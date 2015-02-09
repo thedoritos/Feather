@@ -19,6 +19,8 @@
 		76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951131A86648C009EC9D0 /* FEZTwitterAPI.m */; };
 		76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */; };
 		76D9511D1A8670C1009EC9D0 /* FEZTwitterAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */; };
+		9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D47A3F81A8907E8003C1089 /* FEZConfig.m */; };
+		9D47A3FD1A890941003C1089 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D47A3FC1A890941003C1089 /* secrets.plist */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Feather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Feather.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,9 @@
 		76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STTwitterAPI+Fezaar.m"; path = "Classes/Extensions/STTwitterAPI+Fezaar.m"; sourceTree = "<group>"; };
 		76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTwitterAPITests.m; path = Classes/Services/FEZTwitterAPITests.m; sourceTree = "<group>"; };
 		97BDA99465B87D771A638DAA /* Pods-Feather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feather/Pods-Feather.release.xcconfig"; sourceTree = "<group>"; };
+		9D47A3F71A8907E8003C1089 /* FEZConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZConfig.h; path = Classes/Models/FEZConfig.h; sourceTree = "<group>"; };
+		9D47A3F81A8907E8003C1089 /* FEZConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZConfig.m; path = Classes/Models/FEZConfig.m; sourceTree = "<group>"; };
+		9D47A3FC1A890941003C1089 /* secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = secrets.plist; path = Resources/Config/secrets.plist; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Feather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +115,7 @@
 		76CBECDA1A83A111008C4551 /* Feather */ = {
 			isa = PBXGroup;
 			children = (
+				9D47A3FA1A8908A9003C1089 /* Resources */,
 				76D951081A83A6DD009EC9D0 /* Classes */,
 				76CBECDF1A83A111008C4551 /* AppDelegate.h */,
 				76CBECE01A83A111008C4551 /* AppDelegate.m */,
@@ -153,6 +159,7 @@
 		76D951081A83A6DD009EC9D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D47A3F61A89078B003C1089 /* Models */,
 				76D951111A866457009EC9D0 /* Services */,
 				76D951091A83A6E2009EC9D0 /* Extensions */,
 			);
@@ -203,6 +210,31 @@
 				76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		9D47A3F61A89078B003C1089 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3F71A8907E8003C1089 /* FEZConfig.h */,
+				9D47A3F81A8907E8003C1089 /* FEZConfig.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D47A3FA1A8908A9003C1089 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3FB1A890936003C1089 /* Config */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D47A3FB1A890936003C1089 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3FC1A890941003C1089 /* secrets.plist */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 		BF5B1D4517669CAC12D82838 /* Pods */ = {
@@ -296,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
 				76CBECE71A83A111008C4551 /* Main.storyboard in Resources */,
 				76CBECEC1A83A111008C4551 /* LaunchScreen.xib in Resources */,
 				76CBECE91A83A111008C4551 /* Images.xcassets in Resources */,
@@ -351,6 +384,7 @@
 			files = (
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				76CBECE41A83A111008C4551 /* ViewController.m in Sources */,
+				9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */,
 				76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */,
 				76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */,
 				76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */,

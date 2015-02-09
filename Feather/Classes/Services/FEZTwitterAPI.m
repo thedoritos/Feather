@@ -7,21 +7,31 @@
 //
 
 #import "FEZTwitterAPI.h"
-
-#define FEZConsumerKey    @"xofNjodzkYyfCbd1EfT8YEBXB"
-#define FEZConsumerSecret @"7rCfqvORZVJgQ1mws8sPMrQs6d2h2K9I8Fmu6qarWfb9MUSZdK"
+#import "FEZConfig.h"
 
 @interface FEZTwitterAPI ()
 
 @property (nonatomic) STTwitterAPI *twitterAPI;
 
+@property (nonatomic) FEZConfig *config;
+
 @end
 
 @implementation FEZTwitterAPI
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.config = [FEZConfig defaultConfig];
+    }
+    return self;
+}
+
 - (RACSignal *)authorize
 {
-    STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIWithOAuthConsumerKey:FEZConsumerKey consumerSecret:FEZConsumerSecret];
+    STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIWithOAuthConsumerKey:self.config.consumerKey
+                                                             consumerSecret:self.config.consumerSecret];
     STTwitterAPI *twitterAPIOS = [STTwitterAPI twitterAPIOSWithFirstAccount];
     
     __block NSString *authenticationHeader;
@@ -38,8 +48,8 @@
                }]
                doNext:^(STAccessToken *accessToken) {
                    @strongify(self)
-                   self.twitterAPI = [STTwitterAPI twitterAPIWithOAuthConsumerKey:FEZConsumerKey
-                                                                   consumerSecret:FEZConsumerSecret
+                   self.twitterAPI = [STTwitterAPI twitterAPIWithOAuthConsumerKey:self.config.consumerKey
+                                                                   consumerSecret:self.config.consumerSecret
                                                                        oauthToken:accessToken.oAuthToken
                                                                  oauthTokenSecret:accessToken.oAuthTokenSecret];
     }];

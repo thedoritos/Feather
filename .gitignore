@@ -1,3 +1,6 @@
+# Configurations
+secrets.plist
+
 ### https://raw.github.com/github/gitignore/eda2ee70de1bf7db7e0aba7c7b71aeb2c1c7eeec/Global/OSX.gitignore
 
 .DS_Store

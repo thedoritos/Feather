@@ -1,4 +1,4 @@
-# Feather
+# Fezaar
 
 iOS Twitter Client
 
@@ -6,3 +6,11 @@ iOS Twitter Client
 * In Objective-C
 * Using CocoaPods
 
+### Setup
+
+Define client secrets.
+
+* On `Feather/Resources/Config/secret.plists`
+* TwitterAPI
+    * ConsumerKey
+    * ConsumerSecret
