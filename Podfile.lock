@@ -1,0 +1,19 @@
+PODS:
+  - ReactiveCocoa (2.4.4):
+    - ReactiveCocoa/UI (= 2.4.4)
+  - ReactiveCocoa/Core (2.4.4):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.4)
+  - ReactiveCocoa/UI (2.4.4):
+    - ReactiveCocoa/Core
+  - STTwitter (0.1.8)
+
+DEPENDENCIES:
+  - ReactiveCocoa
+  - STTwitter
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
+  STTwitter: 15d299aeb63fe7aad6285d61dd058d0aaa778a82
+
+COCOAPODS: 0.35.0

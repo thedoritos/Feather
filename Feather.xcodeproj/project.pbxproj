@@ -14,6 +14,14 @@
 		76CBECE91A83A111008C4551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CBECE81A83A111008C4551 /* Images.xcassets */; };
 		76CBECEC1A83A111008C4551 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CBECEA1A83A111008C4551 /* LaunchScreen.xib */; };
 		76CBECF81A83A111008C4551 /* FeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBECF71A83A111008C4551 /* FeatherTests.m */; };
+		76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */; };
+		76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9510F1A8661C9009EC9D0 /* STAccessToken.m */; };
+		76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951131A86648C009EC9D0 /* FEZTwitterAPI.m */; };
+		76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */; };
+		76D9511D1A8670C1009EC9D0 /* FEZTwitterAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */; };
+		9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D47A3F81A8907E8003C1089 /* FEZConfig.m */; };
+		9D47A3FD1A890941003C1089 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D47A3FC1A890941003C1089 /* secrets.plist */; };
+		CBA7D452CC6A9D4C78CA2429 /* libPods-Feather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Feather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62BE729E8372FE414CB6B80F /* Pods-Feather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feather/Pods-Feather.debug.xcconfig"; sourceTree = "<group>"; };
 		76CBECD81A83A111008C4551 /* Feather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CBECDC1A83A111008C4551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76CBECDD1A83A111008C4551 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,20 @@
 		76CBECF11A83A111008C4551 /* FeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CBECF61A83A111008C4551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76CBECF71A83A111008C4551 /* FeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatherTests.m; sourceTree = "<group>"; };
+		76D9510A1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "STTwitterAPI+RACSignalSupport.h"; path = "Classes/Extensions/STTwitterAPI+RACSignalSupport.h"; sourceTree = "<group>"; };
+		76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STTwitterAPI+RACSignalSupport.m"; path = "Classes/Extensions/STTwitterAPI+RACSignalSupport.m"; sourceTree = "<group>"; };
+		76D9510E1A8661C9009EC9D0 /* STAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STAccessToken.h; path = Classes/Extensions/Data/STAccessToken.h; sourceTree = "<group>"; };
+		76D9510F1A8661C9009EC9D0 /* STAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STAccessToken.m; path = Classes/Extensions/Data/STAccessToken.m; sourceTree = "<group>"; };
+		76D951121A86648C009EC9D0 /* FEZTwitterAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTwitterAPI.h; path = Classes/Services/FEZTwitterAPI.h; sourceTree = "<group>"; };
+		76D951131A86648C009EC9D0 /* FEZTwitterAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTwitterAPI.m; path = Classes/Services/FEZTwitterAPI.m; sourceTree = "<group>"; };
+		76D951151A86656E009EC9D0 /* STTwitterAPI+Fezaar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "STTwitterAPI+Fezaar.h"; path = "Classes/Extensions/STTwitterAPI+Fezaar.h"; sourceTree = "<group>"; };
+		76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STTwitterAPI+Fezaar.m"; path = "Classes/Extensions/STTwitterAPI+Fezaar.m"; sourceTree = "<group>"; };
+		76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTwitterAPITests.m; path = Classes/Services/FEZTwitterAPITests.m; sourceTree = "<group>"; };
+		97BDA99465B87D771A638DAA /* Pods-Feather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feather/Pods-Feather.release.xcconfig"; sourceTree = "<group>"; };
+		9D47A3F71A8907E8003C1089 /* FEZConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZConfig.h; path = Classes/Models/FEZConfig.h; sourceTree = "<group>"; };
+		9D47A3F81A8907E8003C1089 /* FEZConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZConfig.m; path = Classes/Models/FEZConfig.m; sourceTree = "<group>"; };
+		9D47A3FC1A890941003C1089 /* secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = secrets.plist; path = Resources/Config/secrets.plist; sourceTree = "<group>"; };
+		E2F22591E5C322311E6E6FEC /* libPods-Feather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA7D452CC6A9D4C78CA2429 /* libPods-Feather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088B1984B1CDDEDDB153408F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2F22591E5C322311E6E6FEC /* libPods-Feather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76CBECCF1A83A110008C4551 = {
 			isa = PBXGroup;
 			children = (
 				76CBECDA1A83A111008C4551 /* Feather */,
 				76CBECF41A83A111008C4551 /* FeatherTests */,
 				76CBECD91A83A111008C4551 /* Products */,
+				BF5B1D4517669CAC12D82838 /* Pods */,
+				088B1984B1CDDEDDB153408F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +115,8 @@
 		76CBECDA1A83A111008C4551 /* Feather */ = {
 			isa = PBXGroup;
 			children = (
+				9D47A3FA1A8908A9003C1089 /* Resources */,
+				76D951081A83A6DD009EC9D0 /* Classes */,
 				76CBECDF1A83A111008C4551 /* AppDelegate.h */,
 				76CBECE01A83A111008C4551 /* AppDelegate.m */,
 				76CBECE21A83A111008C4551 /* ViewController.h */,
@@ -105,6 +141,7 @@
 		76CBECF41A83A111008C4551 /* FeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				76D9511A1A867092009EC9D0 /* Classes */,
 				76CBECF71A83A111008C4551 /* FeatherTests.m */,
 				76CBECF51A83A111008C4551 /* Supporting Files */,
 			);
@@ -119,6 +156,96 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		76D951081A83A6DD009EC9D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3F61A89078B003C1089 /* Models */,
+				76D951111A866457009EC9D0 /* Services */,
+				76D951091A83A6E2009EC9D0 /* Extensions */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		76D951091A83A6E2009EC9D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76D9510D1A85FC61009EC9D0 /* Data */,
+				76D9510A1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.h */,
+				76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */,
+				76D951151A86656E009EC9D0 /* STTwitterAPI+Fezaar.h */,
+				76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		76D9510D1A85FC61009EC9D0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76D9510E1A8661C9009EC9D0 /* STAccessToken.h */,
+				76D9510F1A8661C9009EC9D0 /* STAccessToken.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		76D951111A866457009EC9D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76D951121A86648C009EC9D0 /* FEZTwitterAPI.h */,
+				76D951131A86648C009EC9D0 /* FEZTwitterAPI.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		76D9511A1A867092009EC9D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76D9511B1A86709A009EC9D0 /* Services */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		76D9511B1A86709A009EC9D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76D9511C1A8670C1009EC9D0 /* FEZTwitterAPITests.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9D47A3F61A89078B003C1089 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3F71A8907E8003C1089 /* FEZConfig.h */,
+				9D47A3F81A8907E8003C1089 /* FEZConfig.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D47A3FA1A8908A9003C1089 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3FB1A890936003C1089 /* Config */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D47A3FB1A890936003C1089 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9D47A3FC1A890941003C1089 /* secrets.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		BF5B1D4517669CAC12D82838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BE729E8372FE414CB6B80F /* Pods-Feather.debug.xcconfig */,
+				97BDA99465B87D771A638DAA /* Pods-Feather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76CBECFB1A83A111008C4551 /* Build configuration list for PBXNativeTarget "Feather" */;
 			buildPhases = (
+				54F7C75881ACCEC4961100E6 /* Check Pods Manifest.lock */,
 				76CBECD41A83A111008C4551 /* Sources */,
 				76CBECD51A83A111008C4551 /* Frameworks */,
 				76CBECD61A83A111008C4551 /* Resources */,
+				C48DB903DD60EB7D4B26886B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
 				76CBECE71A83A111008C4551 /* Main.storyboard in Resources */,
 				76CBECEC1A83A111008C4551 /* LaunchScreen.xib in Resources */,
 				76CBECE91A83A111008C4551 /* Images.xcassets in Resources */,
@@ -214,12 +344,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54F7C75881ACCEC4961100E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C48DB903DD60EB7D4B26886B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feather/Pods-Feather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76CBECD41A83A111008C4551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				76CBECE41A83A111008C4551 /* ViewController.m in Sources */,
+				9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */,
+				76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */,
+				76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */,
+				76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */,
 				76CBECE11A83A111008C4551 /* AppDelegate.m in Sources */,
 				76CBECDE1A83A111008C4551 /* main.m in Sources */,
 			);
@@ -229,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D9511D1A8670C1009EC9D0 /* FEZTwitterAPITests.m in Sources */,
 				76CBECF81A83A111008C4551 /* FeatherTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +510,7 @@
 		};
 		76CBECFC1A83A111008C4551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BE729E8372FE414CB6B80F /* Pods-Feather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Feather/Info.plist;
@@ -351,6 +521,7 @@
 		};
 		76CBECFD1A83A111008C4551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BDA99465B87D771A638DAA /* Pods-Feather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Feather/Info.plist;
@@ -361,6 +532,7 @@
 		};
 		76CBECFF1A83A111008C4551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BE729E8372FE414CB6B80F /* Pods-Feather.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +552,7 @@
 		};
 		76CBED001A83A111008C4551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BDA99465B87D771A638DAA /* Pods-Feather.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +585,7 @@
 				76CBECFD1A83A111008C4551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76CBECFE1A83A111008C4551 /* Build configuration list for PBXNativeTarget "FeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +594,7 @@
 				76CBED001A83A111008C4551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
