@@ -11,4 +11,6 @@
 
 @interface STTwitterAPI (Fezaar)
 
+- (RACSignal *)fez_getStatusesHomeTimeline;
+
 @end

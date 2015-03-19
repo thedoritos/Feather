@@ -8,9 +8,12 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "STTwitterAPI+Fezaar.h"
+#import "FEZTimeline.h"
 
 @interface FEZTwitterAPI : NSObject
 
 - (RACSignal *)authorize;
+
+- (RACSignal *)fetchHomeTimeline;
 
 @end

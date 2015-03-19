@@ -55,4 +55,28 @@
     }];
 }
 
+- (RACSignal *)confirmAuthorized
+{
+    if (self.twitterAPI != nil
+        && self.twitterAPI.oauthAccessToken != nil
+        && self.twitterAPI.oauthAccessTokenSecret != nil)
+    {
+        return [RACSignal empty];
+    }
+    
+    return [self authorize];
+}
+
+- (RACSignal *)fetchHomeTimeline
+{
+    @weakify(self)
+    return [[[self confirmAuthorized]
+            then:^{
+                @strongify(self)
+                return [self.twitterAPI fez_getStatusesHomeTimeline];
+            }] map:^(NSArray *tweetJsonArray) {
+                return [FEZTimeline timelineFromTweetJsonArray:tweetJsonArray];
+            }];
+}
+
 @end

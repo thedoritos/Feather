@@ -16,6 +16,9 @@
 		76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951131A86648C009EC9D0 /* FEZTwitterAPI.m */; };
 		76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */; };
 		9D448E2C1ABB11570024C26A /* FEZTwitterAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E2B1ABB11570024C26A /* FEZTwitterAPITests.m */; };
+		9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E331ABB223E0024C26A /* FEZTweet.m */; };
+		9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E361ABB23B80024C26A /* FEZTimeline.m */; };
+		9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E3E1ABB329E0024C26A /* HUKJson.m */; };
 		9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D47A3F81A8907E8003C1089 /* FEZConfig.m */; };
 		9D47A3FD1A890941003C1089 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D47A3FC1A890941003C1089 /* secrets.plist */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
@@ -51,8 +54,14 @@
 		76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STTwitterAPI+Fezaar.m"; path = "Classes/Extensions/STTwitterAPI+Fezaar.m"; sourceTree = "<group>"; };
 		97BDA99465B87D771A638DAA /* Pods-Fezaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fezaar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fezaar/Pods-Fezaar.release.xcconfig"; sourceTree = "<group>"; };
 		9D448E1C1ABB10900024C26A /* FezaarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FezaarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D448E1F1ABB10910024C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = FezaarTests/Info.plist; sourceTree = "<group>"; };
+		9D448E1F1ABB10910024C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D448E2B1ABB11570024C26A /* FEZTwitterAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTwitterAPITests.m; path = Classes/Services/FEZTwitterAPITests.m; sourceTree = "<group>"; };
+		9D448E321ABB223E0024C26A /* FEZTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTweet.h; path = Classes/Models/Twitter/FEZTweet.h; sourceTree = "<group>"; };
+		9D448E331ABB223E0024C26A /* FEZTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTweet.m; path = Classes/Models/Twitter/FEZTweet.m; sourceTree = "<group>"; };
+		9D448E351ABB23B80024C26A /* FEZTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTimeline.h; path = Classes/Models/FEZTimeline.h; sourceTree = "<group>"; };
+		9D448E361ABB23B80024C26A /* FEZTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTimeline.m; path = Classes/Models/FEZTimeline.m; sourceTree = "<group>"; };
+		9D448E3D1ABB329E0024C26A /* HUKJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUKJson.h; path = Classes/Libraries/HumourKit/HUKJson.h; sourceTree = "<group>"; };
+		9D448E3E1ABB329E0024C26A /* HUKJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKJson.m; path = Classes/Libraries/HumourKit/HUKJson.m; sourceTree = "<group>"; };
 		9D47A3F71A8907E8003C1089 /* FEZConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZConfig.h; path = Classes/Models/FEZConfig.h; sourceTree = "<group>"; };
 		9D47A3F81A8907E8003C1089 /* FEZConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZConfig.m; path = Classes/Models/FEZConfig.m; sourceTree = "<group>"; };
 		9D47A3FC1A890941003C1089 /* secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = secrets.plist; path = Resources/Config/secrets.plist; sourceTree = "<group>"; };
@@ -133,6 +142,7 @@
 		76D951081A83A6DD009EC9D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D448E381ABB31AB0024C26A /* Libraries */,
 				9D47A3F61A89078B003C1089 /* Models */,
 				76D951111A866457009EC9D0 /* Services */,
 				76D951091A83A6E2009EC9D0 /* Extensions */,
@@ -203,11 +213,40 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		9D448E2E1ABB21B60024C26A /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				9D448E321ABB223E0024C26A /* FEZTweet.h */,
+				9D448E331ABB223E0024C26A /* FEZTweet.m */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		9D448E381ABB31AB0024C26A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9D448E391ABB31BE0024C26A /* HumourKit */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9D448E391ABB31BE0024C26A /* HumourKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D448E3D1ABB329E0024C26A /* HUKJson.h */,
+				9D448E3E1ABB329E0024C26A /* HUKJson.m */,
+			);
+			name = HumourKit;
+			sourceTree = "<group>";
+		};
 		9D47A3F61A89078B003C1089 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D448E2E1ABB21B60024C26A /* Twitter */,
 				9D47A3F71A8907E8003C1089 /* FEZConfig.h */,
 				9D47A3F81A8907E8003C1089 /* FEZConfig.m */,
+				9D448E351ABB23B80024C26A /* FEZTimeline.h */,
+				9D448E361ABB23B80024C26A /* FEZTimeline.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -371,7 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */,
+				9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
+				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
 				76CBECE41A83A111008C4551 /* ViewController.m in Sources */,
 				9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */,
 				76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */,
@@ -566,6 +608,7 @@
 				9D448E261ABB10910024C26A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,4 +19,12 @@
 
 - (RACSignal *)rac_postReverseAuthAccessTokenWithAuthenticationHeader:(NSString *)authenticationHeader;
 
+- (RACSignal *)rac_getStatusesHomeTimelineWithCount:(NSString *)count
+                                            sinceID:(NSString *)sinceID
+                                              maxID:(NSString *)maxID
+                                           trimUser:(NSNumber *)trimUser
+                                     excludeReplies:(NSNumber *)excludeReplies
+                                 contributorDetails:(NSNumber *)contributorDetails
+                                    includeEntities:(NSNumber *)includeEntities;
+
 @end

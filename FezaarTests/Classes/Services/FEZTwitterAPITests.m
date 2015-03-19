@@ -29,9 +29,28 @@
     
     [[self.sut authorize] subscribeNext:^(STAccessToken *accessToken) {
         [expectation fulfill];
-        NSLog(@"Authorized with userID: %@, screenName:%@", accessToken.userID, accessToken.screenName);
+        
+        NSLog(@"Authorized with token: %@", accessToken);
+        
     } error:^(NSError *error) {
-        XCTFail(@"it should not fail with error: %@", error);
+        XCTFail(@"should not fail with error: %@", error);
+    }];
+    
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
+- (void)testFetchHomeTimeline {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"should receive home timeline"];
+    
+    [[self.sut fetchHomeTimeline] subscribeNext:^(FEZTimeline *timeline) {
+        [expectation fulfill];
+        
+        XCTAssert(timeline.tweets.count > 0, @"should receive at least 1 tweet");
+        
+        NSLog(@"Fetched home timeline with tweets: %@", timeline.tweets);
+        
+    } error:^(NSError *error) {
+        XCTFail(@"should not fail with error: %@", error);
     }];
     
     [self waitForExpectationsWithTimeout:5 handler:nil];
