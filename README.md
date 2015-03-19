@@ -10,7 +10,7 @@ iOS Twitter Client
 
 Define client secrets.
 
-* On `Fezaar/Resources/Config/secret.plists`
+* On `Fezaar/Resources/Config/secrets.plist`
 * TwitterAPI
     * ConsumerKey
     * ConsumerSecret
