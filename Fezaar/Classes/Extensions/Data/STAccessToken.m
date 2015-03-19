@@ -25,4 +25,10 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"STAccessToken oAuthToken:%@, oAuthTokenSecret:%@, userID:%@, screenName:%@",
+            self.oAuthToken, self.oAuthTokenSecret, self.userID, self.screenName];
+}
+
 @end

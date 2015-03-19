@@ -53,4 +53,30 @@
     }];
 }
 
+- (RACSignal *)rac_getStatusesHomeTimelineWithCount:(NSString *)count
+                                            sinceID:(NSString *)sinceID
+                                              maxID:(NSString *)maxID
+                                           trimUser:(NSNumber *)trimUser
+                                     excludeReplies:(NSNumber *)excludeReplies
+                                 contributorDetails:(NSNumber *)contributorDetails
+                                    includeEntities:(NSNumber *)includeEntities
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self getStatusesHomeTimelineWithCount:count
+                                       sinceID:sinceID
+                                         maxID:maxID
+                                      trimUser:trimUser
+                                excludeReplies:excludeReplies
+                            contributorDetails:contributorDetails
+                               includeEntities:includeEntities
+                                  successBlock:^(NSArray *statuses) {
+                                      [subscriber sendNext:statuses];
+                                      [subscriber sendCompleted];
+                                  } errorBlock:^(NSError *error) {
+                                      [subscriber sendError:error];
+                                  }];
+        return nil;
+    }];
+}
+
 @end

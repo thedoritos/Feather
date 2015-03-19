@@ -10,4 +10,15 @@
 
 @implementation STTwitterAPI (Fezaar)
 
+- (RACSignal *)fez_getStatusesHomeTimeline
+{
+    return [self rac_getStatusesHomeTimelineWithCount:@"100"
+                                              sinceID:nil
+                                                maxID:nil
+                                             trimUser:nil
+                                       excludeReplies:nil
+                                   contributorDetails:nil
+                                      includeEntities:nil];
+}
+
 @end
