@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 #import "FEZTwitterAPI.h"
 #import "FEZConfig.h"
 
@@ -77,6 +79,16 @@
             }] map:^(NSArray *tweetJsonArray) {
                 return [FEZTimeline timelineFromTweetJsonArray:tweetJsonArray];
             }];
+}
+
+- (RACSignal *)fetchHomeTimelineBackground
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        
+        
+        return nil;
+    }];
 }
 
 @end
