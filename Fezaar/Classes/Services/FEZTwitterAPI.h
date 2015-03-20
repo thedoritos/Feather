@@ -16,4 +16,6 @@
 
 - (RACSignal *)fetchHomeTimeline;
 
+- (RACSignal *)fetchHomeTimelineBackground;
+
 @end

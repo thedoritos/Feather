@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FEZTwitter.h"
 
 @interface AppDelegate ()
 
@@ -15,9 +16,30 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     return YES;
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    NSLog(@"Start background fetch");
+    
+    FEZTwitter *twitter = [[FEZTwitter alloc] init];
+    
+    [[twitter fetchHomeTimeline] subscribeNext:^(FEZTimeline *timeline) {
+        
+        NSLog(@"Fetched home timeline with tweets: %@, count: %lu", timeline.tweets, (unsigned long)timeline.tweets.count);
+        NSLog(@"Completed background fetch");
+        
+        completionHandler(UIBackgroundFetchResultNewData);
+    } error:^(NSError *error) {
+        
+        NSLog(@"Failed background fetch");
+        
+        completionHandler(UIBackgroundFetchResultFailed);
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
