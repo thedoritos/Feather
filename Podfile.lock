@@ -1,4 +1,19 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
@@ -13,12 +28,14 @@ PODS:
   - Underscore.m (0.2.1)
 
 DEPENDENCIES:
+  - BlocksKit
   - Mantle
   - ReactiveCocoa
   - STTwitter
   - Underscore.m
 
 SPEC CHECKSUMS:
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
   Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
   ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
   STTwitter: 15d299aeb63fe7aad6285d61dd058d0aaa778a82
