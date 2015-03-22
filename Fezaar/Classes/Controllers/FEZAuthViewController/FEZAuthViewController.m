@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *accountTableView;
 
 @property (nonatomic) NSArray *accounts;
+@property (nonatomic) ACAccount *currentAccount;
 
 @property (nonatomic) HUKTwitterAccountStore *accountStore;
 
@@ -64,27 +65,64 @@
     }
     
     ACAccount *account = self.accounts[indexPath.row];
+    BOOL isCurrentAccount = self.currentAccount != nil && [self.currentAccount.username isEqualToString:account.username];
+    
     cell.textLabel.text = [NSString stringWithFormat:@"@%@", account.username];
+    cell.accessoryType = isCurrentAccount ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ACAccount *account = self.accounts[indexPath.row];
+    [self authorizeAccount:account];
+}
 
 #pragma mark - Private
 
 - (void)refreshAccounts
 {
     @weakify(self)
-    [[self.accountStore rac_requestAccounts] subscribeNext:^(NSArray *accounts) {
+    [[[[[[self.accountStore rac_requestAccounts]
+      doNext:^(NSArray *accounts) {
+          @strongify(self)
+          self.accounts = accounts;
+      }]
+      then:^{
+          @strongify(self)
+          return [self.accountStore rac_requestCurrentAccount];
+      }] doNext:^(ACAccount *account) {
+          @strongify(self)
+          self.currentAccount = account;
+      }] finally:^{
+          @strongify(self)
+          [self refreshAccountTable];
+      }] subscribeError:^(NSError *error) {
+          NSLog(@"Failed to list accounts with error: %@", error);
+      }];
+}
+
+- (void)refreshAccountTable
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.accountTableView reloadData];
+    });
+}
+
+- (void)authorizeAccount:(ACAccount *)account
+{
+    @weakify(self)
+    [[self.accountStore rac_registerCurrentAccount:account] subscribeNext:^(ACAccount *account) {
         @strongify(self)
-        self.accounts = accounts;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.accountTableView reloadData];
-        });
+        self.currentAccount = account;
+        [self refreshAccountTable];
     } error:^(NSError *error) {
-        NSLog(@"Failed to list accounts with error: %@", error);
+        NSLog(@"Failed to authorize accounts with error: %@", error);
     }];
 }
 
