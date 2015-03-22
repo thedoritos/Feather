@@ -37,6 +37,7 @@
 		9D713CF51ABF004800709229 /* FEZHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CF31ABF004800709229 /* FEZHomeViewController.xib */; };
 		9D713CFC1ABF023E00709229 /* FEZTweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CFA1ABF023E00709229 /* FEZTweetCell.m */; };
 		9D713CFD1ABF023E00709229 /* FEZTweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CFB1ABF023E00709229 /* FEZTweetCell.xib */; };
+		9D713D0E1ABF158C00709229 /* FEZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713D0D1ABF158C00709229 /* FEZUser.m */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 		9D713CF91ABF023E00709229 /* FEZTweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTweetCell.h; path = Classes/Views/Tweet/FEZTweetCell/FEZTweetCell.h; sourceTree = "<group>"; };
 		9D713CFA1ABF023E00709229 /* FEZTweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTweetCell.m; path = Classes/Views/Tweet/FEZTweetCell/FEZTweetCell.m; sourceTree = "<group>"; };
 		9D713CFB1ABF023E00709229 /* FEZTweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZTweetCell.xib; path = Classes/Views/Tweet/FEZTweetCell/FEZTweetCell.xib; sourceTree = "<group>"; };
+		9D713D0C1ABF158C00709229 /* FEZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZUser.h; path = Classes/Models/Twitter/FEZUser.h; sourceTree = "<group>"; };
+		9D713D0D1ABF158C00709229 /* FEZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZUser.m; path = Classes/Models/Twitter/FEZUser.m; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -266,6 +269,8 @@
 			children = (
 				9D448E321ABB223E0024C26A /* FEZTweet.h */,
 				9D448E331ABB223E0024C26A /* FEZTweet.m */,
+				9D713D0C1ABF158C00709229 /* FEZUser.h */,
+				9D713D0D1ABF158C00709229 /* FEZUser.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 			files = (
 				9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */,
 				9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */,
+				9D713D0E1ABF158C00709229 /* FEZUser.m in Sources */,
 				9D713CCA1ABCC0D800709229 /* HUKTwitter.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,

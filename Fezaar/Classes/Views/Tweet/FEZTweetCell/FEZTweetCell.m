@@ -24,7 +24,7 @@
 
 - (void)presentTweet:(FEZTweet *)tweet
 {
-    self.userNameLabel.text = [NSString stringWithFormat:@"%@", tweet.statusID];
+    self.userNameLabel.text = tweet.user.name;
     self.tweetTextLabel.text = tweet.text;
 }
 

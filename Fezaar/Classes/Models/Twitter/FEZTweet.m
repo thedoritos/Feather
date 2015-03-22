@@ -17,6 +17,11 @@
     };
 }
 
++ (NSValueTransformer *)userJSONTransformer
+{
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:FEZUser.class];
+}
+
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"FEZTweet statusID:%@, text:%@", self.statusID, self.text];
