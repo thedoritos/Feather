@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^Action)(id e);
+typedef BOOL(^Predicate)(id e);
+
 @interface HUKArray : NSObject
 
 @end
@@ -15,5 +18,15 @@
 @interface NSArray (HUKArray)
 
 - (BOOL)huk_isEmpty;
+
+- (BOOL)huk_any:(Predicate)predicate;
+
+- (BOOL)huk_none:(Predicate)predicate;
+
+- (id)huk_match:(Predicate)predicate;
+
+- (id)huk_sample;
+
+- (instancetype)huk_filter:(Predicate)predicate;
 
 @end

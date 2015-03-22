@@ -5,6 +5,7 @@ target "Fezaar" do
   pod 'ReactiveCocoa'
   pod 'Mantle'
   pod 'Underscore.m'
+  pod 'BlocksKit'
 end
 
 target "FezaarTests" do

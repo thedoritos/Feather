@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, HUKTwitterErrorCode)
     
     HUKTwitterErrorCodeAccountStoreAccessDenied,
     HUKTwitterErrorCodeAccountStoreAccountNotFound,
+    HUKTwitterErrorCodeAccountStoreCurrentAccountNotFound,
     
     HUKTwitterErrorCodeRequestFailed,
     HUKTwitterErrorCodeRequestBadStatusReceived,
