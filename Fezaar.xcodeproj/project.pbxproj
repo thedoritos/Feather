@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76CBECDE1A83A111008C4551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBECDD1A83A111008C4551 /* main.m */; };
 		76CBECE11A83A111008C4551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBECE01A83A111008C4551 /* AppDelegate.m */; };
-		76CBECE41A83A111008C4551 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBECE31A83A111008C4551 /* ViewController.m */; };
 		76CBECE91A83A111008C4551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CBECE81A83A111008C4551 /* Images.xcassets */; };
 		76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */; };
 		76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D9510F1A8661C9009EC9D0 /* STAccessToken.m */; };
@@ -31,6 +30,8 @@
 		9D713CDC1ABD1A7500709229 /* HUKTwitterAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CDB1ABD1A7500709229 /* HUKTwitterAccountStore.m */; };
 		9D713CE01ABD6AB700709229 /* HUKAccountStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CDF1ABD6AB700709229 /* HUKAccountStoreTests.m */; };
 		9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CE21ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m */; };
+		9D713CE91ABD7E5400709229 /* FEZAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CE71ABD7E5400709229 /* FEZAuthViewController.m */; };
+		9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CE81ABD7E5400709229 /* FEZAuthViewController.xib */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +52,6 @@
 		76CBECDD1A83A111008C4551 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76CBECDF1A83A111008C4551 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76CBECE01A83A111008C4551 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76CBECE21A83A111008C4551 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76CBECE31A83A111008C4551 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		76CBECE81A83A111008C4551 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		76D9510A1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "STTwitterAPI+RACSignalSupport.h"; path = "Classes/Extensions/STTwitterAPI+RACSignalSupport.h"; sourceTree = "<group>"; };
 		76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STTwitterAPI+RACSignalSupport.m"; path = "Classes/Extensions/STTwitterAPI+RACSignalSupport.m"; sourceTree = "<group>"; };
@@ -92,6 +91,9 @@
 		9D713CDF1ABD6AB700709229 /* HUKAccountStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKAccountStoreTests.m; path = Classes/Libraries/HumourKit/HUKAccountStoreTests.m; sourceTree = "<group>"; };
 		9D713CE11ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HUKTwitterAccountStore+RACSupport.h"; path = "Classes/Libraries/HumourKit/HUKTwitterAccountStore+RACSupport.h"; sourceTree = "<group>"; };
 		9D713CE21ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HUKTwitterAccountStore+RACSupport.m"; path = "Classes/Libraries/HumourKit/HUKTwitterAccountStore+RACSupport.m"; sourceTree = "<group>"; };
+		9D713CE61ABD7E5400709229 /* FEZAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZAuthViewController.h; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.h; sourceTree = "<group>"; };
+		9D713CE71ABD7E5400709229 /* FEZAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZAuthViewController.m; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.m; sourceTree = "<group>"; };
+		9D713CE81ABD7E5400709229 /* FEZAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZAuthViewController.xib; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.xib; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,8 +153,6 @@
 				76D951081A83A6DD009EC9D0 /* Classes */,
 				76CBECDF1A83A111008C4551 /* AppDelegate.h */,
 				76CBECE01A83A111008C4551 /* AppDelegate.m */,
-				76CBECE21A83A111008C4551 /* ViewController.h */,
-				76CBECE31A83A111008C4551 /* ViewController.m */,
 				76CBECE81A83A111008C4551 /* Images.xcassets */,
 				76CBECDB1A83A111008C4551 /* Supporting Files */,
 			);
@@ -171,6 +171,7 @@
 		76D951081A83A6DD009EC9D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D713CE41ABD7DE500709229 /* Controllers */,
 				9D448E381ABB31AB0024C26A /* Libraries */,
 				9D47A3F61A89078B003C1089 /* Models */,
 				76D951111A866457009EC9D0 /* Services */,
@@ -328,6 +329,24 @@
 			name = HumourKit;
 			sourceTree = "<group>";
 		};
+		9D713CE41ABD7DE500709229 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D713CE51ABD7DFD00709229 /* FEZAuthViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9D713CE51ABD7DFD00709229 /* FEZAuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D713CE61ABD7E5400709229 /* FEZAuthViewController.h */,
+				9D713CE71ABD7E5400709229 /* FEZAuthViewController.m */,
+				9D713CE81ABD7E5400709229 /* FEZAuthViewController.xib */,
+			);
+			name = FEZAuthViewController;
+			sourceTree = "<group>";
+		};
 		BF5B1D4517669CAC12D82838 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
+				9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */,
 				76CBECE91A83A111008C4551 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +502,6 @@
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,
-				76CBECE41A83A111008C4551 /* ViewController.m in Sources */,
 				9D713CCE1ABCC16700709229 /* HUKTwitter+RACSupport.m in Sources */,
 				9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */,
 				9D713CD11ABCC4FC00709229 /* HUKArray.m in Sources */,
@@ -492,6 +511,7 @@
 				76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */,
 				76CBECE11A83A111008C4551 /* AppDelegate.m in Sources */,
 				9D713CDC1ABD1A7500709229 /* HUKTwitterAccountStore.m in Sources */,
+				9D713CE91ABD7E5400709229 /* FEZAuthViewController.m in Sources */,
 				76CBECDE1A83A111008C4551 /* main.m in Sources */,
 				9D713CD71ABCCDEE00709229 /* FEZTwitter.m in Sources */,
 			);
