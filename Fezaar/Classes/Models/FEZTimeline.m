@@ -22,6 +22,11 @@
     return self;
 }
 
++ (instancetype)timeline
+{
+    return [[self class] timelineFromTweetJsonArray:@[]];
+}
+
 + (instancetype)timelineFromTweetJsonArray:(NSArray *)tweetJsonArray
 {
     NSError *error = nil;
@@ -32,6 +37,16 @@
     }
     
     return [[[self class] alloc] initWithTweets:tweets];
+}
+
+- (NSUInteger)length
+{
+    return self.tweets.count;
+}
+
+- (FEZTweet *)tweetAtIndex:(NSUInteger)index
+{
+    return self.tweets[index];
 }
 
 - (NSString *)description

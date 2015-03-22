@@ -10,6 +10,8 @@
 
 static NSString * const HUKTwitterErrorDomain = @"HUKTwitterErrorDomain";
 
+static NSString * const HUKTwitterUserInfoInnerError = @"HUKTwitterUserInfoInnerError";
+
 typedef NS_ENUM(NSUInteger, HUKTwitterErrorCode)
 {
     HUKTwitterErrorCodeUndefined,
@@ -19,6 +21,7 @@ typedef NS_ENUM(NSUInteger, HUKTwitterErrorCode)
     HUKTwitterErrorCodeAccountStoreCurrentAccountNotFound,
     
     HUKTwitterErrorCodeRequestFailed,
+    HUKTwitterErrorCodeRequestRateLimitExceeded,
     HUKTwitterErrorCodeRequestBadStatusReceived,
     HUKTwitterErrorCodeRequestBadDataReceived,
 };
@@ -26,5 +29,8 @@ typedef NS_ENUM(NSUInteger, HUKTwitterErrorCode)
 @interface HUKTwitterError : NSError
 
 + (instancetype)errorWithCode:(HUKTwitterErrorCode)code;
++ (instancetype)errorWithCode:(HUKTwitterErrorCode)code innerError:(NSError *)error;
+
++ (instancetype)errorWithURLResponse:(NSHTTPURLResponse *)urlResponse;
 
 @end
