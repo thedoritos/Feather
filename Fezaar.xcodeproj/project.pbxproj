@@ -32,6 +32,7 @@
 		9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CE21ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m */; };
 		9D713CE91ABD7E5400709229 /* FEZAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CE71ABD7E5400709229 /* FEZAuthViewController.m */; };
 		9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CE81ABD7E5400709229 /* FEZAuthViewController.xib */; };
+		9D713CEF1ABE626B00709229 /* FEZLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CEE1ABE626B00709229 /* FEZLaunchScreen.xib */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		9D713CE61ABD7E5400709229 /* FEZAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZAuthViewController.h; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.h; sourceTree = "<group>"; };
 		9D713CE71ABD7E5400709229 /* FEZAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZAuthViewController.m; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.m; sourceTree = "<group>"; };
 		9D713CE81ABD7E5400709229 /* FEZAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZAuthViewController.xib; path = Classes/Controllers/FEZAuthViewController/FEZAuthViewController.xib; sourceTree = "<group>"; };
+		9D713CEE1ABE626B00709229 /* FEZLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FEZLaunchScreen.xib; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				76CBECE01A83A111008C4551 /* AppDelegate.m */,
 				76CBECE81A83A111008C4551 /* Images.xcassets */,
 				76CBECDB1A83A111008C4551 /* Supporting Files */,
+				9D713CEE1ABE626B00709229 /* FEZLaunchScreen.xib */,
 			);
 			path = Fezaar;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D713CEF1ABE626B00709229 /* FEZLaunchScreen.xib in Resources */,
 				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
 				9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */,
 				76CBECE91A83A111008C4551 /* Images.xcassets in Resources */,
