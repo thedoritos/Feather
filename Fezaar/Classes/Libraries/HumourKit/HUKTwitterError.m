@@ -15,4 +15,25 @@
     return [HUKTwitterError errorWithDomain:HUKTwitterErrorDomain code:code userInfo:nil];
 }
 
++ (instancetype)errorWithCode:(HUKTwitterErrorCode)code innerError:(NSError *)error
+{
+    return [HUKTwitterError errorWithDomain:HUKTwitterErrorDomain code:code userInfo:@{                   HUKTwitterUserInfoInnerError : error
+    }];
+}
+
++ (instancetype)errorWithURLResponse:(NSHTTPURLResponse *)urlResponse
+{
+    NSDictionary *headers = urlResponse.allHeaderFields;
+    NSString *rateLimitRemaining = headers[@"x-rate-limit-remaining"];
+    if (rateLimitRemaining && [rateLimitRemaining isEqualToString:@"0"]) {
+        return [HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestRateLimitExceeded];
+    }
+    
+    if (!(200 <= urlResponse.statusCode && urlResponse.statusCode < 300)) {
+        return [HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestBadStatusReceived];
+    }
+    
+    return [HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestFailed];
+}
+
 @end

@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FEZAuthViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FEZHomeViewController">
             <connections>
-                <outlet property="accountTableView" destination="InU-6v-IMP" id="Hbo-2r-FcH"/>
+                <outlet property="tweetTableView" destination="V2Y-K1-Qod" id="N35-R9-U0G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,17 +15,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="InU-6v-IMP" userLabel="AccountTableView">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="V2Y-K1-Qod" userLabel="TweetTableView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="InU-6v-IMP" secondAttribute="trailing" id="Lcj-CZ-soi"/>
-                <constraint firstItem="InU-6v-IMP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YkA-5d-ooV"/>
-                <constraint firstAttribute="bottom" secondItem="InU-6v-IMP" secondAttribute="bottom" id="nfB-ah-5P2"/>
-                <constraint firstItem="InU-6v-IMP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vDD-uk-Qwh"/>
+                <constraint firstItem="V2Y-K1-Qod" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7sc-bc-AzT"/>
+                <constraint firstItem="V2Y-K1-Qod" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D4b-Rw-b1q"/>
+                <constraint firstAttribute="trailing" secondItem="V2Y-K1-Qod" secondAttribute="trailing" id="daf-jO-reU"/>
+                <constraint firstAttribute="bottom" secondItem="V2Y-K1-Qod" secondAttribute="bottom" id="nyS-S7-jzv"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

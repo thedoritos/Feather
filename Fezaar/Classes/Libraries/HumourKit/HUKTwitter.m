@@ -66,7 +66,7 @@
         
         if (!(200 <= urlResponse.statusCode && urlResponse.statusCode < 300)) {
             if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestBadStatusReceived]);
+                errorHandler([HUKTwitterError errorWithURLResponse:urlResponse]);
             }
             return;
         }

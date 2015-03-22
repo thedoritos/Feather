@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FEZTwitter.h"
-#import "FEZAuthViewController.h"
+#import "FEZHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,11 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
-    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
+    FEZHomeViewController *homeViewController = [[FEZHomeViewController alloc] init];
+    UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = authNavigationController;
+    self.window.rootViewController = homeNavigationController;
     [self.window makeKeyAndVisible];
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];

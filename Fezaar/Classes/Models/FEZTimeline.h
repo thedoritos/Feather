@@ -13,6 +13,11 @@
 
 @property (nonatomic, copy, readonly) NSArray *tweets;
 
++ (instancetype)timeline;
+
 + (instancetype)timelineFromTweetJsonArray:(NSArray *)tweetJsonArray;
+
+- (NSUInteger)length;
+- (FEZTweet *)tweetAtIndex:(NSUInteger)index;
 
 @end
