@@ -17,9 +17,10 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="V2Y-K1-Qod" userLabel="TweetTableView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="separatorColor" red="0.80758101851851849" green="0.32622623560860908" blue="0.33401633645586543" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="V2Y-K1-Qod" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7sc-bc-AzT"/>
                 <constraint firstItem="V2Y-K1-Qod" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D4b-Rw-b1q"/>

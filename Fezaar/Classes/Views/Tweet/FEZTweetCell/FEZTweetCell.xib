@@ -15,30 +15,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ylc-rl-zUr" userLabel="UserImageView">
-                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                        <rect key="frame" x="8" y="8" width="38" height="38"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="24" id="uFA-Mm-zaO"/>
-                            <constraint firstAttribute="height" constant="24" id="xod-zb-xqO"/>
+                            <constraint firstAttribute="width" constant="38" id="uFA-Mm-zaO"/>
+                            <constraint firstAttribute="height" constant="38" id="xod-zb-xqO"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-BZ-OAB" userLabel="UsernameLabel">
-                        <rect key="frame" x="37" y="8" width="275" height="14.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-BZ-OAB" userLabel="UsernameLabel">
+                        <rect key="frame" x="51" y="8" width="261" height="14.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Text Text Text Text Text Text Text Text Text Text Text Text Text " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-66-uDP" userLabel="TextLabel">
-                        <rect key="frame" x="37" y="22" width="275" height="29"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Text Text Text Text Text Text Text Text Text Text Text Text Text " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-66-uDP" userLabel="TextLabel">
+                        <rect key="frame" x="51" y="22" width="261" height="26"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-sq-caF" userLabel="TextSpace">
-                        <rect key="frame" x="37" y="51" width="275" height="60.5"/>
+                        <rect key="frame" x="51" y="48" width="261" height="63.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="w9U-BZ-OAB" secondAttribute="leading" id="6eL-Wj-sx7"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="85Y-il-zsO"/>
@@ -55,6 +54,7 @@
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nsu-7b-qZP"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="tweetTextLabel" destination="VWm-66-uDP" id="Flp-7W-WRw"/>
                 <outlet property="userImageView" destination="Ylc-rl-zUr" id="qTm-io-g1m"/>
