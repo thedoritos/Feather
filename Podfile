@@ -4,8 +4,8 @@ target "Fezaar" do
   pod 'STTwitter'
   pod 'ReactiveCocoa'
   pod 'Mantle'
-  pod 'Underscore.m'
   pod 'BlocksKit'
+  pod 'SDWebImage'
 end
 
 target "FezaarTests" do

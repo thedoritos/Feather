@@ -16,4 +16,6 @@
 
 @property (nonatomic, copy, readonly) NSString *screenName;
 
+@property (nonatomic, copy, readonly) NSURL *profileImageURL;
+
 @end

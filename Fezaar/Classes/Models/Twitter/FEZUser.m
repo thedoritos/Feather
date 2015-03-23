@@ -14,8 +14,14 @@
 {
     return @{
         @"userID" : @"id",
-        @"screenName" : @"screen_name"
+        @"screenName" : @"screen_name",
+        @"profileImageURL": @"profile_image_url"
     };
+}
+
++ (NSValueTransformer *)profileImageURLJSONTransformer
+{
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
 @end

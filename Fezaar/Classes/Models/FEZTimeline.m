@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
-#import <Underscore.m/Underscore.h>
 #import "FEZTimeline.h"
 
 #define _ Underscore
