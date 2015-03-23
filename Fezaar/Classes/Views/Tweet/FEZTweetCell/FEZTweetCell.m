@@ -6,13 +6,16 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "FEZTweetCell.h"
 
 @implementation FEZTweetCell
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    self.userImageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.userImageView.layer.cornerRadius = 5;
+    self.userImageView.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -26,6 +29,9 @@
 {
     self.userNameLabel.text = tweet.user.name;
     self.tweetTextLabel.text = tweet.text;
+    [self.userImageView sd_setImageWithURL:tweet.user.profileImageURL];
+    
+    [self layoutIfNeeded];
 }
 
 @end

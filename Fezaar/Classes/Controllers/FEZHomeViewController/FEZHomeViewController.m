@@ -70,7 +70,6 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
      subscribeNext:^(FEZTimeline *timeline) {
          @strongify(self)
          [self updateHomeTimeline:timeline];
-         NSLog(@"Fetched home timeline: %@", timeline);
      } error:^(NSError *error) {
          NSLog(@"Failed to fetch home timeline with error: %@", error);
      }];
