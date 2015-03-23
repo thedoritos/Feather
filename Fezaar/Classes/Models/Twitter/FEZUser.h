@@ -8,6 +8,14 @@
 
 #import <Mantle/Mantle.h>
 
+typedef NS_ENUM(NSInteger, FEZUserProfileImageType)
+{
+    FEZUserProfileImageTypeNormal,
+    FEZUserProfileImageTypeBigger,
+    FEZUserProfileImageTypeMini,
+    FEZUserProfileImageTypeOriginal
+};
+
 @interface FEZUser : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy, readonly) NSNumber *userID;
@@ -17,5 +25,7 @@
 @property (nonatomic, copy, readonly) NSString *screenName;
 
 @property (nonatomic, copy, readonly) NSURL *profileImageURL;
+
+- (NSURL *)profileImageURL:(FEZUserProfileImageType)type;
 
 @end

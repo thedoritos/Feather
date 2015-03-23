@@ -10,6 +10,22 @@
 
 @implementation FEZUser
 
+- (NSURL *)profileImageURL:(FEZUserProfileImageType)type
+{
+    NSString *urlString = self.profileImageURL.absoluteString;
+    switch (type) {
+        case FEZUserProfileImageTypeNormal:
+        default:
+            return [NSURL URLWithString:urlString];
+        case FEZUserProfileImageTypeBigger:
+            return [NSURL URLWithString:[urlString stringByReplacingOccurrencesOfString:@"normal" withString:@"bigger"]];
+        case FEZUserProfileImageTypeMini:
+            return [NSURL URLWithString:[urlString stringByReplacingOccurrencesOfString:@"normal" withString:@"mini"]];
+        case FEZUserProfileImageTypeOriginal:
+            return [NSURL URLWithString:[urlString stringByReplacingOccurrencesOfString:@"normal" withString:@""]];
+    }
+}
+
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{

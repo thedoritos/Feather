@@ -15,26 +15,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ylc-rl-zUr" userLabel="UserImageView">
-                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                        <rect key="frame" x="8" y="8" width="38" height="38"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="24" id="uFA-Mm-zaO"/>
-                            <constraint firstAttribute="height" constant="24" id="xod-zb-xqO"/>
+                            <constraint firstAttribute="width" constant="38" id="uFA-Mm-zaO"/>
+                            <constraint firstAttribute="height" constant="38" id="xod-zb-xqO"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-BZ-OAB" userLabel="UsernameLabel">
-                        <rect key="frame" x="37" y="8" width="275" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-BZ-OAB" userLabel="UsernameLabel">
+                        <rect key="frame" x="51" y="8" width="261" height="14.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Text Text Text Text Text Text Text Text Text Text Text Text Text " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-66-uDP" userLabel="TextLabel">
-                        <rect key="frame" x="37" y="22" width="275" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Text Text Text Text Text Text Text Text Text Text Text Text Text " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-66-uDP" userLabel="TextLabel">
+                        <rect key="frame" x="51" y="22" width="261" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-sq-caF" userLabel="TextSpace">
-                        <rect key="frame" x="37" y="51" width="275" height="60.5"/>
+                        <rect key="frame" x="51" y="51" width="261" height="60.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>

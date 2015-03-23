@@ -14,7 +14,7 @@
 - (void)awakeFromNib
 {
     self.userImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.userImageView.layer.cornerRadius = 5;
+    self.userImageView.layer.cornerRadius = 8;
     self.userImageView.layer.masksToBounds = YES;
 }
 
@@ -29,7 +29,7 @@
 {
     self.userNameLabel.text = tweet.user.name;
     self.tweetTextLabel.text = tweet.text;
-    [self.userImageView sd_setImageWithURL:tweet.user.profileImageURL];
+    [self.userImageView sd_setImageWithURL:[tweet.user profileImageURL:FEZUserProfileImageTypeBigger]];
     
     [self layoutIfNeeded];
 }
