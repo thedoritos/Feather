@@ -15,4 +15,6 @@
 
 - (RACSignal *)rac_getStatusesHomeTimeline;
 
+- (RACSignal *)rac_getListsOwnerships;
+
 @end

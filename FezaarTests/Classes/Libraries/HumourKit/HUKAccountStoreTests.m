@@ -80,7 +80,7 @@
          XCTFail(@"should not fail with error: %@", error);
      }];
     
-    [self waitForExpectationsWithTimeout:500 handler:nil];
+    [self waitForExpectationsWithTimeout:5 handler:nil];
 }
 
 @end

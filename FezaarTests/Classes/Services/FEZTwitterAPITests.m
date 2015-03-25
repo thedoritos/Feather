@@ -47,7 +47,7 @@
         
         XCTAssert(timeline.tweets.count > 0, @"should receive at least 1 tweet");
         
-        NSLog(@"Fetched home timeline with tweets: %@", timeline.tweets);
+        NSLog(@"Fetched home timeline with count: %lu", (unsigned long)timeline.length);
         
     } error:^(NSError *error) {
         XCTFail(@"should not fail with error: %@", error);

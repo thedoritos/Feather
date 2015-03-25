@@ -47,7 +47,7 @@
         
         XCTAssert(timeline.tweets.count > 0, @"should receive at least 1 tweet");
         
-        NSLog(@"Fetched home timeline with tweets: %@, count: %lu", timeline.tweets, (unsigned long)timeline.tweets.count);
+        NSLog(@"Fetched home timeline with count: %lu", (unsigned long)timeline.length);
         
     } error:^(NSError *error) {
         XCTFail(@"should not fail with error: %@", error);
@@ -65,7 +65,7 @@
         
         XCTAssert(lists.count > 0, @"should receive at least 1 list");
         
-        NSLog(@"Fetched lists: %@, count: %lu", lists, (unsigned long)lists.count);
+        NSLog(@"Fetched lists with count: %lu", (unsigned long)lists.count);
         
     } error:^(NSError *error) {
         XCTFail(@"should not fail with error: %@", error);

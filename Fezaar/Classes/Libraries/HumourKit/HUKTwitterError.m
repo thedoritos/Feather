@@ -17,7 +17,8 @@
 
 + (instancetype)errorWithCode:(HUKTwitterErrorCode)code innerError:(NSError *)error
 {
-    return [HUKTwitterError errorWithDomain:HUKTwitterErrorDomain code:code userInfo:@{                   HUKTwitterUserInfoInnerError : error
+    return [HUKTwitterError errorWithDomain:HUKTwitterErrorDomain code:code userInfo:@{
+        HUKTwitterUserInfoInnerError : error
     }];
 }
 

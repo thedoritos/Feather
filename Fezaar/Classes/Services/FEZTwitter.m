@@ -48,4 +48,12 @@
             }];
 }
 
+- (RACSignal *)fetchLists
+{
+    return [[self ensureAuthorized]
+             then:^{
+                 return [self.twitter rac_getListsOwnerships];
+             }];
+}
+
 @end
