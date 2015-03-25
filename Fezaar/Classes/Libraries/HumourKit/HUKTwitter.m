@@ -8,6 +8,7 @@
 
 #import "HUKTwitter.h"
 #import "HUKArray.h"
+#import "SLRequest+HUKTwitter.h"
 
 @interface HUKTwitter ()
 
@@ -56,34 +57,15 @@
     SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"
                                              params:@{}];
     
-    [request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-        if (error) {
-            if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestFailed]);
-            }
-            return;
-        }
-        
-        if (!(200 <= urlResponse.statusCode && urlResponse.statusCode < 300)) {
-            if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithURLResponse:urlResponse]);
-            }
-            return;
-        }
-        
-        NSError *parseError = nil;
-        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&parseError];
-        if (parseError) {
-            if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithCode:HUKTwitterErrorCodeRequestBadDataReceived]);
-            }
-            return;
-        }
-        
-        if (jsonArrayHandler) {
-            jsonArrayHandler(jsonArray);
-        }
-    }];
+    [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
+}
+
+- (void)getListsOwnerships:(JsonArrayHandler)jsonArrayHandler failure:(ErrorHandler)errorHandler
+{
+    SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/ownerships.json"
+                                             params:@{}];
+    
+    [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
 }
 
 - (SLRequest *)requestWithURLString:(NSString *)urlString params:(NSDictionary *)params

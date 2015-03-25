@@ -14,6 +14,7 @@
 
 typedef void(^ErrorHandler)(NSError *error);
 typedef void(^AccountHandler)(ACAccount *account);
+typedef void(^JsonObjectHandler)(id jsonObject);
 typedef void(^JsonArrayHandler)(NSArray *jsonArray);
 
 @interface HUKTwitter : NSObject
@@ -23,5 +24,7 @@ typedef void(^JsonArrayHandler)(NSArray *jsonArray);
 - (void)authorizeSuccess:(AccountHandler)accountHandler failure:(ErrorHandler)errorHandler;
 
 - (void)getStatusesHomeTimelineSuccess:(JsonArrayHandler)jsonArrayHandler failure:(ErrorHandler)errorHandler;
+
+- (void)getListsOwnerships:(JsonArrayHandler)jsonArrayHandler failure:(ErrorHandler)errorHandler;
 
 @end

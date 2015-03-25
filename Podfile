@@ -6,6 +6,9 @@ target "Fezaar" do
   pod 'Mantle'
   pod 'BlocksKit'
   pod 'SDWebImage'
+
+  # Controls 
+  pod 'ECSlidingViewController'
 end
 
 target "FezaarTests" do

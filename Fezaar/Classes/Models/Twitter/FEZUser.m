@@ -10,7 +10,7 @@
 
 @implementation FEZUser
 
-- (NSURL *)profileImageURL:(FEZUserProfileImageType)type
+- (NSURL *)profileImageURLWithType:(FEZUserProfileImageType)type
 {
     NSString *urlString = self.profileImageURL.absoluteString;
     switch (type) {

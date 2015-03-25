@@ -14,6 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - ECSlidingViewController (2.0.3)
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
@@ -31,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - BlocksKit
+  - ECSlidingViewController
   - Mantle
   - ReactiveCocoa
   - SDWebImage
@@ -38,6 +40,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  ECSlidingViewController: e79fe856bfb1a99a39c995377a1943e50f7647eb
   Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
   ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29

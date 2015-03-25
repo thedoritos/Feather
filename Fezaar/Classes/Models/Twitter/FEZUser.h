@@ -26,6 +26,6 @@ typedef NS_ENUM(NSInteger, FEZUserProfileImageType)
 
 @property (nonatomic, copy, readonly) NSURL *profileImageURL;
 
-- (NSURL *)profileImageURL:(FEZUserProfileImageType)type;
+- (NSURL *)profileImageURLWithType:(FEZUserProfileImageType)type;
 
 @end

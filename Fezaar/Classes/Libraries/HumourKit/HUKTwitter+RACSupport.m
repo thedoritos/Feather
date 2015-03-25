@@ -38,4 +38,18 @@
     }];
 }
 
+- (RACSignal *)rac_getListsOwnerships
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self getListsOwnerships:^(NSArray *jsonArray) {
+            [subscriber sendNext:jsonArray];
+            [subscriber sendCompleted];
+        } failure:^(NSError *error) {
+            [subscriber sendError:error];
+        }];
+        
+        return nil;
+    }];
+}
+
 @end
