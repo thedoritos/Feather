@@ -700,7 +700,6 @@
 		};
 		9D448E251ABB10910024C26A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62BE729E8372FE414CB6B80F /* Pods-Fezaar.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -710,6 +709,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/Pods/Headers/Public/**",
 				);
 				INFOPLIST_FILE = FezaarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -721,13 +725,17 @@
 		};
 		9D448E261ABB10910024C26A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97BDA99465B87D771A638DAA /* Pods-Fezaar.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/Pods/Headers/Public/**",
 				);
 				INFOPLIST_FILE = FezaarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
