@@ -50,9 +50,12 @@
 
 - (RACSignal *)fetchLists
 {
-    return [[self ensureAuthorized]
+    return [[[self ensureAuthorized]
              then:^{
                  return [self.twitter rac_getListsOwnerships];
+             }]
+             map:^(NSDictionary *jsonDictionary) {
+                 return [FEZListCollection collectionFromJsonDictionary:jsonDictionary];
              }];
 }
 

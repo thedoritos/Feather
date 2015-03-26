@@ -41,8 +41,8 @@
 - (RACSignal *)rac_getListsOwnerships
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        [self getListsOwnerships:^(NSArray *jsonArray) {
-            [subscriber sendNext:jsonArray];
+        [self getListsOwnerships:^(NSDictionary *jsonDictionary) {
+            [subscriber sendNext:jsonDictionary];
             [subscriber sendCompleted];
         } failure:^(NSError *error) {
             [subscriber sendError:error];

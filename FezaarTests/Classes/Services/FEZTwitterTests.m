@@ -60,12 +60,12 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"should receive lists"];
     
-    [[self.sut fetchLists] subscribeNext:^(NSArray *lists) {
+    [[self.sut fetchLists] subscribeNext:^(FEZListCollection *lists) {
         [expectation fulfill];
         
-        XCTAssert(lists.count > 0, @"should receive at least 1 list");
+        XCTAssert(lists.length > 0, @"should receive at least 1 list");
         
-        NSLog(@"Fetched lists with count: %lu", (unsigned long)lists.count);
+        NSLog(@"Fetched lists with count: %lu", (unsigned long)lists.length);
         
     } error:^(NSError *error) {
         XCTFail(@"should not fail with error: %@", error);
