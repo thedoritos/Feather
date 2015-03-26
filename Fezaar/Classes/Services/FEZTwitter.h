@@ -9,6 +9,7 @@
 #import "HUKTwitter.h"
 #import "HUKTwitter+RACSupport.h"
 #import "FEZTimeline.h"
+#import "FEZListCollection.h"
 
 @interface FEZTwitter : NSObject
 

@@ -22,6 +22,8 @@
 		9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E3E1ABB329E0024C26A /* HUKJson.m */; };
 		9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D47A3F81A8907E8003C1089 /* FEZConfig.m */; };
 		9D47A3FD1A890941003C1089 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D47A3FC1A890941003C1089 /* secrets.plist */; };
+		9D5EF8011AC42F160010781B /* FEZList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EF8001AC42F160010781B /* FEZList.m */; };
+		9D5EF8041AC43F2A0010781B /* FEZListCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EF8031AC43F2A0010781B /* FEZListCollection.m */; };
 		9D713CC41ABCB96900709229 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D713CC31ABCB96900709229 /* Social.framework */; };
 		9D713CCA1ABCC0D800709229 /* HUKTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CC91ABCC0D800709229 /* HUKTwitter.m */; };
 		9D713CCE1ABCC16700709229 /* HUKTwitter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713CCD1ABCC16700709229 /* HUKTwitter+RACSupport.m */; };
@@ -86,6 +88,10 @@
 		9D47A3F71A8907E8003C1089 /* FEZConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZConfig.h; path = Classes/Models/FEZConfig.h; sourceTree = "<group>"; };
 		9D47A3F81A8907E8003C1089 /* FEZConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZConfig.m; path = Classes/Models/FEZConfig.m; sourceTree = "<group>"; };
 		9D47A3FC1A890941003C1089 /* secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = secrets.plist; path = Resources/Config/secrets.plist; sourceTree = "<group>"; };
+		9D5EF7FF1AC42F160010781B /* FEZList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZList.h; path = Classes/Models/Twitter/FEZList.h; sourceTree = "<group>"; };
+		9D5EF8001AC42F160010781B /* FEZList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZList.m; path = Classes/Models/Twitter/FEZList.m; sourceTree = "<group>"; };
+		9D5EF8021AC43F2A0010781B /* FEZListCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListCollection.h; path = Classes/Models/Twitter/FEZListCollection.h; sourceTree = "<group>"; };
+		9D5EF8031AC43F2A0010781B /* FEZListCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZListCollection.m; path = Classes/Models/Twitter/FEZListCollection.m; sourceTree = "<group>"; };
 		9D713CC31ABCB96900709229 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9D713CC81ABCC0D800709229 /* HUKTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUKTwitter.h; path = Classes/Libraries/HumourKit/HUKTwitter.h; sourceTree = "<group>"; };
 		9D713CC91ABCC0D800709229 /* HUKTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKTwitter.m; path = Classes/Libraries/HumourKit/HUKTwitter.m; sourceTree = "<group>"; };
@@ -289,6 +295,10 @@
 				9D448E331ABB223E0024C26A /* FEZTweet.m */,
 				9D713D0C1ABF158C00709229 /* FEZUser.h */,
 				9D713D0D1ABF158C00709229 /* FEZUser.m */,
+				9D5EF7FF1AC42F160010781B /* FEZList.h */,
+				9D5EF8001AC42F160010781B /* FEZList.m */,
+				9D5EF8021AC43F2A0010781B /* FEZListCollection.h */,
+				9D5EF8031AC43F2A0010781B /* FEZListCollection.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -579,9 +589,11 @@
 			files = (
 				9D07769C1AC38FC00094EA03 /* FEZListCollectionViewController.m in Sources */,
 				9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */,
+				9D5EF8041AC43F2A0010781B /* FEZListCollection.m in Sources */,
 				9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */,
 				9D713D0E1ABF158C00709229 /* FEZUser.m in Sources */,
 				9D713CCA1ABCC0D800709229 /* HUKTwitter.m in Sources */,
+				9D5EF8011AC42F160010781B /* FEZList.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,

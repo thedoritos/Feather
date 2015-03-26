@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
-@property (nonatomic) NSArray *listCollection;
+@property (nonatomic) FEZListCollection *listCollection;
 @property (nonatomic) FEZTwitter *twitter;
 
 @end
@@ -24,7 +24,9 @@
 {
     [super viewDidLoad];
     
-    self.listCollection = @[];
+    self.title = @"Lists";
+    
+    self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
     
     self.listTableView.dataSource = self;
@@ -44,7 +46,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.listCollection.count;
+    return self.listCollection.length;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,10 +57,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
-    NSDictionary *list = self.listCollection[indexPath.row];
+    FEZList *list = [self.listCollection listAtIndex:indexPath.row];
     
-    cell.textLabel.text = @"name";
-    cell.detailTextLabel.text = @"detail";
+    cell.textLabel.text = list.name;
+    cell.detailTextLabel.text = list.listDescription;
     
     return cell;
 }
@@ -71,15 +73,15 @@
 {
     @weakify(self)
     [[self.twitter fetchLists]
-     subscribeNext:^(NSArray *lists) {
+     subscribeNext:^(FEZListCollection *listCollection) {
          @strongify(self)
-         [self updateListCollection:lists];
+         [self updateListCollection:listCollection];
      } error:^(NSError *error) {
          NSLog(@"Failed to fetch lists with error: %@", error);
      }];
 }
 
-- (void)updateListCollection:(NSArray *)listCollection
+- (void)updateListCollection:(FEZListCollection *)listCollection
 {
     self.listCollection = listCollection;
     

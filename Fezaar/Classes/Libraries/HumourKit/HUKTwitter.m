@@ -60,12 +60,12 @@
     [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
 }
 
-- (void)getListsOwnerships:(JsonArrayHandler)jsonArrayHandler failure:(ErrorHandler)errorHandler
+- (void)getListsOwnerships:(JsonDictionaryHandler)jsonDictionaryHandler failure:(ErrorHandler)errorHandler
 {
     SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/ownerships.json"
                                              params:@{}];
     
-    [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
+    [request huk_performRequestWithHandler:jsonDictionaryHandler failure:errorHandler];
 }
 
 - (SLRequest *)requestWithURLString:(NSString *)urlString params:(NSDictionary *)params
