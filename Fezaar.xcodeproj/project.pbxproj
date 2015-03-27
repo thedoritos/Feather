@@ -16,7 +16,6 @@
 		76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */; };
 		9D07769C1AC38FC00094EA03 /* FEZListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D07769A1AC38FC00094EA03 /* FEZListCollectionViewController.m */; };
 		9D07769D1AC38FC00094EA03 /* FEZListCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */; };
-		9D448E2C1ABB11570024C26A /* FEZTwitterAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E2B1ABB11570024C26A /* FEZTwitterAPITests.m */; };
 		9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E331ABB223E0024C26A /* FEZTweet.m */; };
 		9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E361ABB23B80024C26A /* FEZTimeline.m */; };
 		9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E3E1ABB329E0024C26A /* HUKJson.m */; };
@@ -78,7 +77,6 @@
 		9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListCollectionViewController.xib; path = Classes/Controllers/FEZListCollectionViewController/FEZListCollectionViewController.xib; sourceTree = "<group>"; };
 		9D448E1C1ABB10900024C26A /* FezaarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FezaarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D448E1F1ABB10910024C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D448E2B1ABB11570024C26A /* FEZTwitterAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTwitterAPITests.m; path = Classes/Services/FEZTwitterAPITests.m; sourceTree = "<group>"; };
 		9D448E321ABB223E0024C26A /* FEZTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTweet.h; path = Classes/Models/Twitter/FEZTweet.h; sourceTree = "<group>"; };
 		9D448E331ABB223E0024C26A /* FEZTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTweet.m; path = Classes/Models/Twitter/FEZTweet.m; sourceTree = "<group>"; };
 		9D448E351ABB23B80024C26A /* FEZTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTimeline.h; path = Classes/Models/FEZTimeline.h; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 		9D448E2A1ABB114B0024C26A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9D448E2B1ABB11570024C26A /* FEZTwitterAPITests.m */,
 				9D713CD81ABCD1CE00709229 /* FEZTwitterTests.m */,
 			);
 			name = Services;
@@ -619,7 +616,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D448E2C1ABB11570024C26A /* FEZTwitterAPITests.m in Sources */,
 				9D713CD91ABCD1CE00709229 /* FEZTwitterTests.m in Sources */,
 				9D713CE01ABD6AB700709229 /* HUKAccountStoreTests.m in Sources */,
 			);
