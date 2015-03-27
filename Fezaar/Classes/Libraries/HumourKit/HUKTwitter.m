@@ -8,6 +8,7 @@
 
 #import "HUKTwitter.h"
 #import "HUKArray.h"
+#import "HUKTwitterAccountStore+RACSupport.h"
 #import "SLRequest+HUKTwitter.h"
 
 @interface HUKTwitter ()
@@ -25,29 +26,16 @@
 
 - (void)authorizeSuccess:(AccountHandler)accountHandler failure:(ErrorHandler)errorHandler
 {
-    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
-    ACAccountType  *accountType  = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-    
-    [accountStore requestAccessToAccountsWithType:accountType options:nil completion:^(BOOL granted, NSError *error) {
-        if (error) {
-            if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithCode:HUKTwitterErrorCodeAccountStoreAccessDenied]);
-            }
-            return;
-        }
-        
-        NSArray *accounts = [accountStore accountsWithAccountType:accountType];
-        if ([accounts huk_isEmpty]) {
-            if (errorHandler) {
-                errorHandler([HUKTwitterError errorWithCode:HUKTwitterErrorCodeAccountStoreAccountNotFound]);
-            }
-            return;
-        }
-        
-        self.account = accounts.lastObject;
-        
+    HUKTwitterAccountStore *accountStore = [[HUKTwitterAccountStore alloc] init];
+    [[accountStore rac_requestCurrentAccount] subscribeNext:^(ACAccount *account) {
+        self.account = account;
         if (accountHandler) {
-            accountHandler(self.account);
+            accountHandler(account);
+        }
+    } error:^(NSError *error) {
+        self.account = nil;
+        if (errorHandler) {
+            errorHandler(error);
         }
     }];
 }

@@ -47,7 +47,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self refreshListCollection];
+    [self refreshAccount];
 }
 
 #pragma mark - UI Action
@@ -86,6 +86,16 @@
 #pragma mark - UITableViewDelegate
 
 #pragma mark - Private
+
+- (void)refreshAccount
+{
+    [[self.twitter authorize] subscribeNext:^(ACAccount *account) {
+        [self refreshListCollection];
+    } error:^(NSError *error) {
+        NSLog(@"Failed to refresh account with error:%@", error);
+        [self updateListCollection:[FEZListCollection collection]];
+    }];
+}
 
 - (void)refreshListCollection
 {
