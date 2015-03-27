@@ -8,6 +8,7 @@
 
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
+#import "FEZAuthViewController.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -26,20 +27,37 @@
     
     self.title = @"Lists";
     
+    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    self.navigationItem.rightBarButtonItem = accountButton;
+    
     self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
     
     self.listTableView.dataSource = self;
     self.listTableView.delegate = self;
     self.listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    [self refreshListCollection];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self refreshListCollection];
+}
+
+#pragma mark - UI Action
+
+- (void)presentAccounts
+{
+    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
+    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
+    
+    [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
