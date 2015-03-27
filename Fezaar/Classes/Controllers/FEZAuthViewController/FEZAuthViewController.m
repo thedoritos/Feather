@@ -29,6 +29,9 @@
     
     self.title = @"Authorize";
     
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismiss)];
+    self.navigationItem.rightBarButtonItem = doneButton;
+    
     self.accountTableView.dataSource = self;
     self.accountTableView.delegate = self;
     
@@ -42,6 +45,13 @@
                                              selector:@selector(refreshAccounts)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
+}
+
+#pragma mark - UI Action
+
+- (void)dismiss
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
