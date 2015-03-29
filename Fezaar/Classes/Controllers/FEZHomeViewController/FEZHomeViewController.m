@@ -41,6 +41,9 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.tweetTableView.dataSource = self;
     self.tweetTableView.delegate = self;
     self.tweetTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    self.tweetTableView.estimatedRowHeight = 120;
+    self.tweetTableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)viewWillAppear:(BOOL)animated
