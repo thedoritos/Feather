@@ -9,6 +9,7 @@
 #import "FEZHomeViewController.h"
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
+#import "FEZAuthViewController.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 
@@ -30,8 +31,10 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.title = @"Home";
     
+    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    self.navigationItem.rightBarButtonItem = accountButton;
+    
     self.homeTimeline = [FEZTimeline timeline];
-    self.twitter = [[FEZTwitter alloc] init];
     
     [self.tweetTableView registerNib:[UINib nibWithNibName:kTweetCellID bundle:nil] forCellReuseIdentifier:kTweetCellID];
     
@@ -39,7 +42,26 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.tweetTableView.delegate = self;
     self.tweetTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
+    self.tweetTableView.estimatedRowHeight = 120;
+    self.tweetTableView.rowHeight = UITableViewAutomaticDimension;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.twitter = [[FEZTwitter alloc] init];
     [self refreshHomeTimeline];
+}
+
+#pragma mark - UI Action
+
+- (void)presentAccounts
+{
+    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
+    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
+    
+    [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
