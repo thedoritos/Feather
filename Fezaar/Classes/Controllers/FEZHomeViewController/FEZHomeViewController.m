@@ -11,6 +11,8 @@
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
 
+#import <SVPullToRefresh/SVPullToRefresh.h>
+
 static NSString * const kTweetCellID = @"FEZTweetCell";
 
 @interface FEZHomeViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -44,6 +46,19 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.tweetTableView.estimatedRowHeight = 120;
     self.tweetTableView.rowHeight = UITableViewAutomaticDimension;
+    
+    @weakify(self)
+    [self.tweetTableView addPullToRefreshWithActionHandler:^{
+        @strongify(self)
+        [[self.twitter fetchHomeTimeline]
+         subscribeNext:^(FEZTimeline *timeline) {
+             [self.tweetTableView.pullToRefreshView stopAnimating];
+             [self updateHomeTimeline:timeline];
+         } error:^(NSError *error) {
+             [self.tweetTableView.pullToRefreshView stopAnimating];
+             NSLog(@"Failed to fetch home timeline with error: %@", error);
+         }];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
