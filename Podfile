@@ -6,6 +6,7 @@ target "Fezaar" do
   pod 'Mantle'
   pod 'BlocksKit'
   pod 'SDWebImage'
+  pod 'SVPullToRefresh'
 
   # Controls 
   pod 'ECSlidingViewController'
