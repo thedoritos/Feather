@@ -48,6 +48,25 @@
     [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
 }
 
+- (void)getStatusesHomeTimelineWithSinceID:(NSNumber *)sinceID
+                                     maxID:(NSNumber *)maxID
+                                   success:(JsonArrayHandler)jsonArrayHandler
+                                   failure:(ErrorHandler)errorHandler
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if (sinceID) {
+        params[@"since_id"] = [sinceID stringValue];
+    }
+    if (maxID) {
+        params[@"max_id"] = [maxID stringValue];
+    }
+    
+    SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"
+                                             params:params];
+    
+    [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
+}
+
 - (void)getListsOwnerships:(JsonDictionaryHandler)jsonDictionaryHandler failure:(ErrorHandler)errorHandler
 {
     SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/ownerships.json"

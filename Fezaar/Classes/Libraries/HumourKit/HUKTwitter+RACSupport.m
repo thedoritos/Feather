@@ -38,6 +38,23 @@
     }];
 }
 
+- (RACSignal *)rac_getStatusesHomeTimelineWithSinceID:(NSNumber *)sinceID
+                                                maxID:(NSNumber *)maxID
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self getStatusesHomeTimelineWithSinceID:sinceID
+                                           maxID:maxID
+                                         success:^(NSArray *jsonArray) {
+                                             [subscriber sendNext:jsonArray];
+                                             [subscriber sendCompleted];
+                                         } failure:^(NSError *error) {
+                                             [subscriber sendError:error];
+                                         }];
+        
+        return nil;
+    }];
+}
+
 - (RACSignal *)rac_getListsOwnerships
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {

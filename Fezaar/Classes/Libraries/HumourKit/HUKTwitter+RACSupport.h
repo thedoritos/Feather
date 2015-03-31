@@ -15,6 +15,9 @@
 
 - (RACSignal *)rac_getStatusesHomeTimeline;
 
+- (RACSignal *)rac_getStatusesHomeTimelineWithSinceID:(NSNumber *)sinceID
+                                                maxID:(NSNumber *)maxID;
+
 - (RACSignal *)rac_getListsOwnerships;
 
 @end

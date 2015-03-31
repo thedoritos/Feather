@@ -50,7 +50,19 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     @weakify(self)
     [self.tweetTableView addPullToRefreshWithActionHandler:^{
         @strongify(self)
-        [[self.twitter fetchHomeTimeline]
+        [[self.twitter fetchHomeTimelineLaterThanTimeline:self.homeTimeline]
+         subscribeNext:^(FEZTimeline *timeline) {
+             [self.tweetTableView.pullToRefreshView stopAnimating];
+             [self updateHomeTimeline:timeline];
+         } error:^(NSError *error) {
+             [self.tweetTableView.pullToRefreshView stopAnimating];
+             NSLog(@"Failed to fetch home timeline with error: %@", error);
+         }];
+    }];
+    
+    [self.tweetTableView addInfiniteScrollingWithActionHandler:^{
+        @strongify(self)
+        [[self.twitter fetchHomeTimelineOlderThanTimeline:self.homeTimeline]
          subscribeNext:^(FEZTimeline *timeline) {
              [self.tweetTableView.pullToRefreshView stopAnimating];
              [self updateHomeTimeline:timeline];
@@ -103,7 +115,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 - (void)refreshHomeTimeline
 {
     @weakify(self)
-    [[self.twitter fetchHomeTimeline]
+    [[self.twitter fetchHomeTimelineLaterThanTimeline:self.homeTimeline]
      subscribeNext:^(FEZTimeline *timeline) {
          @strongify(self)
          [self updateHomeTimeline:timeline];

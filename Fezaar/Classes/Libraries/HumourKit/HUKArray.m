@@ -45,4 +45,19 @@
     return [self bk_select:predicate];
 }
 
+- (instancetype)huk_unique:(NSArray *)comparison comparator:(Comparator)comparator
+{
+    NSMutableArray *unique = [NSMutableArray array];
+    
+    [unique addObjectsFromArray:[self bk_select:^BOOL(id existing){
+        return [comparison bk_none:^BOOL(id incoming) {
+            return comparator(existing, incoming) == NSOrderedSame;
+        }];
+    }]];
+    
+    [unique addObjectsFromArray:comparison];
+    
+    return unique;
+}
+
 @end

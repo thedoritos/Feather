@@ -17,7 +17,12 @@
 
 + (instancetype)timelineFromTweetJsonArray:(NSArray *)tweetJsonArray;
 
+- (FEZTimeline *)timelineInsertOrUpdateTimeline:(FEZTimeline *)timeline;
+
 - (NSUInteger)length;
 - (FEZTweet *)tweetAtIndex:(NSUInteger)index;
+
+- (NSNumber *)sinceID;
+- (NSNumber *)maxID;
 
 @end
