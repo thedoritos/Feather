@@ -7,8 +7,7 @@
 //
 
 #import "FEZTimeline.h"
-
-#define _ Underscore
+#import "HUKArray.h"
 
 @implementation FEZTimeline
 
@@ -38,6 +37,19 @@
     return [[[self class] alloc] initWithTweets:tweets];
 }
 
+- (FEZTimeline *)timelineInsertOrUpdateTimeline:(FEZTimeline *)timeline
+{
+    NSArray *tweets = [self.tweets huk_unique:timeline.tweets comparator:^NSComparisonResult(FEZTweet *a, FEZTweet *b) {
+        return [a.statusID compare:b.statusID];
+    }];
+    
+    [tweets sortedArrayUsingComparator:^NSComparisonResult(FEZTweet *a, FEZTweet *b) {
+        return [a.statusID compare:b.statusID];
+    }];
+    
+    return [[FEZTimeline alloc] initWithTweets:tweets];
+}
+
 - (NSUInteger)length
 {
     return self.tweets.count;
@@ -51,6 +63,24 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"FEZTimeline tweets:%@", self.tweets];
+}
+
+- (NSNumber *)sinceID
+{
+    if (self.tweets.count == 0) {
+        return nil;
+    }
+    
+    return ((FEZTweet *)self.tweets.firstObject).statusID;
+}
+
+- (NSNumber *)maxID
+{
+    if (self.tweets.count == 0) {
+        return nil;
+    }
+    
+    return ((FEZTweet *)self.tweets.lastObject).statusID;
 }
 
 @end

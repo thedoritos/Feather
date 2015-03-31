@@ -10,6 +10,7 @@
 
 typedef void(^Action)(id e);
 typedef BOOL(^Predicate)(id e);
+typedef NSComparisonResult(^Comparator)(id a, id b);
 
 @interface HUKArray : NSObject
 
@@ -28,5 +29,7 @@ typedef BOOL(^Predicate)(id e);
 - (id)huk_sample;
 
 - (instancetype)huk_filter:(Predicate)predicate;
+
+- (instancetype)huk_unique:(NSArray *)comparison comparator:(Comparator)comparator;
 
 @end
