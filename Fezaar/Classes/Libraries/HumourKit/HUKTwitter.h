@@ -26,6 +26,11 @@ typedef void(^JsonDictionaryHandler)(NSDictionary *jsonDictionary);
 
 - (void)getStatusesHomeTimelineSuccess:(JsonArrayHandler)jsonArrayHandler failure:(ErrorHandler)errorHandler;
 
+- (void)getStatusesHomeTimelineWithSinceID:(NSNumber *)sinceID
+                                     maxID:(NSNumber *)maxID
+                                   success:(JsonArrayHandler)jsonArrayHandler
+                                   failure:(ErrorHandler)errorHandler;
+
 - (void)getListsOwnerships:(JsonDictionaryHandler)jsonDictionaryHandler failure:(ErrorHandler)errorHandler;
 
 @end
