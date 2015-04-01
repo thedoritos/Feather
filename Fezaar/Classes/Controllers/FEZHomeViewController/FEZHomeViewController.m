@@ -93,6 +93,29 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 #pragma mark - UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    if (self.homeTimeline.length == 0) {
+        UILabel *emptyMessageLabel = [[UILabel alloc] initWithFrame:self.view.frame];
+        
+        emptyMessageLabel.text = @"timeline is empty";
+        emptyMessageLabel.textColor = [UIColor whiteColor];
+        emptyMessageLabel.numberOfLines = 0;
+        emptyMessageLabel.textAlignment = NSTextAlignmentCenter;
+        emptyMessageLabel.font = [UIFont fontWithName:@"Helvetica Neue Light" size:14];
+        [emptyMessageLabel sizeToFit];
+        
+        self.tweetTableView.backgroundView = emptyMessageLabel;
+        self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
+        return 0;
+    }
+    
+    self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.homeTimeline.length;
