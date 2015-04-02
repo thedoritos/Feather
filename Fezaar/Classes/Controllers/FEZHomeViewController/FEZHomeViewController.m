@@ -112,6 +112,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
         return 0;
     }
     
+    self.tweetTableView.backgroundView = nil;
     self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
     return 1;
