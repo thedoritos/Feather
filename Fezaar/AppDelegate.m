@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FEZTwitter.h"
 #import "FEZHomeViewController.h"
+#import "FEZColor.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setBarTintColor:[FEZColor navigationBarColor]];
+    [[UINavigationBar appearance] setTintColor:[FEZColor navigationBarTextColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [FEZColor navigationBarTextColor] }];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
     FEZHomeViewController *homeViewController = [[FEZHomeViewController alloc] init];
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
 
