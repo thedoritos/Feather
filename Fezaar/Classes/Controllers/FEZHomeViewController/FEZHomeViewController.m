@@ -53,10 +53,14 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
         @strongify(self)
         [[self.twitter fetchHomeTimelineLaterThanTimeline:self.homeTimeline]
          subscribeNext:^(FEZTimeline *timeline) {
-             [self.tweetTableView.pullToRefreshView stopAnimating];
-             [self updateHomeTimeline:timeline];
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self updateHomeTimeline:timeline];
+                 [self.tweetTableView.pullToRefreshView stopAnimating];
+             });
          } error:^(NSError *error) {
-             [self.tweetTableView.pullToRefreshView stopAnimating];
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self.tweetTableView.pullToRefreshView stopAnimating];
+             });
              NSLog(@"Failed to fetch home timeline with error: %@", error);
          }];
     }];
@@ -65,11 +69,15 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
         @strongify(self)
         [[self.twitter fetchHomeTimelineOlderThanTimeline:self.homeTimeline]
          subscribeNext:^(FEZTimeline *timeline) {
-             [self.tweetTableView.pullToRefreshView stopAnimating];
-             [self updateHomeTimeline:timeline];
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self updateHomeTimeline:timeline];
+                 [self.tweetTableView.infiniteScrollingView stopAnimating];
+             });
          } error:^(NSError *error) {
-             [self.tweetTableView.pullToRefreshView stopAnimating];
-             NSLog(@"Failed to fetch home timeline with error: %@", error);
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self.tweetTableView.infiniteScrollingView stopAnimating];
+                 NSLog(@"Failed to fetch home timeline with error: %@", error);
+             });
          }];
     }];
 }
