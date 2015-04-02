@@ -10,6 +10,7 @@
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
+#import "FEZColor.h"
 
 #import <SVPullToRefresh/SVPullToRefresh.h>
 
@@ -32,7 +33,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     [super viewDidLoad];
     
     self.title = @"Home";
-    
+        
     UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
     self.navigationItem.rightBarButtonItem = accountButton;
     
