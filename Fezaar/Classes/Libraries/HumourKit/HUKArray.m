@@ -60,4 +60,17 @@
     return unique;
 }
 
+- (instancetype)huk_range:(NSInteger)from to:(NSInteger)to
+{
+    NSMutableArray *range = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < self.count; i++) {
+        if (from <= i && i <= to) {
+            [range addObject:self[i]];
+        }
+    }
+    
+    return range;
+}
+
 @end

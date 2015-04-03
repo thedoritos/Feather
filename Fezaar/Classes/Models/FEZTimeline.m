@@ -43,8 +43,8 @@
         return [a.statusID compare:b.statusID];
     }];
     
-    [tweets sortedArrayUsingComparator:^NSComparisonResult(FEZTweet *a, FEZTweet *b) {
-        return [a.statusID compare:b.statusID];
+    tweets = [tweets sortedArrayUsingComparator:^NSComparisonResult(FEZTweet *a, FEZTweet *b) {
+        return [a.statusID compare:b.statusID] * -1;
     }];
     
     return [[FEZTimeline alloc] initWithTweets:tweets];

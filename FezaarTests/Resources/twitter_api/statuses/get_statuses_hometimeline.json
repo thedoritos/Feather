@@ -1,0 +1,3113 @@
+[
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 284,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583977818490568704",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBq0u1vWgAAfRUa.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583977818951913472\/photo\/1",
+          "id" : 583977818490568704,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 556,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 325,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 184,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/ULrbwMYq6m",
+          "type" : "photo",
+          "indices" : [
+            65,
+            87
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBq0u1vWgAAfRUa.jpg",
+          "url" : "http:\/\/t.co\/ULrbwMYq6m"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 244,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583977818951913472,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "created_at" : "Tue Mar 24 15:28:02 +0000 2009",
+      "id" : 26257166,
+      "default_profile_image" : false,
+      "listed_count" : 38138,
+      "profile_background_color" : "131516",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Bristol, CT",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "All things sports. Nominate top plays using #SCtop10. *If you tweet or otherwise send us content, you consent to ESPN using and showcasing it in any media.*",
+      "followers_count" : 16012887,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 56315,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : true,
+      "profile_use_background_image" : true,
+      "id_str" : "26257166",
+      "name" : "SportsCenter",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/26257166\/1403487428",
+      "screen_name" : "SportsCenter",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_link_color" : "009999",
+      "favourites_count" : 407,
+      "is_translation_enabled" : true,
+      "utc_offset" : -14400,
+      "friends_count" : 1525,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583977818490568704",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBq0u1vWgAAfRUa.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583977818951913472\/photo\/1",
+          "id" : 583977818490568704,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 556,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 325,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 184,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/ULrbwMYq6m",
+          "type" : "photo",
+          "indices" : [
+            65,
+            87
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBq0u1vWgAAfRUa.jpg",
+          "url" : "http:\/\/t.co\/ULrbwMYq6m"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "LeBron James now chases Jerry West on NBA all-time scoring list. http:\/\/t.co\/ULrbwMYq6m",
+    "created_at" : "Fri Apr 03 13:02:16 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583977818951913472",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/www.javacodegeeks.com\/\" rel=\"nofollow\">Java Code Geeks<\/a>",
+    "truncated" : false,
+    "favorite_count" : 1,
+    "possibly_sensitive" : false,
+    "lang" : "und",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "radcortez.com\/get-into-#Dock…",
+          "url" : "http:\/\/t.co\/tcGjGZTaQD",
+          "indices" : [
+            0,
+            22
+          ],
+          "expanded_url" : "http:\/\/www.radcortez.com\/get-into-#Docker\/"
+        },
+        {
+          "display_url" : "goo.gl\/FSrVmb",
+          "url" : "http:\/\/t.co\/wp0lKaLV8k",
+          "indices" : [
+            33,
+            55
+          ],
+          "expanded_url" : "http:\/\/goo.gl\/FSrVmb"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            25,
+            32
+          ],
+          "text" : "DevOps"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 0,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583977423227768834,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "http:\/\/t.co\/tcGjGZTaQD - #DevOps http:\/\/t.co\/wp0lKaLV8k",
+    "created_at" : "Fri Apr 03 13:00:42 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583977423227768834",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 1,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1HmsVlO",
+          "url" : "http:\/\/t.co\/Tekg1bukxG",
+          "indices" : [
+            41,
+            63
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1HmsVlO"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            26,
+            32
+          ],
+          "text" : "Maven"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 1,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583977409466204162,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "How to run unit test with #Maven example http:\/\/t.co\/Tekg1bukxG",
+    "created_at" : "Fri Apr 03 13:00:38 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583977409466204162",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 462,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583974801309577216",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqx_N3WMAAE6zx.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583974802131681280\/photo\/1",
+          "id" : 583974801309577216,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 512,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 300,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 170,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/xJloPDUQje",
+          "type" : "photo",
+          "indices" : [
+            107,
+            129
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqx_N3WMAAE6zx.jpg",
+          "url" : "http:\/\/t.co\/xJloPDUQje"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 350,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583974802131681280,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "created_at" : "Tue Mar 24 15:28:02 +0000 2009",
+      "id" : 26257166,
+      "default_profile_image" : false,
+      "listed_count" : 38138,
+      "profile_background_color" : "131516",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Bristol, CT",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "All things sports. Nominate top plays using #SCtop10. *If you tweet or otherwise send us content, you consent to ESPN using and showcasing it in any media.*",
+      "followers_count" : 16012887,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 56315,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : true,
+      "profile_use_background_image" : true,
+      "id_str" : "26257166",
+      "name" : "SportsCenter",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/26257166\/1403487428",
+      "screen_name" : "SportsCenter",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_link_color" : "009999",
+      "favourites_count" : 407,
+      "is_translation_enabled" : true,
+      "utc_offset" : -14400,
+      "friends_count" : 1525,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583974801309577216",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqx_N3WMAAE6zx.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583974802131681280\/photo\/1",
+          "id" : 583974801309577216,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 512,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 300,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 170,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/xJloPDUQje",
+          "type" : "photo",
+          "indices" : [
+            107,
+            129
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqx_N3WMAAE6zx.jpg",
+          "url" : "http:\/\/t.co\/xJloPDUQje"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "ICYMI: Cavaliers F LeBron James’ 23 points moved him past Patrick Ewing for 20th on all-time scoring list. http:\/\/t.co\/xJloPDUQje",
+    "created_at" : "Fri Apr 03 12:50:17 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583974802131681280",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 3,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583969797240676352",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqtb8QWYAA-Y0F.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583969797437796352\/photo\/1",
+          "id" : 583969797240676352,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 682,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 399,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 226,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/YJco7Ao0Hs",
+          "type" : "photo",
+          "indices" : [
+            88,
+            110
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqtb8QWYAA-Y0F.jpg",
+          "url" : "http:\/\/t.co\/YJco7Ao0Hs"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1GRDLSV",
+          "url" : "http:\/\/t.co\/HReZKeWuSq",
+          "indices" : [
+            65,
+            87
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1GRDLSV"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            14,
+            18
+          ],
+          "text" : "SSL"
+        },
+        {
+          "indices" : [
+            50,
+            54
+          ],
+          "text" : "web"
+        },
+        {
+          "indices" : [
+            55,
+            64
+          ],
+          "text" : "security"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 3,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583969797437796352,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583969797240676352",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqtb8QWYAA-Y0F.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583969797437796352\/photo\/1",
+          "id" : 583969797240676352,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 682,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 399,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 226,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/YJco7Ao0Hs",
+          "type" : "photo",
+          "indices" : [
+            88,
+            110
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqtb8QWYAA-Y0F.jpg",
+          "url" : "http:\/\/t.co\/YJco7Ao0Hs"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "Understanding #SSL Certificates - FREE Whitepaper #web #security http:\/\/t.co\/HReZKeWuSq http:\/\/t.co\/YJco7Ao0Hs",
+    "created_at" : "Fri Apr 03 12:30:24 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583969797437796352",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 750,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583968563452628992",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqsUICW0AA2ksP.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583968564463476736\/photo\/1",
+          "id" : 583968563452628992,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 682,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 400,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 226,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/RMGBbwyKyu",
+          "type" : "photo",
+          "indices" : [
+            113,
+            135
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqsUICW0AA2ksP.jpg",
+          "url" : "http:\/\/t.co\/RMGBbwyKyu"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 472,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583968564463476736,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "created_at" : "Tue Mar 24 15:28:02 +0000 2009",
+      "id" : 26257166,
+      "default_profile_image" : false,
+      "listed_count" : 38138,
+      "profile_background_color" : "131516",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Bristol, CT",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "All things sports. Nominate top plays using #SCtop10. *If you tweet or otherwise send us content, you consent to ESPN using and showcasing it in any media.*",
+      "followers_count" : 16012887,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 56315,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : true,
+      "profile_use_background_image" : true,
+      "id_str" : "26257166",
+      "name" : "SportsCenter",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/26257166\/1403487428",
+      "screen_name" : "SportsCenter",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_link_color" : "009999",
+      "favourites_count" : 407,
+      "is_translation_enabled" : true,
+      "utc_offset" : -14400,
+      "friends_count" : 1525,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583968563452628992",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqsUICW0AA2ksP.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/SportsCenter\/status\/583968564463476736\/photo\/1",
+          "id" : 583968563452628992,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 682,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 400,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 226,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/RMGBbwyKyu",
+          "type" : "photo",
+          "indices" : [
+            113,
+            135
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqsUICW0AA2ksP.jpg",
+          "url" : "http:\/\/t.co\/RMGBbwyKyu"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "Shaka Smart’s 163 wins are tied for the second-most by a head coach in his first 6 seasons in Men’s D-1 history. http:\/\/t.co\/RMGBbwyKyu",
+    "created_at" : "Fri Apr 03 12:25:30 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583968564463476736",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 443,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "es.pn\/1G8Wjiq",
+          "url" : "http:\/\/t.co\/O04ewjBETq",
+          "indices" : [
+            67,
+            89
+          ],
+          "expanded_url" : "http:\/\/es.pn\/1G8Wjiq"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 514,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583966365494673409,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "created_at" : "Tue Mar 24 15:28:02 +0000 2009",
+      "id" : 26257166,
+      "default_profile_image" : false,
+      "listed_count" : 38138,
+      "profile_background_color" : "131516",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Bristol, CT",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "All things sports. Nominate top plays using #SCtop10. *If you tweet or otherwise send us content, you consent to ESPN using and showcasing it in any media.*",
+      "followers_count" : 16012887,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 56315,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : true,
+      "profile_use_background_image" : true,
+      "id_str" : "26257166",
+      "name" : "SportsCenter",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/26257166\/1403487428",
+      "screen_name" : "SportsCenter",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_link_color" : "009999",
+      "favourites_count" : 407,
+      "is_translation_enabled" : true,
+      "utc_offset" : -14400,
+      "friends_count" : 1525,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "ICYMI: Shaka Smart is leaving VCU to become head coach at Texas. » http:\/\/t.co\/O04ewjBETq",
+    "created_at" : "Fri Apr 03 12:16:45 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583966365494673409",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>",
+    "truncated" : false,
+    "favorite_count" : 1885,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583965621706043392",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqpo5LUMAAtTFS.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/hikakin\/status\/583965629700407297\/photo\/1",
+          "id" : 583965621706043392,
+          "sizes" : {
+            "large" : {
+              "w" : 768,
+              "h" : 1024,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 800,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 453,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/twCvs902hd",
+          "type" : "photo",
+          "indices" : [
+            13,
+            35
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqpo5LUMAAtTFS.jpg",
+          "url" : "http:\/\/t.co\/twCvs902hd"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 357,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583965629700407297,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "created_at" : "Wed Apr 07 09:33:08 +0000 2010",
+      "id" : 130447415,
+      "default_profile_image" : false,
+      "listed_count" : 3049,
+      "profile_background_color" : "000000",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Tokyo",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "youtube.com\/user\/HikakinTV",
+              "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+              "indices" : [
+                0,
+                23
+              ],
+              "expanded_url" : "https:\/\/www.youtube.com\/user\/HikakinTV"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+      "description" : "YouTuber（ユーチューバー）やってる25歳。 再生回数計18億回、チャンネル登録者計530万人突破。YouTubeタレント事務所UUUM株式会社ファウンダー兼最高顧問。LINE公式アカウント、Instagram、vineもやってます！",
+      "followers_count" : 1002129,
+      "geo_enabled" : false,
+      "lang" : "ja",
+      "profile_text_color" : "333333",
+      "statuses_count" : 30977,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : false,
+      "id_str" : "130447415",
+      "name" : "HIKAKIN ヒカキン",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/130447415\/1417295614",
+      "screen_name" : "hikakin",
+      "time_zone" : "Hawaii",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_link_color" : "05B9F0",
+      "favourites_count" : 2378,
+      "is_translation_enabled" : false,
+      "utc_offset" : -36000,
+      "friends_count" : 478,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583965621706043392",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqpo5LUMAAtTFS.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/hikakin\/status\/583965629700407297\/photo\/1",
+          "id" : 583965621706043392,
+          "sizes" : {
+            "large" : {
+              "w" : 768,
+              "h" : 1024,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 800,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 453,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/twCvs902hd",
+          "type" : "photo",
+          "indices" : [
+            13,
+            35
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqpo5LUMAAtTFS.jpg",
+          "url" : "http:\/\/t.co\/twCvs902hd"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "1人お花見なう(;_;) http:\/\/t.co\/twCvs902hd",
+    "created_at" : "Fri Apr 03 12:13:50 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583965629700407297",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 318,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "es.pn\/19Nlwkf",
+          "url" : "http:\/\/t.co\/s5r0v8OZn0",
+          "indices" : [
+            116,
+            138
+          ],
+          "expanded_url" : "http:\/\/es.pn\/19Nlwkf"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 461,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583962237771079680,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "created_at" : "Tue Mar 24 15:28:02 +0000 2009",
+      "id" : 26257166,
+      "default_profile_image" : false,
+      "listed_count" : 38138,
+      "profile_background_color" : "131516",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Bristol, CT",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "All things sports. Nominate top plays using #SCtop10. *If you tweet or otherwise send us content, you consent to ESPN using and showcasing it in any media.*",
+      "followers_count" : 16012887,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 56315,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : true,
+      "profile_use_background_image" : true,
+      "id_str" : "26257166",
+      "name" : "SportsCenter",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/489621467790082049\/Np08P5_r_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/26257166\/1403487428",
+      "screen_name" : "SportsCenter",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/480904536454750208\/mD9fyg2r.jpeg",
+      "profile_link_color" : "009999",
+      "favourites_count" : 407,
+      "is_translation_enabled" : true,
+      "utc_offset" : -14400,
+      "friends_count" : 1525,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "ICYMI: At a minimum price of $89.95, Mayweather vs Pacquiao is due to become the most expensive fight in history. » http:\/\/t.co\/s5r0v8OZn0",
+    "created_at" : "Fri Apr 03 12:00:21 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583962237771079680",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 3,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583962230233890817",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqmje9WAAEylSC.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583962230359777281\/photo\/1",
+          "id" : 583962230233890817,
+          "sizes" : {
+            "large" : {
+              "w" : 1000,
+              "h" : 733,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 439,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 249,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/6drXf9wdoz",
+          "type" : "photo",
+          "indices" : [
+            70,
+            92
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqmje9WAAEylSC.jpg",
+          "url" : "http:\/\/t.co\/6drXf9wdoz"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1BVlfCs",
+          "url" : "http:\/\/t.co\/TjTeFAU1eY",
+          "indices" : [
+            47,
+            69
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1BVlfCs"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            23,
+            30
+          ],
+          "text" : "DevOps"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 1,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583962230359777281,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583962230233890817",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqmje9WAAEylSC.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583962230359777281\/photo\/1",
+          "id" : 583962230233890817,
+          "sizes" : {
+            "large" : {
+              "w" : 1000,
+              "h" : 733,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 439,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 249,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/6drXf9wdoz",
+          "type" : "photo",
+          "indices" : [
+            70,
+            92
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqmje9WAAEylSC.jpg",
+          "url" : "http:\/\/t.co\/6drXf9wdoz"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "Check out our kick-ass #DevOps Tutorials page! http:\/\/t.co\/TjTeFAU1eY http:\/\/t.co\/6drXf9wdoz",
+    "created_at" : "Fri Apr 03 12:00:19 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583962230359777281",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 6,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583947153279737857",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqY147W4AEZMpK.png",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583947153397194752\/photo\/1",
+          "id" : 583947153279737857,
+          "sizes" : {
+            "large" : {
+              "w" : 600,
+              "h" : 379,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 379,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 214,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/hVlESN4H5y",
+          "type" : "photo",
+          "indices" : [
+            52,
+            74
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqY147W4AEZMpK.png",
+          "url" : "http:\/\/t.co\/hVlESN4H5y"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1GQvtKV",
+          "url" : "http:\/\/t.co\/cWJ23mzT81",
+          "indices" : [
+            29,
+            51
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1GQvtKV"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            0,
+            8
+          ],
+          "text" : "BigData"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 3,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583947153397194752,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583947153279737857",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqY147W4AEZMpK.png",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583947153397194752\/photo\/1",
+          "id" : 583947153279737857,
+          "sizes" : {
+            "large" : {
+              "w" : 600,
+              "h" : 379,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 379,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 214,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/hVlESN4H5y",
+          "type" : "photo",
+          "indices" : [
+            52,
+            74
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqY147W4AEZMpK.png",
+          "url" : "http:\/\/t.co\/hVlESN4H5y"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "#BigData Basics - FREE Guide http:\/\/t.co\/cWJ23mzT81 http:\/\/t.co\/hVlESN4H5y",
+    "created_at" : "Fri Apr 03 11:00:25 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583947153397194752",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 371,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+        {
+          "id_str" : "10228272",
+          "id" : 10228272,
+          "screen_name" : "YouTube",
+          "name" : "YouTube",
+          "indices" : [
+            64,
+            72
+          ]
+        }
+      ],
+      "urls" : [
+        {
+          "display_url" : "youtu.be\/dk2622GdLlM?li…",
+          "url" : "https:\/\/t.co\/DWiQ3x42a7",
+          "indices" : [
+            40,
+            63
+          ],
+          "expanded_url" : "https:\/\/youtu.be\/dk2622GdLlM?list=UUX1xppLvuj03ubLio8jslyA"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 71,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583935564086288384,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "created_at" : "Wed Apr 07 09:33:08 +0000 2010",
+      "id" : 130447415,
+      "default_profile_image" : false,
+      "listed_count" : 3049,
+      "profile_background_color" : "000000",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Tokyo",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "youtube.com\/user\/HikakinTV",
+              "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+              "indices" : [
+                0,
+                23
+              ],
+              "expanded_url" : "https:\/\/www.youtube.com\/user\/HikakinTV"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+      "description" : "YouTuber（ユーチューバー）やってる25歳。 再生回数計18億回、チャンネル登録者計530万人突破。YouTubeタレント事務所UUUM株式会社ファウンダー兼最高顧問。LINE公式アカウント、Instagram、vineもやってます！",
+      "followers_count" : 1002129,
+      "geo_enabled" : false,
+      "lang" : "ja",
+      "profile_text_color" : "333333",
+      "statuses_count" : 30977,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : false,
+      "id_str" : "130447415",
+      "name" : "HIKAKIN ヒカキン",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/130447415\/1417295614",
+      "screen_name" : "hikakin",
+      "time_zone" : "Hawaii",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_link_color" : "05B9F0",
+      "favourites_count" : 2378,
+      "is_translation_enabled" : false,
+      "utc_offset" : -36000,
+      "friends_count" : 478,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "動画公開しました！→【LINE POP2初見チャレンジ！【ヒカキンゲームズ】: https:\/\/t.co\/DWiQ3x42a7 @YouTubeさんから",
+    "created_at" : "Fri Apr 03 10:14:22 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583935564086288384",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/www.javacodegeeks.com\/\" rel=\"nofollow\">Java Code Geeks<\/a>",
+    "truncated" : false,
+    "favorite_count" : 5,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "goo.gl\/gtfXjq",
+          "url" : "http:\/\/t.co\/tJij7xMLB0",
+          "indices" : [
+            94,
+            116
+          ],
+          "expanded_url" : "http:\/\/goo.gl\/gtfXjq"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            5,
+            17
+          ],
+          "text" : "Performance"
+        },
+        {
+          "indices" : [
+            75,
+            84
+          ],
+          "text" : "CoreJava"
+        },
+        {
+          "indices" : [
+            85,
+            88
+          ],
+          "text" : "GC"
+        },
+        {
+          "indices" : [
+            89,
+            93
+          ],
+          "text" : "JVM"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 3,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583932818121691137,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "Java #Performance Tuning: Getting the Most Out of Your Garbage Collector - #CoreJava #GC #JVM http:\/\/t.co\/tJij7xMLB0",
+    "created_at" : "Fri Apr 03 10:03:27 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583932818121691137",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 666,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+        {
+          "id_str" : "10228272",
+          "id" : 10228272,
+          "screen_name" : "YouTube",
+          "name" : "YouTube",
+          "indices" : [
+            113,
+            121
+          ]
+        }
+      ],
+      "urls" : [
+        {
+          "display_url" : "youtu.be\/xWOfpXBIUWM",
+          "url" : "https:\/\/t.co\/bVtaUtY4cN",
+          "indices" : [
+            89,
+            112
+          ],
+          "expanded_url" : "https:\/\/youtu.be\/xWOfpXBIUWM"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 298,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583932192889245696,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "created_at" : "Wed Apr 07 09:33:08 +0000 2010",
+      "id" : 130447415,
+      "default_profile_image" : false,
+      "listed_count" : 3049,
+      "profile_background_color" : "000000",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Tokyo",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "youtube.com\/user\/HikakinTV",
+              "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+              "indices" : [
+                0,
+                23
+              ],
+              "expanded_url" : "https:\/\/www.youtube.com\/user\/HikakinTV"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+      "description" : "YouTuber（ユーチューバー）やってる25歳。 再生回数計18億回、チャンネル登録者計530万人突破。YouTubeタレント事務所UUUM株式会社ファウンダー兼最高顧問。LINE公式アカウント、Instagram、vineもやってます！",
+      "followers_count" : 1002129,
+      "geo_enabled" : false,
+      "lang" : "ja",
+      "profile_text_color" : "333333",
+      "statuses_count" : 30977,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : false,
+      "id_str" : "130447415",
+      "name" : "HIKAKIN ヒカキン",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/130447415\/1417295614",
+      "screen_name" : "hikakin",
+      "time_zone" : "Hawaii",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_link_color" : "05B9F0",
+      "favourites_count" : 2378,
+      "is_translation_enabled" : false,
+      "utc_offset" : -36000,
+      "friends_count" : 478,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "本日のHikakinTVはこちら！→【ランニングマンやってみた！三代目 J Soul Brothers from EXILE TRIBE : 「R Y U S E I 」】: https:\/\/t.co\/bVtaUtY4cN @YouTubeさんから",
+    "created_at" : "Fri Apr 03 10:00:58 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583932192889245696",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 4,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1BSjAh2",
+          "url" : "http:\/\/t.co\/eKNaQkvo6h",
+          "indices" : [
+            34,
+            56
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1BSjAh2"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            0,
+            4
+          ],
+          "text" : "XML"
+        },
+        {
+          "indices" : [
+            18,
+            25
+          ],
+          "text" : "Jersey"
+        },
+        {
+          "indices" : [
+            28,
+            33
+          ],
+          "text" : "JAXB"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 3,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583932009975848960,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "#XML Example With #Jersey + #JAXB http:\/\/t.co\/eKNaQkvo6h",
+    "created_at" : "Fri Apr 03 10:00:14 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583932009975848960",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>",
+    "truncated" : false,
+    "favorite_count" : 0,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+        {
+          "id_str" : "2787103018",
+          "id" : 2787103018,
+          "screen_name" : "webcodegeeks",
+          "name" : "Web Code Geeks",
+          "indices" : [
+            3,
+            16
+          ]
+        }
+      ],
+      "urls" : [
+        {
+          "display_url" : "goo.gl\/0WYf1C",
+          "url" : "http:\/\/t.co\/LTeJsIICgx",
+          "indices" : [
+            55,
+            77
+          ],
+          "expanded_url" : "http:\/\/goo.gl\/0WYf1C"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            18,
+            29
+          ],
+          "text" : "JavaScript"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "retweeted_status" : {
+      "place" : null,
+      "contributors" : null,
+      "source" : "<a href=\"http:\/\/www.webcodegeeks.com\" rel=\"nofollow\">Web Code Geeks<\/a>",
+      "truncated" : false,
+      "favorite_count" : 8,
+      "possibly_sensitive" : false,
+      "lang" : "en",
+      "entities" : {
+        "symbols" : [
+
+        ],
+        "user_mentions" : [
+
+        ],
+        "urls" : [
+          {
+            "display_url" : "goo.gl\/0WYf1C",
+            "url" : "http:\/\/t.co\/LTeJsIICgx",
+            "indices" : [
+              37,
+              59
+            ],
+            "expanded_url" : "http:\/\/goo.gl\/0WYf1C"
+          }
+        ],
+        "hashtags" : [
+          {
+            "indices" : [
+              0,
+              11
+            ],
+            "text" : "JavaScript"
+          }
+        ]
+      },
+      "in_reply_to_screen_name" : null,
+      "possibly_sensitive_appealable" : false,
+      "retweet_count" : 2,
+      "favorited" : false,
+      "geo" : null,
+      "id" : 583920827118256128,
+      "user" : {
+        "protected" : false,
+        "is_translator" : false,
+        "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/520256627761377280\/BMCBooL4_normal.png",
+        "created_at" : "Sat Sep 27 12:44:30 +0000 2014",
+        "id" : 2787103018,
+        "default_profile_image" : false,
+        "listed_count" : 54,
+        "profile_background_color" : "C0DEED",
+        "follow_request_sent" : false,
+        "profile_location" : null,
+        "location" : "",
+        "entities" : {
+          "url" : {
+            "urls" : [
+              {
+                "display_url" : "webcodegeeks.com",
+                "url" : "http:\/\/t.co\/zXVQH6JNNT",
+                "indices" : [
+                  0,
+                  22
+                ],
+                "expanded_url" : "http:\/\/www.webcodegeeks.com"
+              }
+            ]
+          },
+          "description" : {
+            "urls" : [
+
+            ]
+          }
+        },
+        "url" : "http:\/\/t.co\/zXVQH6JNNT",
+        "description" : "Web 2 Web developers resource center. WCGs is one of the fastest growing Web developers community on the net. Created by Web developers for Web developers",
+        "followers_count" : 1009,
+        "geo_enabled" : false,
+        "lang" : "en",
+        "profile_text_color" : "333333",
+        "statuses_count" : 159,
+        "following" : false,
+        "notifications" : false,
+        "profile_background_tile" : false,
+        "profile_use_background_image" : true,
+        "id_str" : "2787103018",
+        "name" : "Web Code Geeks",
+        "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/520256627761377280\/BMCBooL4_normal.png",
+        "profile_sidebar_fill_color" : "DDEEF6",
+        "profile_sidebar_border_color" : "C0DEED",
+        "contributors_enabled" : false,
+        "default_profile" : true,
+        "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/2787103018\/1412886279",
+        "screen_name" : "webcodegeeks",
+        "time_zone" : "Athens",
+        "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_link_color" : "0084B4",
+        "favourites_count" : 0,
+        "is_translation_enabled" : false,
+        "utc_offset" : 10800,
+        "friends_count" : 0,
+        "verified" : false
+      },
+      "in_reply_to_user_id" : null,
+      "retweeted" : false,
+      "text" : "#JavaScript Number Format Example -  http:\/\/t.co\/LTeJsIICgx",
+      "created_at" : "Fri Apr 03 09:15:48 +0000 2015",
+      "in_reply_to_status_id_str" : null,
+      "in_reply_to_status_id" : null,
+      "in_reply_to_user_id_str" : null,
+      "id_str" : "583920827118256128",
+      "coordinates" : null
+    },
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 2,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583931726587699200,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "RT @webcodegeeks: #JavaScript Number Format Example -  http:\/\/t.co\/LTeJsIICgx",
+    "created_at" : "Fri Apr 03 09:59:07 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583931726587699200",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac<\/a>",
+    "truncated" : false,
+    "favorite_count" : 1817,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583924767876452352",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqEe4zUEAAkBwK.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/hikakin\/status\/583924768488828928\/photo\/1",
+          "id" : 583924767876452352,
+          "sizes" : {
+            "large" : {
+              "w" : 1015,
+              "h" : 574,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 339,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 192,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/TBT8CEqMHH",
+          "type" : "photo",
+          "indices" : [
+            32,
+            54
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqEe4zUEAAkBwK.jpg",
+          "url" : "http:\/\/t.co\/TBT8CEqMHH"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 824,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583924768488828928,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "created_at" : "Wed Apr 07 09:33:08 +0000 2010",
+      "id" : 130447415,
+      "default_profile_image" : false,
+      "listed_count" : 3049,
+      "profile_background_color" : "000000",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "Tokyo",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "youtube.com\/user\/HikakinTV",
+              "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+              "indices" : [
+                0,
+                23
+              ],
+              "expanded_url" : "https:\/\/www.youtube.com\/user\/HikakinTV"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "https:\/\/t.co\/zIhOkKY8Nd",
+      "description" : "YouTuber（ユーチューバー）やってる25歳。 再生回数計18億回、チャンネル登録者計530万人突破。YouTubeタレント事務所UUUM株式会社ファウンダー兼最高顧問。LINE公式アカウント、Instagram、vineもやってます！",
+      "followers_count" : 1002129,
+      "geo_enabled" : false,
+      "lang" : "ja",
+      "profile_text_color" : "333333",
+      "statuses_count" : 30977,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : false,
+      "id_str" : "130447415",
+      "name" : "HIKAKIN ヒカキン",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/463529469148282881\/lRlww4w9_normal.jpeg",
+      "profile_sidebar_fill_color" : "EFEFEF",
+      "profile_sidebar_border_color" : "000000",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/130447415\/1417295614",
+      "screen_name" : "hikakin",
+      "time_zone" : "Hawaii",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/544921687\/__________2012-05-05_18.56.52.png",
+      "profile_link_color" : "05B9F0",
+      "favourites_count" : 2378,
+      "is_translation_enabled" : false,
+      "utc_offset" : -36000,
+      "friends_count" : 478,
+      "verified" : true
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583924767876452352",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBqEe4zUEAAkBwK.jpg",
+          "expanded_url" : "http:\/\/twitter.com\/hikakin\/status\/583924768488828928\/photo\/1",
+          "id" : 583924767876452352,
+          "sizes" : {
+            "large" : {
+              "w" : 1015,
+              "h" : 574,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 339,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 192,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/TBT8CEqMHH",
+          "type" : "photo",
+          "indices" : [
+            32,
+            54
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBqEe4zUEAAkBwK.jpg",
+          "url" : "http:\/\/t.co\/TBT8CEqMHH"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "今日のヒカキンTVはランニングマンやりました(笑)お楽しみに♪ http:\/\/t.co\/TBT8CEqMHH",
+    "created_at" : "Fri Apr 03 09:31:28 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583924768488828928",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/www.mahou.co.jp\/contents\/game\/tico\/?chara=twitter_app\" rel=\"nofollow\">TiCo for iOS<\/a>",
+    "truncated" : false,
+    "favorite_count" : 0,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+        {
+          "id_str" : "1973393484",
+          "id" : 1973393484,
+          "screen_name" : "mangahonz",
+          "name" : "マンガHONZ",
+          "indices" : [
+            3,
+            13
+          ]
+        }
+      ],
+      "urls" : [
+        {
+          "display_url" : "honz.jp\/articles\/-\/413…",
+          "url" : "http:\/\/t.co\/m8qgoJX6mg",
+          "indices" : [
+            46,
+            68
+          ],
+          "expanded_url" : "http:\/\/honz.jp\/articles\/-\/41311"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "retweeted_status" : {
+      "place" : null,
+      "contributors" : null,
+      "source" : "<a href=\"http:\/\/www.ismedia.jp\" rel=\"nofollow\">Tools for isMedia<\/a>",
+      "truncated" : false,
+      "favorite_count" : 1,
+      "possibly_sensitive" : false,
+      "lang" : "ja",
+      "entities" : {
+        "symbols" : [
+
+        ],
+        "user_mentions" : [
+
+        ],
+        "urls" : [
+          {
+            "display_url" : "honz.jp\/articles\/-\/413…",
+            "url" : "http:\/\/t.co\/m8qgoJX6mg",
+            "indices" : [
+              31,
+              53
+            ],
+            "expanded_url" : "http:\/\/honz.jp\/articles\/-\/41311"
+          }
+        ],
+        "hashtags" : [
+
+        ]
+      },
+      "in_reply_to_screen_name" : null,
+      "possibly_sensitive_appealable" : false,
+      "retweet_count" : 4,
+      "favorited" : false,
+      "geo" : null,
+      "id" : 583918392995745792,
+      "user" : {
+        "protected" : false,
+        "is_translator" : false,
+        "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/460798038957502464\/nIsXESoY_normal.jpeg",
+        "created_at" : "Sun Oct 20 01:31:31 +0000 2013",
+        "id" : 1973393484,
+        "default_profile_image" : false,
+        "listed_count" : 38,
+        "profile_background_color" : "C0DEED",
+        "follow_request_sent" : false,
+        "profile_location" : null,
+        "location" : "",
+        "entities" : {
+          "url" : {
+            "urls" : [
+              {
+                "display_url" : "honz.jp\/manga",
+                "url" : "http:\/\/t.co\/e7uSu0Vk1n",
+                "indices" : [
+                  0,
+                  22
+                ],
+                "expanded_url" : "http:\/\/honz.jp\/manga"
+              }
+            ]
+          },
+          "description" : {
+            "urls" : [
+
+            ]
+          }
+        },
+        "url" : "http:\/\/t.co\/e7uSu0Vk1n",
+        "description" : "マンガのレビューサイト。",
+        "followers_count" : 1177,
+        "geo_enabled" : false,
+        "lang" : "ja",
+        "profile_text_color" : "333333",
+        "statuses_count" : 440,
+        "following" : false,
+        "notifications" : false,
+        "profile_background_tile" : false,
+        "profile_use_background_image" : true,
+        "id_str" : "1973393484",
+        "name" : "マンガHONZ",
+        "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/460798038957502464\/nIsXESoY_normal.jpeg",
+        "profile_sidebar_fill_color" : "DDEEF6",
+        "profile_sidebar_border_color" : "C0DEED",
+        "contributors_enabled" : false,
+        "default_profile" : true,
+        "screen_name" : "mangahonz",
+        "time_zone" : null,
+        "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_link_color" : "0084B4",
+        "favourites_count" : 7,
+        "is_translation_enabled" : false,
+        "utc_offset" : null,
+        "friends_count" : 57,
+        "verified" : false
+      },
+      "in_reply_to_user_id" : null,
+      "retweeted" : false,
+      "text" : "更新しました！ マコとマコト【第19話】 - マンガHONZ http:\/\/t.co\/m8qgoJX6mg",
+      "created_at" : "Fri Apr 03 09:06:08 +0000 2015",
+      "in_reply_to_status_id_str" : null,
+      "in_reply_to_status_id" : null,
+      "in_reply_to_user_id_str" : null,
+      "id_str" : "583918392995745792",
+      "coordinates" : null
+    },
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 4,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583921082303787008,
+    "user" : {
+      "protected" : true,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png",
+      "created_at" : "Thu May 31 05:56:24 +0000 2012",
+      "id" : 595296549,
+      "default_profile_image" : true,
+      "listed_count" : 0,
+      "profile_background_color" : "C0DEED",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : null,
+      "description" : "",
+      "followers_count" : 2,
+      "geo_enabled" : true,
+      "lang" : "ja",
+      "profile_text_color" : "333333",
+      "statuses_count" : 178,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "595296549",
+      "name" : "matsumuradev",
+      "profile_image_url_https" : "https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png",
+      "profile_sidebar_fill_color" : "DDEEF6",
+      "profile_sidebar_border_color" : "C0DEED",
+      "contributors_enabled" : false,
+      "default_profile" : true,
+      "screen_name" : "matsumuradev",
+      "time_zone" : null,
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_link_color" : "0084B4",
+      "favourites_count" : 37,
+      "is_translation_enabled" : false,
+      "utc_offset" : null,
+      "friends_count" : 26,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "RT @mangahonz: 更新しました！ マコとマコト【第19話】 - マンガHONZ http:\/\/t.co\/m8qgoJX6mg",
+    "created_at" : "Fri Apr 03 09:16:49 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583921082303787008",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>",
+    "truncated" : false,
+    "favorite_count" : 3,
+    "possibly_sensitive" : false,
+    "lang" : "ja",
+    "entities" : {
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "goo.gl\/soCM7B",
+          "url" : "http:\/\/t.co\/HsleMdvvPZ",
+          "indices" : [
+            87,
+            109
+          ],
+          "expanded_url" : "http:\/\/goo.gl\/soCM7B"
+        }
+      ],
+      "hashtags" : [
+
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 2,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583918236447539204,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2321502161\/hcti5hfg6yon7tf7ru4e_normal.png",
+      "created_at" : "Fri Jun 01 03:32:17 +0000 2012",
+      "id" : 596161773,
+      "default_profile_image" : false,
+      "listed_count" : 369,
+      "profile_background_color" : "C0DEED",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "vivi.tv",
+              "url" : "http:\/\/t.co\/P5U2DIDASv",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/vivi.tv\/"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/P5U2DIDASv",
+      "description" : "雑誌『ViVi』（毎月23日発売／講談社）公式ツイッターです。ファッション・ビューティ情報はもちろん、ViViモデル、読モの最新情報、撮影の裏側などをお伝えしていきます！　紗羅マリー・木下優樹菜・エリーローズ・大石参月・トリンドル玲奈・河北麻友子・八木アリサ・マギー・玉城ティナ・宮城舞・佐久間由衣・立花恵理・emma",
+      "followers_count" : 71267,
+      "geo_enabled" : true,
+      "lang" : "ja",
+      "profile_text_color" : "0084B4",
+      "statuses_count" : 3228,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "596161773",
+      "name" : "ViVi編集部",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2321502161\/hcti5hfg6yon7tf7ru4e_normal.png",
+      "profile_sidebar_fill_color" : "DDEEF6",
+      "profile_sidebar_border_color" : "C0DEED",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "screen_name" : "vivi_magazine",
+      "time_zone" : "Tokyo",
+      "profile_background_image_url" : "http:\/\/pbs.twimg.com\/profile_background_images\/594515489\/x9e54f7695a2ddf6d1d4c5357fc4447d.png",
+      "profile_background_image_url_https" : "https:\/\/pbs.twimg.com\/profile_background_images\/594515489\/x9e54f7695a2ddf6d1d4c5357fc4447d.png",
+      "profile_link_color" : "333333",
+      "favourites_count" : 0,
+      "is_translation_enabled" : false,
+      "utc_offset" : 32400,
+      "friends_count" : 42,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "retweeted" : false,
+    "text" : "【ViVi公式通販】honey salon by foppish激売れ中の注目人気アイテム達が再入荷決定!! フラワーパールショルダーなどのマストバイアイテムはお早めに♡\n http:\/\/t.co\/HsleMdvvPZ",
+    "created_at" : "Fri Apr 03 09:05:30 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583918236447539204",
+    "coordinates" : null
+  },
+  {
+    "place" : null,
+    "contributors" : null,
+    "source" : "<a href=\"http:\/\/bufferapp.com\" rel=\"nofollow\">Buffer<\/a>",
+    "truncated" : false,
+    "favorite_count" : 3,
+    "possibly_sensitive" : false,
+    "lang" : "en",
+    "entities" : {
+      "media" : [
+        {
+          "id_str" : "583916923290832896",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBp9WRcW0AAZcs9.png",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583916923466973184\/photo\/1",
+          "id" : 583916923290832896,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 819,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 480,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 272,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/oaniNOzKyJ",
+          "type" : "photo",
+          "indices" : [
+            68,
+            90
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBp9WRcW0AAZcs9.png",
+          "url" : "http:\/\/t.co\/oaniNOzKyJ"
+        }
+      ],
+      "symbols" : [
+
+      ],
+      "user_mentions" : [
+
+      ],
+      "urls" : [
+        {
+          "display_url" : "buff.ly\/1aotl10",
+          "url" : "http:\/\/t.co\/bpnC9hH5Zh",
+          "indices" : [
+            45,
+            67
+          ],
+          "expanded_url" : "http:\/\/buff.ly\/1aotl10"
+        }
+      ],
+      "hashtags" : [
+        {
+          "indices" : [
+            0,
+            5
+          ],
+          "text" : "Java"
+        }
+      ]
+    },
+    "in_reply_to_screen_name" : null,
+    "possibly_sensitive_appealable" : false,
+    "retweet_count" : 7,
+    "favorited" : false,
+    "geo" : null,
+    "id" : 583916923466973184,
+    "user" : {
+      "protected" : false,
+      "is_translator" : false,
+      "profile_image_url" : "http:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "created_at" : "Tue Jun 01 22:38:53 +0000 2010",
+      "id" : 150820027,
+      "default_profile_image" : false,
+      "listed_count" : 889,
+      "profile_background_color" : "ACDED6",
+      "follow_request_sent" : false,
+      "profile_location" : null,
+      "location" : "",
+      "entities" : {
+        "url" : {
+          "urls" : [
+            {
+              "display_url" : "javacodegeeks.com",
+              "url" : "http:\/\/t.co\/DivczES801",
+              "indices" : [
+                0,
+                22
+              ],
+              "expanded_url" : "http:\/\/www.javacodegeeks.com"
+            }
+          ]
+        },
+        "description" : {
+          "urls" : [
+
+          ]
+        }
+      },
+      "url" : "http:\/\/t.co\/DivczES801",
+      "description" : "Java 2 Java developers resource center. JCGs is one of the fastest growing Java developers community on the net. Created by Java developers for Java developers",
+      "followers_count" : 61829,
+      "geo_enabled" : false,
+      "lang" : "en",
+      "profile_text_color" : "333333",
+      "statuses_count" : 22747,
+      "following" : true,
+      "notifications" : false,
+      "profile_background_tile" : false,
+      "profile_use_background_image" : true,
+      "id_str" : "150820027",
+      "name" : "Java Code Geeks",
+      "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/2928906892\/098968d4c7f39c870935f8aae12a8a14_normal.png",
+      "profile_sidebar_fill_color" : "F6F6F6",
+      "profile_sidebar_border_color" : "EEEEEE",
+      "contributors_enabled" : false,
+      "default_profile" : false,
+      "profile_banner_url" : "https:\/\/pbs.twimg.com\/profile_banners\/150820027\/1393781870",
+      "screen_name" : "javacodegeeks",
+      "time_zone" : "Athens",
+      "profile_background_image_url" : "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_background_image_url_https" : "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+      "profile_link_color" : "038543",
+      "favourites_count" : 1,
+      "is_translation_enabled" : false,
+      "utc_offset" : 10800,
+      "friends_count" : 128,
+      "verified" : false
+    },
+    "in_reply_to_user_id" : null,
+    "extended_entities" : {
+      "media" : [
+        {
+          "id_str" : "583916923290832896",
+          "media_url_https" : "https:\/\/pbs.twimg.com\/media\/CBp9WRcW0AAZcs9.png",
+          "expanded_url" : "http:\/\/twitter.com\/javacodegeeks\/status\/583916923466973184\/photo\/1",
+          "id" : 583916923290832896,
+          "sizes" : {
+            "large" : {
+              "w" : 1024,
+              "h" : 819,
+              "resize" : "fit"
+            },
+            "medium" : {
+              "w" : 600,
+              "h" : 480,
+              "resize" : "fit"
+            },
+            "thumb" : {
+              "w" : 150,
+              "h" : 150,
+              "resize" : "crop"
+            },
+            "small" : {
+              "w" : 340,
+              "h" : 272,
+              "resize" : "fit"
+            }
+          },
+          "display_url" : "pic.twitter.com\/oaniNOzKyJ",
+          "type" : "photo",
+          "indices" : [
+            68,
+            90
+          ],
+          "media_url" : "http:\/\/pbs.twimg.com\/media\/CBp9WRcW0AAZcs9.png",
+          "url" : "http:\/\/t.co\/oaniNOzKyJ"
+        }
+      ]
+    },
+    "retweeted" : false,
+    "text" : "#Java Facts to Blow your Mind! (infographic) http:\/\/t.co\/bpnC9hH5Zh http:\/\/t.co\/oaniNOzKyJ",
+    "created_at" : "Fri Apr 03 09:00:17 +0000 2015",
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "id_str" : "583916923466973184",
+    "coordinates" : null
+  }
+]

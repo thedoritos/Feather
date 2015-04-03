@@ -42,6 +42,9 @@
 		9D713CFD1ABF023E00709229 /* FEZTweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D713CFB1ABF023E00709229 /* FEZTweetCell.xib */; };
 		9D713D0E1ABF158C00709229 /* FEZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D713D0D1ABF158C00709229 /* FEZUser.m */; };
 		9D7E68091ACD85C100DAAEFD /* FEZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E68081ACD85C100DAAEFD /* FEZColor.m */; };
+		9D90E3EE1ACEC383001EE56C /* FEZTimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3ED1ACEC383001EE56C /* FEZTimelineTests.m */; };
+		9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3F01ACEDC78001EE56C /* HUKLoader.m */; };
+		9D90E3F61ACEDDB7001EE56C /* get_statuses_hometimeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */; };
 		9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
@@ -122,6 +125,10 @@
 		9D713D0D1ABF158C00709229 /* FEZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZUser.m; path = Classes/Models/Twitter/FEZUser.m; sourceTree = "<group>"; };
 		9D7E68071ACD85C100DAAEFD /* FEZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZColor.h; path = Classes/Models/FEZColor.h; sourceTree = "<group>"; };
 		9D7E68081ACD85C100DAAEFD /* FEZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZColor.m; path = Classes/Models/FEZColor.m; sourceTree = "<group>"; };
+		9D90E3ED1ACEC383001EE56C /* FEZTimelineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZTimelineTests.m; path = Classes/Models/FEZTimelineTests.m; sourceTree = "<group>"; };
+		9D90E3EF1ACEDC78001EE56C /* HUKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUKLoader.h; path = Classes/Libraries/HumourKit/HUKLoader.h; sourceTree = "<group>"; };
+		9D90E3F01ACEDC78001EE56C /* HUKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKLoader.m; path = Classes/Libraries/HumourKit/HUKLoader.m; sourceTree = "<group>"; };
+		9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = get_statuses_hometimeline.json; path = Resources/twitter_api/statuses/get_statuses_hometimeline.json; sourceTree = "<group>"; };
 		9DCF739A1AC1C055005C3134 /* SLRequest+HUKTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SLRequest+HUKTwitter.h"; path = "Classes/Libraries/HumourKit/SLRequest+HUKTwitter.h"; sourceTree = "<group>"; };
 		9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SLRequest+HUKTwitter.m"; path = "Classes/Libraries/HumourKit/SLRequest+HUKTwitter.m"; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +264,7 @@
 		9D448E1D1ABB10910024C26A /* FezaarTests */ = {
 			isa = PBXGroup;
 			children = (
+				9D90E3F21ACEDD6D001EE56C /* Resources */,
 				9D448E291ABB11430024C26A /* Classes */,
 				9D448E1E1ABB10910024C26A /* Supporting Files */,
 			);
@@ -274,6 +282,7 @@
 		9D448E291ABB11430024C26A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D90E3EC1ACEC333001EE56C /* Models */,
 				9D713CDD1ABD6A9300709229 /* Libraries */,
 				9D448E2A1ABB114B0024C26A /* Services */,
 			);
@@ -330,6 +339,8 @@
 				9D713CE21ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m */,
 				9DCF739A1AC1C055005C3134 /* SLRequest+HUKTwitter.h */,
 				9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */,
+				9D90E3EF1ACEDC78001EE56C /* HUKLoader.h */,
+				9D90E3F01ACEDC78001EE56C /* HUKLoader.m */,
 			);
 			name = HumourKit;
 			sourceTree = "<group>";
@@ -434,6 +445,38 @@
 				9D713CFB1ABF023E00709229 /* FEZTweetCell.xib */,
 			);
 			name = FEZTweetCell;
+			sourceTree = "<group>";
+		};
+		9D90E3EC1ACEC333001EE56C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D90E3ED1ACEC383001EE56C /* FEZTimelineTests.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D90E3F21ACEDD6D001EE56C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D90E3F41ACEDD94001EE56C /* twitter_api */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D90E3F31ACEDD77001EE56C /* statuses */ = {
+			isa = PBXGroup;
+			children = (
+				9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */,
+			);
+			name = statuses;
+			sourceTree = "<group>";
+		};
+		9D90E3F41ACEDD94001EE56C /* twitter_api */ = {
+			isa = PBXGroup;
+			children = (
+				9D90E3F31ACEDD77001EE56C /* statuses */,
+			);
+			name = twitter_api;
 			sourceTree = "<group>";
 		};
 		BF5B1D4517669CAC12D82838 /* Pods */ = {
@@ -546,6 +589,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D90E3F61ACEDDB7001EE56C /* get_statuses_hometimeline.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +641,7 @@
 				9D7E68091ACD85C100DAAEFD /* FEZColor.m in Sources */,
 				9D713CCA1ABCC0D800709229 /* HUKTwitter.m in Sources */,
 				9D5EF8011AC42F160010781B /* FEZList.m in Sources */,
+				9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,
@@ -622,6 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D90E3EE1ACEC383001EE56C /* FEZTimelineTests.m in Sources */,
 				9D713CD91ABCD1CE00709229 /* FEZTwitterTests.m in Sources */,
 				9D713CE01ABD6AB700709229 /* HUKAccountStoreTests.m in Sources */,
 			);

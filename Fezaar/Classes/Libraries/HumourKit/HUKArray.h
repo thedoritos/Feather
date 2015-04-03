@@ -32,4 +32,6 @@ typedef NSComparisonResult(^Comparator)(id a, id b);
 
 - (instancetype)huk_unique:(NSArray *)comparison comparator:(Comparator)comparator;
 
+- (instancetype)huk_range:(NSInteger)from to:(NSInteger)to;
+
 @end
