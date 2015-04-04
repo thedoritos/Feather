@@ -33,4 +33,8 @@ typedef void(^JsonDictionaryHandler)(NSDictionary *jsonDictionary);
 
 - (void)getListsOwnerships:(JsonDictionaryHandler)jsonDictionaryHandler failure:(ErrorHandler)errorHandler;
 
+- (void)getListsStatuses:(NSNumber *)listID
+                 success:(JsonArrayHandler)jsonArrayHandler
+                 failure:(ErrorHandler)errorHandler;
+
 @end
