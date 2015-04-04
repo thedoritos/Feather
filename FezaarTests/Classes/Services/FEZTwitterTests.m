@@ -74,4 +74,24 @@
     [self waitForExpectationsWithTimeout:5 handler:nil];
 }
 
+- (void)testFetchListTimeline
+{
+    XCTestExpectation *expectation = [self expectationWithDescription:@"should receive lists"];
+    
+    [[[self.sut fetchLists] flattenMap:^(FEZListCollection *lists) {
+        return [self.sut fetchListTimeline:[lists listAtIndex:0]];
+    }] subscribeNext:^(FEZTimeline *timeline) {
+        [expectation fulfill];
+        
+        XCTAssert(timeline.tweets.count > 0, @"should receive at least 1 tweet");
+        
+        NSLog(@"Fetched home timeline with count: %lu", (unsigned long)timeline.length);
+        
+    } error:^(NSError *error) {
+        XCTFail(@"should not fail with error: %@", error);
+    }];
+    
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
 @end
