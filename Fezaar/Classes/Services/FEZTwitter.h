@@ -21,5 +21,6 @@
 - (RACSignal *)fetchHomeTimelineOlderThanTimeline:(FEZTimeline *)timeline;
 
 - (RACSignal *)fetchLists;
+- (RACSignal *)fetchListTimeline:(FEZList *)list;
 
 @end

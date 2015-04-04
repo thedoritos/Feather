@@ -81,4 +81,15 @@
              }];
 }
 
+- (RACSignal *)fetchListTimeline:(FEZList *)list
+{
+    return [[[self ensureAuthorized]
+             then:^{
+                 return [self.twitter rac_getListsStatusesListID:list.listID];
+             }]
+             map:^(NSArray *jsonArray) {
+                 return [FEZTimeline timelineFromTweetJsonArray:jsonArray];
+             }];
+}
+
 @end

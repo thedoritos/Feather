@@ -20,4 +20,6 @@
 
 - (RACSignal *)rac_getListsOwnerships;
 
+- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID;
+
 @end

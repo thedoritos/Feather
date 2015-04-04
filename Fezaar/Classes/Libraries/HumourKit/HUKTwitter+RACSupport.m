@@ -69,4 +69,18 @@
     }];
 }
 
+- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID;
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self getListsStatuses:listID success:^(NSArray *jsonArray) {
+            [subscriber sendNext:jsonArray];
+            [subscriber sendCompleted];
+        } failure:^(NSError *error) {
+            [subscriber sendError:error];
+        }];
+        
+        return nil;
+    }];
+}
+
 @end
