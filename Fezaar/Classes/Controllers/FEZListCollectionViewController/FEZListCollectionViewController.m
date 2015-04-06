@@ -9,6 +9,7 @@
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
+#import "FEZListViewController.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -84,6 +85,14 @@
 }
 
 #pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FEZList *selectedList = [self.listCollection listAtIndex:indexPath.row];
+    
+    FEZListViewController *listViewController = [[FEZListViewController alloc] initWithList:selectedList];
+    [self.navigationController pushViewController:listViewController animated:YES];
+}
 
 #pragma mark - Private
 

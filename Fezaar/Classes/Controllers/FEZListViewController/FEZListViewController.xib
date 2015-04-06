@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FEZListCollectionViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FEZListViewController">
             <connections>
-                <outlet property="listTableView" destination="Hf2-mt-fzo" id="dJv-Xj-u2w"/>
+                <outlet property="tweetTableView" destination="Nyq-GC-nGa" id="aJN-YB-E1e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,17 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-mt-fzo">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Nyq-GC-nGa">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="0.066666666666666666" green="0.19607843137254902" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Hf2-mt-fzo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="30Y-3G-xCt"/>
-                <constraint firstAttribute="trailing" secondItem="Hf2-mt-fzo" secondAttribute="trailing" id="Csw-kG-9xg"/>
-                <constraint firstItem="Hf2-mt-fzo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QCP-g8-trf"/>
-                <constraint firstAttribute="bottom" secondItem="Hf2-mt-fzo" secondAttribute="bottom" id="hD6-0k-6Sz"/>
+                <constraint firstAttribute="trailing" secondItem="Nyq-GC-nGa" secondAttribute="trailing" id="1Uo-fN-is8"/>
+                <constraint firstItem="Nyq-GC-nGa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pbe-Zl-hVK"/>
+                <constraint firstItem="Nyq-GC-nGa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mho-is-hl8"/>
+                <constraint firstAttribute="bottom" secondItem="Nyq-GC-nGa" secondAttribute="bottom" id="u6y-j8-TcA"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

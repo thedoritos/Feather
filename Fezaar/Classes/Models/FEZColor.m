@@ -28,6 +28,12 @@
     return [UIColor colorWithRed:142.0f/255.0f green:53.0f/255.0f blue:74.0f/255.0f alpha:1.0f];
 }
 
++ (UIColor *)kon
+{
+    // Kon
+    return [UIColor colorWithRed:15.0f/255.0f green:37.0f/255.0f blue:64.0f/255.0f alpha:1.0f];
+}
+
 + (UIColor *)navigationBarColor
 {
     return [FEZColor chitoseMidori];
@@ -56,6 +62,11 @@
 + (UIColor *)backgroundColor
 {
     return [FEZColor suoh];
+}
+
++ (UIColor *)backgroundColorDark
+{
+    return [FEZColor kon];
 }
 
 @end
