@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FEZTwitter.h"
-#import "FEZHomeViewController.h"
+#import "FEZListCollectionViewController.h"
 #import "FEZColor.h"
 
 @interface AppDelegate ()
@@ -24,11 +24,11 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [FEZColor navigationBarTextColor] }];
     [[UINavigationBar appearance] setTranslucent:NO];
     
-    FEZHomeViewController *homeViewController = [[FEZHomeViewController alloc] init];
-    UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    FEZListCollectionViewController *listCollectionViewController = [[FEZListCollectionViewController alloc] init];
+    UINavigationController *listCollectionNavigationController = [[UINavigationController alloc] initWithRootViewController:listCollectionViewController];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = homeNavigationController;
+    self.window.rootViewController = listCollectionNavigationController;
     [self.window makeKeyAndVisible];
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];

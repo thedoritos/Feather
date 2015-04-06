@@ -18,5 +18,6 @@
 + (UIColor *)strongTextColor;
 
 + (UIColor *)backgroundColor;
++ (UIColor *)backgroundColorDark;
 
 @end
