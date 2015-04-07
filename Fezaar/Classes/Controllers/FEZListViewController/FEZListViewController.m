@@ -53,6 +53,8 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.twitter = [[FEZTwitter alloc] init];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveListSelection:) name:@"FEZNotificationShowList" object:nil];
+    
     [self refreshTimeline];
 }
 
@@ -66,6 +68,16 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     }
     
     [self.slidingViewController anchorTopViewToRightAnimated:YES];
+}
+
+#pragma mark - Notifications
+
+- (void)didReceiveListSelection:(NSNotification *)notification
+{
+    FEZList *selectedList = notification.userInfo[@"list"];
+    self.list = selectedList;
+    
+    [self refreshTimeline];
 }
 
 #pragma mark - UITableViewDataSource
@@ -89,6 +101,11 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 - (void)refreshTimeline
 {
+    if (!self.list) {
+        [self updateTimeline:[FEZTimeline timeline]];
+        return;
+    }
+    
     @weakify(self)
     [[self.twitter fetchListTimeline:self.list]
      subscribeNext:^(FEZTimeline *timeline) {
