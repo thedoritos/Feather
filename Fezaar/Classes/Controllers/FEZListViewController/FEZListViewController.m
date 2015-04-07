@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "FEZListViewController.h"
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
@@ -40,6 +41,8 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.title = @"List";
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(toggleListCollectionView)];
+    
     self.timeline = [FEZTimeline timeline];
     
     [self.tweetTableView registerNib:[UINib nibWithNibName:kTweetCellID bundle:nil] forCellReuseIdentifier:kTweetCellID];
@@ -51,6 +54,18 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.twitter = [[FEZTwitter alloc] init];
     
     [self refreshTimeline];
+}
+
+#pragma mark - UI Actions
+
+- (void)toggleListCollectionView
+{
+    if (self.slidingViewController.currentTopViewPosition != ECSlidingViewControllerTopViewPositionCentered) {
+        [self.slidingViewController resetTopViewAnimated:YES];
+        return;
+    }
+    
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
 }
 
 #pragma mark - UITableViewDataSource
