@@ -30,7 +30,10 @@
     FEZListViewController *listViewController = [[FEZListViewController alloc] init];
     
     ECSlidingViewController *mainViewController = [ECSlidingViewController slidingWithTopViewController:[[UINavigationController alloc] initWithRootViewController:listViewController]];
+    
     mainViewController.underLeftViewController = [[UINavigationController alloc] initWithRootViewController:listCollectionViewController];
+    mainViewController.underLeftViewController.edgesForExtendedLayout = UIRectEdgeTop | UIRectEdgeBottom | UIRectEdgeLeft;
+    mainViewController.anchorRightRevealAmount = 280;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = mainViewController;
