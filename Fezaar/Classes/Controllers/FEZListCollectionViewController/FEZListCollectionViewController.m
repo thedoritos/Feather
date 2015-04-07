@@ -9,7 +9,6 @@
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
-#import "FEZListViewController.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -37,6 +36,8 @@
     self.listTableView.dataSource = self;
     self.listTableView.delegate = self;
     self.listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,9 +90,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FEZList *selectedList = [self.listCollection listAtIndex:indexPath.row];
-    
-    FEZListViewController *listViewController = [[FEZListViewController alloc] initWithList:selectedList];
-    [self.navigationController pushViewController:listViewController animated:YES];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FEZNotificationShowList" object:nil userInfo:@{@"list" : selectedList}];
 }
 
 #pragma mark - Private

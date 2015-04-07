@@ -6,9 +6,11 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <ECSlidingViewController/ECSlidingViewController.h>
 #import "AppDelegate.h"
 #import "FEZTwitter.h"
 #import "FEZListCollectionViewController.h"
+#import "FEZListViewController.h"
 #import "FEZColor.h"
 
 @interface AppDelegate ()
@@ -25,10 +27,16 @@
     [[UINavigationBar appearance] setTranslucent:NO];
     
     FEZListCollectionViewController *listCollectionViewController = [[FEZListCollectionViewController alloc] init];
-    UINavigationController *listCollectionNavigationController = [[UINavigationController alloc] initWithRootViewController:listCollectionViewController];
-
+    FEZListViewController *listViewController = [[FEZListViewController alloc] init];
+    
+    ECSlidingViewController *mainViewController = [ECSlidingViewController slidingWithTopViewController:[[UINavigationController alloc] initWithRootViewController:listViewController]];
+    
+    mainViewController.underLeftViewController = [[UINavigationController alloc] initWithRootViewController:listCollectionViewController];
+    mainViewController.underLeftViewController.edgesForExtendedLayout = UIRectEdgeTop | UIRectEdgeBottom | UIRectEdgeLeft;
+    mainViewController.anchorRightRevealAmount = 280;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = listCollectionNavigationController;
+    self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
