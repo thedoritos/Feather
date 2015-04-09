@@ -9,6 +9,7 @@
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
+#import "FEZColor.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,8 +34,6 @@
     self.listTableView.dataSource = self;
     self.listTableView.delegate = self;
     self.listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning

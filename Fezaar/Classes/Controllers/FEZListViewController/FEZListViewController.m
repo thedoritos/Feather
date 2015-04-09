@@ -45,6 +45,12 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(toggleListCollectionView)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
     
+    CALayer *baseLayer = self.navigationController.view.layer;
+    baseLayer.shadowOpacity = 0.5f;
+    baseLayer.shadowRadius = 5.0f;
+    baseLayer.shadowColor = [UIColor blackColor].CGColor;
+    baseLayer.shadowPath = [UIBezierPath bezierPathWithRect:baseLayer.bounds].CGPath;
+    
     self.timeline = [FEZTimeline timeline];
     
     [self.tweetTableView registerNib:[UINib nibWithNibName:kTweetCellID bundle:nil] forCellReuseIdentifier:kTweetCellID];
