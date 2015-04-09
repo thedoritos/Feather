@@ -9,7 +9,6 @@
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
-#import "FEZAuthViewController.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,9 +26,6 @@
     [super viewDidLoad];
     
     self.title = @"Lists";
-    
-    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
-    self.navigationItem.rightBarButtonItem = accountButton;
     
     self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
@@ -51,16 +47,6 @@
 {
     [super viewWillAppear:animated];
     [self refreshAccount];
-}
-
-#pragma mark - UI Action
-
-- (void)presentAccounts
-{
-    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
-    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
-    
-    [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
