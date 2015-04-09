@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
@@ -92,6 +93,9 @@
     FEZList *selectedList = [self.listCollection listAtIndex:indexPath.row];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"FEZNotificationShowList" object:nil userInfo:@{@"list" : selectedList}];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.slidingViewController resetTopViewAnimated:YES];
 }
 
 #pragma mark - Private
