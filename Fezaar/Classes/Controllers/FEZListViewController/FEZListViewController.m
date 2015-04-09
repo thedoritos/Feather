@@ -10,6 +10,7 @@
 #import "FEZListViewController.h"
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
+#import "FEZAuthViewController.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 
@@ -41,7 +42,14 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.title = @"List";
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(toggleListCollectionView)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(toggleListCollectionView)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    
+    CALayer *baseLayer = self.navigationController.view.layer;
+    baseLayer.shadowOpacity = 0.5f;
+    baseLayer.shadowRadius = 5.0f;
+    baseLayer.shadowColor = [UIColor blackColor].CGColor;
+    baseLayer.shadowPath = [UIBezierPath bezierPathWithRect:baseLayer.bounds].CGPath;
     
     self.timeline = [FEZTimeline timeline];
     
@@ -68,6 +76,14 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     }
     
     [self.slidingViewController anchorTopViewToRightAnimated:YES];
+}
+
+- (void)presentAccounts
+{
+    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
+    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
+    
+    [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - Notifications

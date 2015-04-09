@@ -17,10 +17,9 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-mt-fzo">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.066666666666666666" green="0.19607843137254902" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Hf2-mt-fzo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="30Y-3G-xCt"/>
                 <constraint firstAttribute="trailing" secondItem="Hf2-mt-fzo" secondAttribute="trailing" id="Csw-kG-9xg"/>

@@ -6,9 +6,10 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
-#import "FEZAuthViewController.h"
+#import "FEZColor.h"
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,17 +28,12 @@
     
     self.title = @"Lists";
     
-    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
-    self.navigationItem.rightBarButtonItem = accountButton;
-    
     self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
     
     self.listTableView.dataSource = self;
     self.listTableView.delegate = self;
     self.listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,16 +46,6 @@
 {
     [super viewWillAppear:animated];
     [self refreshAccount];
-}
-
-#pragma mark - UI Action
-
-- (void)presentAccounts
-{
-    FEZAuthViewController *authViewController = [[FEZAuthViewController alloc] init];
-    UINavigationController *authNavigationController = [[UINavigationController alloc] initWithRootViewController:authViewController];
-    
-    [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
@@ -92,6 +78,9 @@
     FEZList *selectedList = [self.listCollection listAtIndex:indexPath.row];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"FEZNotificationShowList" object:nil userInfo:@{@"list" : selectedList}];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.slidingViewController resetTopViewAnimated:YES];
 }
 
 #pragma mark - Private
