@@ -59,6 +59,9 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.tweetTableView.delegate = self;
     self.tweetTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
+    self.tweetTableView.estimatedRowHeight = 120;
+    self.tweetTableView.rowHeight = UITableViewAutomaticDimension;
+    
     self.twitter = [[FEZTwitter alloc] init];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveListSelection:) name:@"FEZNotificationShowList" object:nil];
