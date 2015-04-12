@@ -95,6 +95,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 {
     FEZList *selectedList = notification.userInfo[@"list"];
     self.list = selectedList;
+    self.title = selectedList.name;
     
     [self refreshTimeline];
 }
