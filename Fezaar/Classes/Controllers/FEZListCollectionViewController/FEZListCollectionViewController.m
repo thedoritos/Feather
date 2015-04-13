@@ -28,6 +28,8 @@
     
     self.title = @"Lists";
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshListCollection)];
+    
     self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
     
@@ -97,6 +99,8 @@
 
 - (void)refreshListCollection
 {
+    [self updateListCollection:[FEZListCollection collection]];
+    
     @weakify(self)
     [[self.twitter fetchLists]
      subscribeNext:^(FEZListCollection *listCollection) {
