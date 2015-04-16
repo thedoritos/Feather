@@ -7,6 +7,7 @@
 //
 
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import <SVPullToRefresh/SVPullToRefresh.h>
 #import "FEZListViewController.h"
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
@@ -61,6 +62,40 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     self.tweetTableView.estimatedRowHeight = 120;
     self.tweetTableView.rowHeight = UITableViewAutomaticDimension;
+    
+    @weakify(self)
+    [self.tweetTableView addPullToRefreshWithActionHandler:^{
+        @strongify(self)
+        [[self.twitter fetchListTimeline:self.list laterThanTimeline:self.timeline]
+         subscribeNext:^(FEZTimeline *timeline) {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self updateTimeline:timeline];
+                 [self.tweetTableView.pullToRefreshView stopAnimating];
+             });
+         } error:^(NSError *error) {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self.tweetTableView.pullToRefreshView stopAnimating];
+             });
+             NSLog(@"Failed to fetch list timeline with error: %@", error);
+         }];
+    }];
+    
+    [self.tweetTableView addInfiniteScrollingWithActionHandler:^{
+        @strongify(self)
+        [[self.twitter fetchListTimeline:self.list olderThanTimeline:self.timeline]
+         subscribeNext:^(FEZTimeline *timeline) {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self updateTimeline:timeline];
+                 [self.tweetTableView.infiniteScrollingView stopAnimating];
+             });
+         } error:^(NSError *error) {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 [self.tweetTableView.infiniteScrollingView stopAnimating];
+                 NSLog(@"Failed to fetch list timeline with error: %@", error);
+             });
+         }];
+    }];
+
     
     self.twitter = [[FEZTwitter alloc] init];
     
