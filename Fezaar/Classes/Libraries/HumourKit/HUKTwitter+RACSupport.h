@@ -22,4 +22,8 @@
 
 - (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID;
 
+- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID
+                                  sinceID:(NSNumber *)sinceID
+                                    maxID:(NSNumber *)maxID;
+
 @end

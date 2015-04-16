@@ -37,4 +37,10 @@ typedef void(^JsonDictionaryHandler)(NSDictionary *jsonDictionary);
                  success:(JsonArrayHandler)jsonArrayHandler
                  failure:(ErrorHandler)errorHandler;
 
+- (void)getListsStatuses:(NSNumber *)listID
+                 sinceID:(NSNumber *)sinceID
+                   maxID:(NSNumber *)maxID
+                 success:(JsonArrayHandler)jsonArrayHandler
+                 failure:(ErrorHandler)errorHandler;
+
 @end

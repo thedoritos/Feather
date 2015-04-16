@@ -90,6 +90,29 @@
     [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
 }
 
+- (void)getListsStatuses:(NSNumber *)listID
+                 sinceID:(NSNumber *)sinceID
+                   maxID:(NSNumber *)maxID
+                 success:(JsonArrayHandler)jsonArrayHandler
+                 failure:(ErrorHandler)errorHandler
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if (listID) {
+        params[@"list_id"] = [listID stringValue];
+    }
+    if (sinceID) {
+        params[@"since_id"] = [sinceID stringValue];
+    }
+    if (maxID) {
+        params[@"max_id"] = [maxID stringValue];
+    }
+    
+    SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/statuses.json"
+                                             params:params];
+    
+    [request huk_performRequestWithHandler:jsonArrayHandler failure:errorHandler];
+}
+
 - (SLRequest *)requestWithURLString:(NSString *)urlString params:(NSDictionary *)params
 {
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
