@@ -69,7 +69,7 @@
     }];
 }
 
-- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID;
+- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [self getListsStatuses:listID success:^(NSArray *jsonArray) {
@@ -78,6 +78,25 @@
         } failure:^(NSError *error) {
             [subscriber sendError:error];
         }];
+        
+        return nil;
+    }];
+}
+
+- (RACSignal *)rac_getListsStatusesListID:(NSNumber *)listID
+                                  sinceID:(NSNumber *)sinceID
+                                    maxID:(NSNumber *)maxID
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self getListsStatuses:listID
+                       sinceID:sinceID
+                         maxID:maxID
+                       success:^(NSArray *jsonArray) {
+                           [subscriber sendNext:jsonArray];
+                           [subscriber sendCompleted];
+                       } failure:^(NSError *error) {
+                           [subscriber sendError:error];
+                       }];
         
         return nil;
     }];

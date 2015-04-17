@@ -92,4 +92,30 @@
              }];
 }
 
+- (RACSignal *)fetchListTimeline:(FEZList *)list laterThanTimeline:(FEZTimeline *)timeline
+{
+    return [[[self ensureAuthorized]
+             then:^{
+                 return [self.twitter rac_getListsStatusesListID:list.listID
+                                                         sinceID:timeline.sinceID
+                                                           maxID:nil];
+             }]
+             map:^(NSArray *jsonArray) {
+                 return [timeline timelineInsertOrUpdateTimeline:[FEZTimeline timelineFromTweetJsonArray:jsonArray]];
+             }];
+}
+
+- (RACSignal *)fetchListTimeline:(FEZList *)list olderThanTimeline:(FEZTimeline *)timeline
+{
+    return [[[self ensureAuthorized]
+             then:^{
+                 return [self.twitter rac_getListsStatusesListID:list.listID
+                                                         sinceID:nil
+                                                           maxID:timeline.maxID];
+             }]
+             map:^(NSArray *jsonArray) {
+                 return [timeline timelineInsertOrUpdateTimeline:[FEZTimeline timelineFromTweetJsonArray:jsonArray]];
+             }];
+}
+
 @end

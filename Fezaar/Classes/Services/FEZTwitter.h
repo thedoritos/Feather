@@ -23,4 +23,7 @@
 - (RACSignal *)fetchLists;
 - (RACSignal *)fetchListTimeline:(FEZList *)list;
 
+- (RACSignal *)fetchListTimeline:(FEZList *)list laterThanTimeline:(FEZTimeline *)timeline;
+- (RACSignal *)fetchListTimeline:(FEZList *)list olderThanTimeline:(FEZTimeline *)timeline;
+
 @end
