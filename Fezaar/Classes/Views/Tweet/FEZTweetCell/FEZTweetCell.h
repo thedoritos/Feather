@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *creationDateLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;

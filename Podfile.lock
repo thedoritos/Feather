@@ -18,6 +18,7 @@ PODS:
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
+  - NSDate-Extensions (0.0.1)
   - ReactiveCocoa (2.4.4):
     - ReactiveCocoa/UI (= 2.4.4)
   - ReactiveCocoa/Core (2.4.4):
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - BlocksKit
   - ECSlidingViewController
   - Mantle
+  - NSDate-Extensions
   - ReactiveCocoa
   - SDWebImage
   - STTwitter
@@ -44,9 +46,10 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
   Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  NSDate-Extensions: cbd68ecf5cf8a150644e184b4521d7734fea5ace
   ReactiveCocoa: cbe3b5eae464aa72a348a7323996b171728a9e71
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   STTwitter: 2b05662fecfc8552626c464cc06c735153720974
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.3
