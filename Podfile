@@ -7,6 +7,7 @@ target "Fezaar" do
   pod 'BlocksKit'
   pod 'SDWebImage'
   pod 'SVPullToRefresh'
+  pod 'NSDate-Extensions'
 
   # Controls 
   pod 'ECSlidingViewController'

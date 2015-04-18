@@ -8,6 +8,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "FEZTweetCell.h"
+#import "FEZDateFormatter.h"
 
 @implementation FEZTweetCell
 
@@ -27,6 +28,8 @@
 
 - (void)presentTweet:(FEZTweet *)tweet
 {
+    self.creationDateLabel.text = [FEZDateFormatter formatDate:tweet.creationDate];
+    
     self.userNameLabel.text = tweet.user.name;
     self.tweetTextLabel.text = tweet.text;
     [self.userImageView sd_setImageWithURL:[tweet.user profileImageURLWithType:FEZUserProfileImageTypeBigger]];

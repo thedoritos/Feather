@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -22,7 +22,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-BZ-OAB" userLabel="UsernameLabel">
-                        <rect key="frame" x="51" y="8" width="261" height="15"/>
+                        <rect key="frame" x="51" y="8" width="59" height="15"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -37,14 +37,23 @@
                         <rect key="frame" x="51" y="49" width="261" height="62"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/04/01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L08-U9-vnl" userLabel="DateLabel">
+                        <rect key="frame" x="253" y="8" width="59" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="L08-U9-vnl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w9U-BZ-OAB" secondAttribute="trailing" id="21P-d1-qAk"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="w9U-BZ-OAB" secondAttribute="leading" id="6eL-Wj-sx7"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="85Y-il-zsO"/>
                     <constraint firstAttribute="bottomMargin" secondItem="BsA-sq-caF" secondAttribute="bottom" id="8j0-fE-gHc"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="top" secondItem="w9U-BZ-OAB" secondAttribute="bottom" id="8wH-sg-efl"/>
+                    <constraint firstItem="L08-U9-vnl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Etu-xo-7eY"/>
                     <constraint firstAttribute="trailingMargin" secondItem="w9U-BZ-OAB" secondAttribute="trailing" id="MYg-Yc-2Rc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BsA-sq-caF" secondAttribute="trailing" id="Sfx-pk-Nlm"/>
+                    <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="L08-U9-vnl" secondAttribute="top" id="UE6-sz-IMJ"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="BsA-sq-caF" secondAttribute="leading" id="W8G-dO-Dtf"/>
                     <constraint firstItem="BsA-sq-caF" firstAttribute="top" secondItem="VWm-66-uDP" secondAttribute="bottom" id="WcI-qi-YUN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VWm-66-uDP" secondAttribute="trailing" id="cHl-Mi-0Fg"/>
@@ -53,8 +62,14 @@
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kaz-Fd-LYQ"/>
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nsu-7b-qZP"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MYg-Yc-2Rc"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="creationDateLabel" destination="L08-U9-vnl" id="bCw-Xi-Vu0"/>
                 <outlet property="tweetTextLabel" destination="VWm-66-uDP" id="Flp-7W-WRw"/>
                 <outlet property="userImageView" destination="Ylc-rl-zUr" id="qTm-io-g1m"/>
                 <outlet property="userNameLabel" destination="w9U-BZ-OAB" id="Bro-1O-Tz5"/>
