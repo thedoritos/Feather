@@ -13,6 +13,8 @@
 
 @property (nonatomic, copy, readonly) NSNumber *statusID;
 
+@property (copy, nonatomic, readonly) NSDate *creationDate;
+
 @property (nonatomic, copy, readonly) NSString *text;
 
 @property (nonatomic, readonly) FEZUser *user;

@@ -13,8 +13,33 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-        @"statusID" : @"id"
+        @"statusID" : @"id",
+        @"creationDate" : @"created_at"
     };
+}
+
++ (NSValueTransformer *)creationDateJSONTransformer {
+    static dispatch_once_t onceToken;
+    static NSDateFormatter *dateFormatter;
+    
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+        [dateFormatter setDateFormat:@"eee MMM dd HH:mm:ss Z yyyy"];
+    });
+    
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *value) {
+        if ([value isKindOfClass:NSString.class]) {
+            return [dateFormatter dateFromString:value];
+        }
+        return nil;
+    } reverseBlock:^id(NSDate *date) {
+        if ([date isKindOfClass:NSDate.class]) {
+            return [dateFormatter stringFromDate:date];
+        }
+        return nil;
+    }];
 }
 
 + (NSValueTransformer *)userJSONTransformer
