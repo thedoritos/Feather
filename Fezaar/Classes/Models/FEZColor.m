@@ -7,6 +7,7 @@
 //
 
 #import "FEZColor.h"
+#import "UIColor+HexString.h"
 
 @implementation FEZColor
 
@@ -34,39 +35,67 @@
     return [UIColor colorWithRed:15.0f/255.0f green:37.0f/255.0f blue:64.0f/255.0f alpha:1.0f];
 }
 
+// Aspirin C
+// https://color.adobe.com/Aspirin-C-color-theme-251864/edit/?copy=true
+
++ (UIColor *)darkBlue
+{
+    return [UIColor colorWithHexString:@"#225378"];
+}
+
++ (UIColor *)blue
+{
+    return [UIColor colorWithHexString:@"#1695A3"];
+}
+
++ (UIColor *)lightBlue
+{
+    return [UIColor colorWithHexString:@"#ACF0F2"];
+}
+
++ (UIColor *)superLightBlue
+{
+    return [UIColor colorWithHexString:@"#F3FFE2"];
+}
+
++ (UIColor *)orange
+{
+    return [UIColor colorWithHexString:@"#EB7F00"];
+}
+
 + (UIColor *)navigationBarColor
 {
-    return [FEZColor chitoseMidori];
+    return [FEZColor darkBlue];
 }
 
 + (UIColor *)navigationBarTextColor
 {
-    return [FEZColor kuchiba];
+    return [FEZColor orange];
 }
 
 + (UIColor *)textColor
 {
-    return [FEZColor kuchiba];
+    return [FEZColor darkBlue];
 }
 
 + (UIColor *)weakTextColor
 {
-    return [FEZColor kuchiba];
+    return [FEZColor blue];
 }
 
 + (UIColor *)strongTextColor
 {
-    return [FEZColor kuchiba];
+    return [FEZColor orange];
 }
 
 + (UIColor *)backgroundColor
 {
-    return [FEZColor suoh];
+    return [FEZColor superLightBlue];
 }
 
 + (UIColor *)backgroundColorDark
 {
-    return [FEZColor kon];
+    return [FEZColor blue];
 }
 
 @end
