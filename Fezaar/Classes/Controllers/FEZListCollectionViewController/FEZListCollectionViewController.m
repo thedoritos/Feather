@@ -10,6 +10,9 @@
 #import "FEZListCollectionViewController.h"
 #import "FEZTwitter.h"
 #import "FEZColor.h"
+#import "FEZListCell.h"
+
+static NSString * const kListCellID = @"FEZListCell";
 
 @interface FEZListCollectionViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,9 +36,14 @@
     self.listCollection = [FEZListCollection collection];
     self.twitter = [[FEZTwitter alloc] init];
     
+   [self.listTableView registerNib:[UINib nibWithNibName:kListCellID bundle:nil] forCellReuseIdentifier:kListCellID];
+    
     self.listTableView.dataSource = self;
     self.listTableView.delegate = self;
     self.listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    self.listTableView.estimatedRowHeight = 120;
+    self.listTableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,16 +67,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellID = @"listCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
-    }
-    
+    FEZListCell *cell = [tableView dequeueReusableCellWithIdentifier:kListCellID];
     FEZList *list = [self.listCollection listAtIndex:indexPath.row];
     
-    cell.textLabel.text = list.name;
-    cell.detailTextLabel.text = list.listDescription;
+    [cell presentList:list];
     
     return cell;
 }
