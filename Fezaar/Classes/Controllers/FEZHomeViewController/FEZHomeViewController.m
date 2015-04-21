@@ -33,7 +33,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     [super viewDidLoad];
     
     self.title = @"Home";
-        
+    
     UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
     self.navigationItem.rightBarButtonItem = accountButton;
     

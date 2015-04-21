@@ -16,4 +16,8 @@
 
 @property (nonatomic, copy, readonly) NSString *listDescription;
 
+@property (nonatomic, copy, readonly) NSNumber *subscriberCount;
+
+@property (nonatomic, copy, readonly) NSNumber *memberCount;
+
 @end

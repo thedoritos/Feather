@@ -14,7 +14,9 @@
 {
     return @{
         @"listID" : @"id",
-        @"listDescription" : @"description"
+        @"listDescription" : @"description",
+        @"subscriberCount" : @"subscriber_count",
+        @"memberCount" : @"member_count"
     };
 }
 
