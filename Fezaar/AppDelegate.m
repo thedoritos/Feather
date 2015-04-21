@@ -21,11 +21,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];    
     [[UINavigationBar appearance] setBarTintColor:[FEZColor navigationBarColor]];
     [[UINavigationBar appearance] setTintColor:[FEZColor navigationBarTextColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [FEZColor navigationBarTextColor] }];
     [[UINavigationBar appearance] setTranslucent:NO];
-        
+    
     FEZListCollectionViewController *listCollectionViewController = [[FEZListCollectionViewController alloc] init];
     FEZListViewController *listViewController = [[FEZListViewController alloc] init];
     

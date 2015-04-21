@@ -35,6 +35,16 @@
     return [UIColor colorWithRed:15.0f/255.0f green:37.0f/255.0f blue:64.0f/255.0f alpha:1.0f];
 }
 
++ (UIColor *)clearBlue
+{
+    return [UIColor colorWithRed:72.0f/255.0f green:152.0f/255.0f blue:248.0f/255.0f alpha:1.0f];
+}
+
++ (UIColor *)clearOrange
+{
+    return [UIColor colorWithRed:253.0f/255.0f green:188.0f/255.0f blue:64.0f/255.0f alpha:1.0f];
+}
+
 // Aspirin C
 // https://color.adobe.com/Aspirin-C-color-theme-251864/edit/?copy=true
 
@@ -65,12 +75,12 @@
 
 + (UIColor *)navigationBarColor
 {
-    return [FEZColor darkBlue];
+    return [FEZColor clearBlue];
 }
 
 + (UIColor *)navigationBarTextColor
 {
-    return [FEZColor orange];
+    return [UIColor whiteColor];
 }
 
 + (UIColor *)textColor
