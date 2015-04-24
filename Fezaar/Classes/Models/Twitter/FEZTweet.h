@@ -19,4 +19,8 @@
 
 @property (nonatomic, readonly) FEZUser *user;
 
+@property (nonatomic, copy, readonly) NSNumber *favoriteCount;
+
+@property (nonatomic, copy, readonly) NSNumber *retweetCount;
+
 @end

@@ -14,7 +14,9 @@
 {
     return @{
         @"statusID" : @"id",
-        @"creationDate" : @"created_at"
+        @"creationDate" : @"created_at",
+        @"favoriteCount" : @"favorite_count",
+        @"retweetCount" : @"retweet_count"
     };
 }
 

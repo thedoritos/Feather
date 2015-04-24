@@ -19,6 +19,10 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *favoriteCountLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *retweetCountLabel;
+
 - (void)presentTweet:(FEZTweet *)tweet;
 
 @end

@@ -34,6 +34,9 @@
     self.tweetTextLabel.text = tweet.text;
     [self.userImageView sd_setImageWithURL:[tweet.user profileImageURLWithType:FEZUserProfileImageTypeBigger]];
     
+    self.favoriteCountLabel.text = [tweet.favoriteCount stringValue];
+    self.retweetCountLabel.text = [tweet.retweetCount stringValue];
+    
     [self layoutIfNeeded];
 }
 
