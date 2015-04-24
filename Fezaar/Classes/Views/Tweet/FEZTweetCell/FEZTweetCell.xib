@@ -34,47 +34,75 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-sq-caF" userLabel="TextSpace">
-                        <rect key="frame" x="51" y="49" width="261" height="62"/>
+                        <rect key="frame" x="51" y="49" width="261" height="43"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/04/01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L08-U9-vnl" userLabel="DateLabel">
                         <rect key="frame" x="253" y="8" width="59" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fav." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-Yx-Qiu" userLabel="FavoriteLabel">
+                        <rect key="frame" x="51" y="97" width="18" height="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19I-sV-5rv" userLabel="FavoriteCountLabel">
+                        <rect key="frame" x="74" y="97" width="13" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14t-6Y-ynV" userLabel="RetweetLabel">
+                        <rect key="frame" x="102" y="97" width="13" height="12"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-2n-xbr" userLabel="RetweetCountLabel">
+                        <rect key="frame" x="120" y="97" width="13" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="L08-U9-vnl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w9U-BZ-OAB" secondAttribute="trailing" id="21P-d1-qAk"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="w9U-BZ-OAB" secondAttribute="leading" id="6eL-Wj-sx7"/>
+                    <constraint firstItem="Prg-Yx-Qiu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="7WP-eF-w4p"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="85Y-il-zsO"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="BsA-sq-caF" secondAttribute="bottom" id="8j0-fE-gHc"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="top" secondItem="w9U-BZ-OAB" secondAttribute="bottom" id="8wH-sg-efl"/>
                     <constraint firstItem="L08-U9-vnl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Etu-xo-7eY"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="w9U-BZ-OAB" secondAttribute="trailing" id="MYg-Yc-2Rc"/>
+                    <constraint firstItem="19I-sV-5rv" firstAttribute="baseline" secondItem="14t-6Y-ynV" secondAttribute="baseline" id="GHl-Wr-fYs"/>
+                    <constraint firstItem="w9U-BZ-OAB" firstAttribute="leading" secondItem="Prg-Yx-Qiu" secondAttribute="leading" id="GbV-ue-qPc"/>
+                    <constraint firstItem="19I-sV-5rv" firstAttribute="baseline" secondItem="Prg-Yx-Qiu" secondAttribute="baseline" id="Ogg-cr-lVp"/>
+                    <constraint firstItem="NVc-2n-xbr" firstAttribute="leading" secondItem="14t-6Y-ynV" secondAttribute="trailing" constant="5" id="Rd5-zb-1ay"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BsA-sq-caF" secondAttribute="trailing" id="Sfx-pk-Nlm"/>
+                    <constraint firstItem="NVc-2n-xbr" firstAttribute="baseline" secondItem="14t-6Y-ynV" secondAttribute="baseline" id="U2l-CG-wDY"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="L08-U9-vnl" secondAttribute="top" id="UE6-sz-IMJ"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="BsA-sq-caF" secondAttribute="leading" id="W8G-dO-Dtf"/>
                     <constraint firstItem="BsA-sq-caF" firstAttribute="top" secondItem="VWm-66-uDP" secondAttribute="bottom" id="WcI-qi-YUN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VWm-66-uDP" secondAttribute="trailing" id="cHl-Mi-0Fg"/>
+                    <constraint firstItem="19I-sV-5rv" firstAttribute="leading" secondItem="Prg-Yx-Qiu" secondAttribute="trailing" constant="5" id="eDX-Jk-yK2"/>
+                    <constraint firstItem="19I-sV-5rv" firstAttribute="top" secondItem="BsA-sq-caF" secondAttribute="bottom" constant="5" id="hZo-Nh-Oif"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ylc-rl-zUr" secondAttribute="bottom" id="iOF-qN-cie"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="leading" secondItem="Ylc-rl-zUr" secondAttribute="trailing" constant="5" id="jcX-1b-YFJ"/>
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kaz-Fd-LYQ"/>
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nsu-7b-qZP"/>
+                    <constraint firstItem="14t-6Y-ynV" firstAttribute="leading" secondItem="19I-sV-5rv" secondAttribute="trailing" constant="15" id="rIa-6U-3Im"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="MYg-Yc-2Rc"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="creationDateLabel" destination="L08-U9-vnl" id="bCw-Xi-Vu0"/>
+                <outlet property="favoriteCountLabel" destination="19I-sV-5rv" id="cuW-bH-2ij"/>
+                <outlet property="retweetCountLabel" destination="NVc-2n-xbr" id="PLi-je-FKc"/>
                 <outlet property="tweetTextLabel" destination="VWm-66-uDP" id="Flp-7W-WRw"/>
                 <outlet property="userImageView" destination="Ylc-rl-zUr" id="qTm-io-g1m"/>
                 <outlet property="userNameLabel" destination="w9U-BZ-OAB" id="Bro-1O-Tz5"/>
             </connections>
-            <point key="canvasLocation" x="244" y="359"/>
+            <point key="canvasLocation" x="76" y="277"/>
         </tableViewCell>
     </objects>
 </document>
