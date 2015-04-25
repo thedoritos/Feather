@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-sq-caF" userLabel="TextSpace">
-                        <rect key="frame" x="51" y="49" width="261" height="43"/>
+                        <rect key="frame" x="51" y="49" width="261" height="33"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/04/01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L08-U9-vnl" userLabel="DateLabel">
@@ -67,9 +67,20 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viK-uv-qph" userLabel="PocketButton">
+                        <rect key="frame" x="264" y="87" width="48" height="30"/>
+                        <state key="normal" title="Pocket">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="saveToPocket:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bQa-jP-Ise"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="L08-U9-vnl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w9U-BZ-OAB" secondAttribute="trailing" id="21P-d1-qAk"/>
+                    <constraint firstItem="viK-uv-qph" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NVc-2n-xbr" secondAttribute="trailing" constant="15" id="4lm-fD-tUg"/>
+                    <constraint firstItem="NVc-2n-xbr" firstAttribute="baseline" secondItem="viK-uv-qph" secondAttribute="baseline" id="6U1-jo-4J1"/>
                     <constraint firstItem="VWm-66-uDP" firstAttribute="leading" secondItem="w9U-BZ-OAB" secondAttribute="leading" id="6eL-Wj-sx7"/>
                     <constraint firstItem="Prg-Yx-Qiu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="7WP-eF-w4p"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="85Y-il-zsO"/>
@@ -86,17 +97,20 @@
                     <constraint firstItem="BsA-sq-caF" firstAttribute="top" secondItem="VWm-66-uDP" secondAttribute="bottom" id="WcI-qi-YUN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VWm-66-uDP" secondAttribute="trailing" id="cHl-Mi-0Fg"/>
                     <constraint firstItem="19I-sV-5rv" firstAttribute="leading" secondItem="Prg-Yx-Qiu" secondAttribute="trailing" constant="5" id="eDX-Jk-yK2"/>
-                    <constraint firstItem="19I-sV-5rv" firstAttribute="top" secondItem="BsA-sq-caF" secondAttribute="bottom" constant="5" id="hZo-Nh-Oif"/>
+                    <constraint firstItem="19I-sV-5rv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BsA-sq-caF" secondAttribute="bottom" constant="5" id="hZo-Nh-Oif"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ylc-rl-zUr" secondAttribute="bottom" id="iOF-qN-cie"/>
                     <constraint firstItem="w9U-BZ-OAB" firstAttribute="leading" secondItem="Ylc-rl-zUr" secondAttribute="trailing" constant="5" id="jcX-1b-YFJ"/>
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kaz-Fd-LYQ"/>
                     <constraint firstItem="Ylc-rl-zUr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nsu-7b-qZP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="viK-uv-qph" secondAttribute="trailing" id="qbF-ja-pPf"/>
                     <constraint firstItem="14t-6Y-ynV" firstAttribute="leading" secondItem="19I-sV-5rv" secondAttribute="trailing" constant="15" id="rIa-6U-3Im"/>
+                    <constraint firstItem="viK-uv-qph" firstAttribute="top" secondItem="BsA-sq-caF" secondAttribute="bottom" constant="5" id="xmi-Qa-BNg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="creationDateLabel" destination="L08-U9-vnl" id="bCw-Xi-Vu0"/>
                 <outlet property="favoriteCountLabel" destination="19I-sV-5rv" id="cuW-bH-2ij"/>
+                <outlet property="pocketButton" destination="viK-uv-qph" id="exE-V9-GkG"/>
                 <outlet property="retweetCountLabel" destination="NVc-2n-xbr" id="PLi-je-FKc"/>
                 <outlet property="tweetTextLabel" destination="VWm-66-uDP" id="Flp-7W-WRw"/>
                 <outlet property="userImageView" destination="Ylc-rl-zUr" id="qTm-io-g1m"/>

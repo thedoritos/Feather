@@ -23,6 +23,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *retweetCountLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *pocketButton;
+
 - (void)presentTweet:(FEZTweet *)tweet;
 
 @end

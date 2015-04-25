@@ -19,6 +19,7 @@ PODS:
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
   - NSDate-Extensions (0.0.1)
+  - PocketAPI (1.0.3)
   - ReactiveCocoa (2.4.4):
     - ReactiveCocoa/UI (= 2.4.4)
   - ReactiveCocoa/Core (2.4.4):
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - ECSlidingViewController
   - Mantle
   - NSDate-Extensions
+  - PocketAPI
   - ReactiveCocoa
   - SDWebImage
   - STTwitter
@@ -47,6 +49,7 @@ SPEC CHECKSUMS:
   ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
   Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
   NSDate-Extensions: cbd68ecf5cf8a150644e184b4521d7734fea5ace
+  PocketAPI: 561fd4f428a38a4662c5837247c85f9962393f01
   ReactiveCocoa: cbe3b5eae464aa72a348a7323996b171728a9e71
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   STTwitter: 2b05662fecfc8552626c464cc06c735153720974
