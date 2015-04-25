@@ -59,4 +59,9 @@
     return [NSString stringWithFormat:@"FEZTweet statusID:%@, text:%@", self.statusID, self.text];
 }
 
+- (BOOL)containsURL
+{
+    return [self.entities containsURL];
+}
+
 @end

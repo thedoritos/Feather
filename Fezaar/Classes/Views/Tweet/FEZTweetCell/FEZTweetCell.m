@@ -6,9 +6,16 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <PocketAPI/PocketAPI.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "FEZTweetCell.h"
 #import "FEZDateFormatter.h"
+
+@interface FEZTweetCell ()
+
+@property (nonatomic, copy, readonly) FEZTweet *tweet;
+
+@end
 
 @implementation FEZTweetCell
 
@@ -37,12 +44,23 @@
     self.favoriteCountLabel.text = [tweet.favoriteCount stringValue];
     self.retweetCountLabel.text = [tweet.retweetCount stringValue];
     
+    self.pocketButton.enabled = [tweet containsURL];
+    
+    _tweet = tweet;
     [self layoutIfNeeded];
 }
 
 - (IBAction)saveToPocket:(id)sender
 {
+    if (![self.tweet containsURL]) {
+        return;
+    }
     
+    NSURL *url = self.tweet.entities.urls.firstObject;
+    
+    [[PocketAPI sharedAPI] saveURL:url withTitle:self.tweet.text tweetID:[self.tweet.statusID stringValue] handler:^(PocketAPI *api, NSURL *url, NSError *error) {
+        NSLog(@"Saved to Pocket url:%@, error:%@", url, error);
+    }];
 }
 
 @end
