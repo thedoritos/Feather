@@ -83,6 +83,7 @@
     if (listID) {
         params[@"list_id"] = [listID stringValue];
     }
+    params[@"include_entities"] = @(YES);
     
     SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/statuses.json"
                                              params:params];
@@ -106,6 +107,7 @@
     if (maxID) {
         params[@"max_id"] = [maxID stringValue];
     }
+    params[@"include_entities"] = @(YES);
     
     SLRequest *request = [self requestWithURLString:@"https://api.twitter.com/1.1/lists/statuses.json"
                                              params:params];

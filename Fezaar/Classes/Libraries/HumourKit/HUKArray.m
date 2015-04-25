@@ -73,4 +73,9 @@
     return range;
 }
 
+- (instancetype)huk_map:(Handler)handler
+{
+    return [self bk_map:handler];
+}
+
 @end

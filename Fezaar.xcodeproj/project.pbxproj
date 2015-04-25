@@ -53,6 +53,7 @@
 		9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */; };
 		9DE9B8FC1AE546B5000ED3BF /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B8FB1AE546B5000ED3BF /* UIColor+HexString.m */; };
 		9DFB076D1AEBC48500F97EE4 /* FEZPocketConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB076C1AEBC48500F97EE4 /* FEZPocketConfig.m */; };
+		9DFB07711AEBCA1700F97EE4 /* FEZEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,8 @@
 		9DE9B8FB1AE546B5000ED3BF /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Classes/Libraries/UIColor+HexString/UIColor+HexString.m"; sourceTree = "<group>"; };
 		9DFB076B1AEBC48500F97EE4 /* FEZPocketConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZPocketConfig.h; path = Classes/Models/FEZPocketConfig.h; sourceTree = "<group>"; };
 		9DFB076C1AEBC48500F97EE4 /* FEZPocketConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZPocketConfig.m; path = Classes/Models/FEZPocketConfig.m; sourceTree = "<group>"; };
+		9DFB076F1AEBCA1700F97EE4 /* FEZEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZEntities.h; path = Classes/Models/Twitter/FEZEntities.h; sourceTree = "<group>"; };
+		9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZEntities.m; path = Classes/Models/Twitter/FEZEntities.m; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -327,6 +330,8 @@
 				9D5EF8001AC42F160010781B /* FEZList.m */,
 				9D5EF8021AC43F2A0010781B /* FEZListCollection.h */,
 				9D5EF8031AC43F2A0010781B /* FEZListCollection.m */,
+				9DFB076F1AEBCA1700F97EE4 /* FEZEntities.h */,
+				9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -712,6 +717,7 @@
 				9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
+				9DFB07711AEBCA1700F97EE4 /* FEZEntities.m in Sources */,
 				9DFB076D1AEBC48500F97EE4 /* FEZPocketConfig.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,
 				9D713CCE1ABCC16700709229 /* HUKTwitter+RACSupport.m in Sources */,

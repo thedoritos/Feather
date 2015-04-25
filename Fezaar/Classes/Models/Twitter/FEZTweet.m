@@ -49,6 +49,11 @@
     return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:FEZUser.class];
 }
 
++ (NSValueTransformer *)entitiesJSONTransformer
+{
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:FEZEntities.class];
+}
+
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"FEZTweet statusID:%@, text:%@", self.statusID, self.text];
