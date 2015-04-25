@@ -6,12 +6,14 @@
 //  Copyright (c) 2015 HumourStudio. All rights reserved.
 //
 
+#import <PocketAPI/PocketAPI.h>
 #import <ECSlidingViewController/ECSlidingViewController.h>
 #import "AppDelegate.h"
 #import "FEZTwitter.h"
 #import "FEZListCollectionViewController.h"
 #import "FEZListViewController.h"
 #import "FEZColor.h"
+#import "FEZConfig.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +28,9 @@
     [[UINavigationBar appearance] setTintColor:[FEZColor navigationBarTextColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [FEZColor navigationBarTextColor] }];
     [[UINavigationBar appearance] setTranslucent:NO];
+    
+    FEZConfig *config = [FEZConfig defaultConfig];
+    [config.pocketConfig prepare];
     
     FEZListCollectionViewController *listCollectionViewController = [[FEZListCollectionViewController alloc] init];
     FEZListViewController *listViewController = [[FEZListViewController alloc] init];
@@ -85,6 +90,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [[PocketAPI sharedAPI] handleOpenURL:url];
 }
 
 @end
