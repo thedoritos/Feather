@@ -8,6 +8,8 @@ target "Fezaar" do
   pod 'SDWebImage'
   pod 'SVPullToRefresh'
   pod 'NSDate-Extensions'
+  
+  pod 'PocketAPI'
 
   # Controls 
   pod 'ECSlidingViewController'
