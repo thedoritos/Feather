@@ -7,6 +7,7 @@
 //
 
 #import <PocketAPI/PocketAPI.h>
+#import <MRProgress/MRProgress.h>
 #import "FEZWebViewController.h"
 
 @interface FEZWebViewController ()
@@ -45,8 +46,14 @@
 
 - (void)saveToPocket
 {
+    [MRProgressOverlayView showOverlayAddedTo:self.view.window
+                                        title:@"Saving to Pocket..." mode:MRProgressOverlayViewModeIndeterminate
+                                     animated:YES];
+    
     [[PocketAPI sharedAPI] saveURL:self.url withTitle:self.tweet.text tweetID:[self.tweet.statusID stringValue] handler:^(PocketAPI *api, NSURL *url, NSError *error) {
         NSLog(@"Saved to Pocket url:%@, error:%@", url, error);
+        
+        [MRProgressOverlayView dismissOverlayForView:self.view.window animated:YES];
     }];
 }
 
