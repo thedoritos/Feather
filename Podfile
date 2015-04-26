@@ -13,6 +13,7 @@ target "Fezaar" do
 
   # Controls 
   pod 'ECSlidingViewController'
+  pod 'MRProgress'
 end
 
 target "FezaarTests" do

@@ -12,6 +12,7 @@
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
+#import "FEZWebViewController.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 
@@ -150,6 +151,19 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     [cell presentTweet:tweet];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FEZTweet *selectedTweet = [self.timeline tweetAtIndex:indexPath.row];
+    if (![selectedTweet containsURL]) {
+        return;
+    }
+    
+    FEZWebViewController *webViewController = [[FEZWebViewController alloc] initWithURL:selectedTweet.entities.urls.firstObject tweet:selectedTweet];
+    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 #pragma mark - Private
