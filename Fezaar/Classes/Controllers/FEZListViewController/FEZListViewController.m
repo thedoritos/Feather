@@ -162,7 +162,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
         return;
     }
     
-    FEZWebViewController *webViewController = [[FEZWebViewController alloc] initWithURL:selectedTweet.entities.urls.firstObject];
+    FEZWebViewController *webViewController = [[FEZWebViewController alloc] initWithURL:selectedTweet.entities.urls.firstObject tweet:selectedTweet];
     [self.navigationController pushViewController:webViewController animated:YES];
 }
 

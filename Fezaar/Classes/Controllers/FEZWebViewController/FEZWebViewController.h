@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FEZTweet.h"
 
 @interface FEZWebViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-- (instancetype)initWithURL:(NSURL *)url;
+- (instancetype)initWithURL:(NSURL *)url tweet:(FEZTweet *)tweet;
 
 @end
