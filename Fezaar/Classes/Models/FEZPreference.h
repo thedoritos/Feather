@@ -12,4 +12,8 @@
 
 @property (nonatomic) NSNumber *lastViewedListID;
 
++ (instancetype)load;
+
+- (void)save;
+
 @end

@@ -23,7 +23,7 @@ static NSString * const kLastViewedListID = @"LastViewedListIDKey";
     return self;
 }
 
-+ (instancetype)sharedPreference
++ (instancetype)load
 {
     return [[FEZPreference alloc] init];
 }
