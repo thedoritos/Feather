@@ -201,7 +201,9 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
                    return [list.listID isEqualToNumber:preference.lastViewedListID];
                }];
            }
-           return [self.twitter fetchListTimeline:listArray.firstObject];
+           
+           self.list = listArray.firstObject;
+           return [self.twitter fetchListTimeline:self.list];
        }]
        subscribeNext:^(FEZTimeline *timeline) {
            @strongify(self)
