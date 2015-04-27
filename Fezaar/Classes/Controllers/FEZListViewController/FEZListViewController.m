@@ -13,6 +13,8 @@
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
 #import "FEZWebViewController.h"
+#import "FEZPreference.h"
+#import "HUKArray.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 
@@ -34,6 +36,10 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self = [super init];
     if (self) {
         self.list = list;
+        
+        FEZPreference *preference = [FEZPreference load];
+        preference.lastViewedListID = list.listID;
+        [preference save];
     }
     return self;
 }
@@ -170,19 +176,37 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 - (void)refreshTimeline
 {
-    if (!self.list) {
-        [self updateTimeline:[FEZTimeline timeline]];
-        return;
+    @weakify(self)
+    if (self.list) {
+        [[self.twitter
+          fetchListTimeline:self.list]
+          subscribeNext:^(FEZTimeline *timeline) {
+              @strongify(self)
+              [self updateTimeline:timeline];
+          }];
+          return;
     }
     
-    @weakify(self)
-    [[self.twitter fetchListTimeline:self.list]
-     subscribeNext:^(FEZTimeline *timeline) {
-         @strongify(self)
-         [self updateTimeline:timeline];
-     } error:^(NSError *error) {
-         NSLog(@"Failed to fetch list timeline with error: %@", error);
-     }];
+    [[[self.twitter fetchLists]
+       flattenMap:^(FEZListCollection *lists) {
+           if (lists.length == 0) {
+               return [RACSignal return:[FEZTimeline timeline]];
+           }
+        
+           @strongify(self)
+           FEZPreference *preference = [FEZPreference load];
+           NSArray *listArray = lists.lists;
+           if (preference.lastViewedListID) {
+               listArray = [listArray huk_filter:^BOOL(FEZList *list) {
+                   return [list.listID isEqualToNumber:preference.lastViewedListID];
+               }];
+           }
+           return [self.twitter fetchListTimeline:listArray.firstObject];
+       }]
+       subscribeNext:^(FEZTimeline *timeline) {
+           @strongify(self)
+           [self updateTimeline:timeline];
+       }];
 }
 
 - (void)updateTimeline:(FEZTimeline *)timeline
