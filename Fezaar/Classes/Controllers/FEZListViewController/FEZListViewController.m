@@ -139,6 +139,10 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.list = selectedList;
     self.title = selectedList.name;
     
+    FEZPreference *preference = [FEZPreference load];
+    preference.lastViewedListID = self.list.listID;
+    [preference save];
+    
     [self refreshTimeline];
 }
 
