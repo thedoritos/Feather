@@ -7,11 +7,15 @@
 //
 
 #import <Mantle/Mantle.h>
+#import "FEZMedia.h"
 
 @interface FEZEntities : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy, readonly) NSArray *urls;
 
+@property (nonatomic, copy, readonly) NSArray *media;
+
 - (BOOL)containsURL;
+- (BOOL)containsMedia;
 
 @end

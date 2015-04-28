@@ -26,9 +26,19 @@
     }];
 }
 
++ (NSValueTransformer *)mediaJSONTransformer
+{
+    return [MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:FEZMedia.class];
+}
+
 - (BOOL)containsURL
 {
     return self.urls.count > 0;
+}
+
+- (BOOL)containsMedia
+{
+    return self.media.count > 0;
 }
 
 @end

@@ -48,6 +48,7 @@
 		9D90E3EE1ACEC383001EE56C /* FEZTimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3ED1ACEC383001EE56C /* FEZTimelineTests.m */; };
 		9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3F01ACEDC78001EE56C /* HUKLoader.m */; };
 		9D90E3F61ACEDDB7001EE56C /* get_statuses_hometimeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */; };
+		9DB50F5A1AEFCADD00BFCC43 /* FEZMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */; };
 		9DB56C1B1AD2BED300F6A98B /* FEZListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB56C191AD2BED300F6A98B /* FEZListViewController.m */; };
 		9DB56C1C1AD2BED300F6A98B /* FEZListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB56C1A1AD2BED300F6A98B /* FEZListViewController.xib */; };
 		9DC175311AE2948000C406E5 /* FEZDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC175301AE2948000C406E5 /* FEZDateFormatter.m */; };
@@ -145,6 +146,8 @@
 		9D90E3EF1ACEDC78001EE56C /* HUKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUKLoader.h; path = Classes/Libraries/HumourKit/HUKLoader.h; sourceTree = "<group>"; };
 		9D90E3F01ACEDC78001EE56C /* HUKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKLoader.m; path = Classes/Libraries/HumourKit/HUKLoader.m; sourceTree = "<group>"; };
 		9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = get_statuses_hometimeline.json; path = Resources/twitter_api/statuses/get_statuses_hometimeline.json; sourceTree = "<group>"; };
+		9DB50F581AEFCADD00BFCC43 /* FEZMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZMedia.h; path = Classes/Models/Twitter/FEZMedia.h; sourceTree = "<group>"; };
+		9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZMedia.m; path = Classes/Models/Twitter/FEZMedia.m; sourceTree = "<group>"; };
 		9DB56C181AD2BED300F6A98B /* FEZListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListViewController.h; path = Classes/Controllers/FEZListViewController/FEZListViewController.h; sourceTree = "<group>"; };
 		9DB56C191AD2BED300F6A98B /* FEZListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZListViewController.m; path = Classes/Controllers/FEZListViewController/FEZListViewController.m; sourceTree = "<group>"; };
 		9DB56C1A1AD2BED300F6A98B /* FEZListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListViewController.xib; path = Classes/Controllers/FEZListViewController/FEZListViewController.xib; sourceTree = "<group>"; };
@@ -340,6 +343,8 @@
 				9D5EF8031AC43F2A0010781B /* FEZListCollection.m */,
 				9DFB076F1AEBCA1700F97EE4 /* FEZEntities.h */,
 				9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */,
+				9DB50F581AEFCADD00BFCC43 /* FEZMedia.h */,
+				9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -748,6 +753,7 @@
 				9D713CD11ABCC4FC00709229 /* HUKArray.m in Sources */,
 				9DFB077A1AED19EA00F97EE4 /* FEZWebViewController.m in Sources */,
 				76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */,
+				9DB50F5A1AEFCADD00BFCC43 /* FEZMedia.m in Sources */,
 				9D713CF41ABF004800709229 /* FEZHomeViewController.m in Sources */,
 				76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */,
 				9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */,
