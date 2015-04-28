@@ -27,5 +27,6 @@
 @property (nonatomic, copy, readonly) FEZEntities *entities;
 
 - (BOOL)containsURL;
+- (BOOL)containsMedia;
 
 @end

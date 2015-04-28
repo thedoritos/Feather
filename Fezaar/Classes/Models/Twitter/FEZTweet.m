@@ -64,4 +64,9 @@
     return [self.entities containsURL];
 }
 
+- (BOOL)containsMedia
+{
+    return [self.entities containsMedia];
+}
+
 @end
