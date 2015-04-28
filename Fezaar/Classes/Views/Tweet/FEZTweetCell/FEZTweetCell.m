@@ -15,6 +15,9 @@
 
 @property (nonatomic, copy, readonly) FEZTweet *tweet;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeight;
+@property (nonatomic) CGFloat imageViewDefaultHeight;
+
 @end
 
 @implementation FEZTweetCell
@@ -24,6 +27,10 @@
     self.userImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.userImageView.layer.cornerRadius = 8;
     self.userImageView.layer.masksToBounds = YES;
+    
+    self.mediaImageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.mediaImageView.clipsToBounds = YES;
+    self.imageViewDefaultHeight = self.imageViewHeight.constant;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -45,6 +52,15 @@
     self.retweetCountLabel.text = [tweet.retweetCount stringValue];
     
     self.pocketButton.enabled = [tweet containsURL];
+    
+    self.imageViewHeight.constant = [tweet containsMedia] ? self.imageViewDefaultHeight : 0;
+    
+    if ([tweet containsMedia]) {
+        FEZMedia *media = tweet.entities.media.firstObject;
+        [self.mediaImageView sd_setImageWithURL:media.mediaURL];
+    } else {
+        [self.mediaImageView sd_setImageWithURL:nil];
+    }
     
     _tweet = tweet;
     [self layoutIfNeeded];
