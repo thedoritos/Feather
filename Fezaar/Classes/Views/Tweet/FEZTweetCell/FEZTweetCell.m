@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeight;
 @property (nonatomic) CGFloat imageViewDefaultHeight;
 
+@property (nonatomic) NSString *retweetUserLabelFormat;
+
 @end
 
 @implementation FEZTweetCell
@@ -31,6 +33,8 @@
     self.mediaImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.mediaImageView.clipsToBounds = YES;
     self.imageViewDefaultHeight = self.imageViewHeight.constant;
+    
+    self.retweetUserLabelFormat = self.retweetUserLabel.text;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -42,6 +46,15 @@
 
 - (void)presentTweet:(FEZTweet *)tweet
 {
+    _tweet = tweet;
+
+    if ([tweet isRetweet]) {
+        self.retweetUserLabel.text = [NSString stringWithFormat:self.retweetUserLabelFormat, tweet.user.name];
+        tweet = tweet.retweetedStatus;
+    } else {
+        self.retweetUserLabel.text = nil;
+    }
+    
     self.creationDateLabel.text = [FEZDateFormatter formatDate:tweet.creationDate];
     
     self.userNameLabel.text = tweet.user.name;
@@ -62,7 +75,6 @@
         [self.mediaImageView sd_setImageWithURL:nil];
     }
     
-    _tweet = tweet;
     [self layoutIfNeeded];
 }
 

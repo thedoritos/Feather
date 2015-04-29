@@ -26,7 +26,11 @@
 
 @property (nonatomic, copy, readonly) FEZEntities *entities;
 
+@property (nonatomic, copy, readonly) FEZTweet *retweetedStatus;
+
 - (BOOL)containsURL;
 - (BOOL)containsMedia;
+
+- (BOOL)isRetweet;
 
 @end
