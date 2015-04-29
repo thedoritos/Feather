@@ -16,7 +16,8 @@
         @"statusID" : @"id",
         @"creationDate" : @"created_at",
         @"favoriteCount" : @"favorite_count",
-        @"retweetCount" : @"retweet_count"
+        @"retweetCount" : @"retweet_count",
+        @"retweetedStatus" : @"retweeted_status"
     };
 }
 
@@ -54,6 +55,11 @@
     return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:FEZEntities.class];
 }
 
++ (NSValueTransformer *)retweetedStatusJSONTransformer
+{
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:FEZTweet.class];
+}
+
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"FEZTweet statusID:%@, text:%@", self.statusID, self.text];
@@ -67,6 +73,11 @@
 - (BOOL)containsMedia
 {
     return [self.entities containsMedia];
+}
+
+- (BOOL)isRetweet
+{
+    return self.retweetedStatus != nil;
 }
 
 @end
