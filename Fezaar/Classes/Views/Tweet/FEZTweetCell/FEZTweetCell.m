@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeight;
 @property (nonatomic) CGFloat imageViewDefaultHeight;
 
+@property (nonatomic) CGFloat retweetUserLabelDefaultHeight;
+@property (nonatomic) NSString *retweetUserLabelFormat;
+
 @end
 
 @implementation FEZTweetCell
@@ -31,6 +34,9 @@
     self.mediaImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.mediaImageView.clipsToBounds = YES;
     self.imageViewDefaultHeight = self.imageViewHeight.constant;
+    
+    self.retweetUserLabelDefaultHeight = self.retweetUserLabel.frame.size.height;
+    self.retweetUserLabelFormat = self.retweetUserLabel.text;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
