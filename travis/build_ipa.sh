@@ -2,9 +2,9 @@
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
   exit 0
 fi
-#if [[ "$TRAVIS_BRANCH" != "master" ]]; then
-#  exit 0
-#fi
+if [[ "$TRAVIS_BRANCH" != "develop" ]]; then
+  exit 0
+fi
 
 rm -rf ./build/*
 xcodebuild -workspace Fezaar.xcworkspace -scheme Fezaar -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY='iPhone Distribution: Tomohiro Matsumura' archive -archivePath ./build/Fezaar.xcarchive
