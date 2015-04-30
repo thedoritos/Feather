@@ -5,3 +5,13 @@ env:
   global:
   - secure: GZ3xSFDXPcHFF3MulBY0z8SdbjTtHCTu4JhOxPJKPFNsZ34OFSqWRqnX6lWCxXRpMdKI+b3qhJjqq0VM7+nqfwa2EY7GeKoivPHDkc5ZL3WmcHKenG83xCMds+fszmmZbwQQpfVt3j7pHdhSn52uNMsnCD8LbzZCMS0qK3GswzU=
   - secure: jC6xGatJlIA/67O8AEocmnJtTOwe9a4hfB3/pQgb7ZhscKuexj0oWlXKFUO1cGF9AQnI8mEVRYL365wbfYG8oWBxwiQANN1sYWqjYccmGN/wIRU+IgLYXbK+4mtJmMeygKWGdr2YQB0jo6ZoZtjIcOQFS4cPRH6uNM4X+biVROA=
+  - secure: QAsbN1eVZj8gBzkdkI26VAFtL/KXe7sEXPzQMXPyOZdijsTHNX7tde0JW1G5j8lB6ZmWTnDY7LBoeiJuvW6yaLPVipLG3JEoGeEPCW/6vpcr8HP3U5SuQv8Tk0F7k67aNur2Lv68pAZugUzwJYi9NybygTVv0c5Ry56Qf/q0luw=
+  - secure: RgCq9t8p2Y54mqMrGPq7R99KaVlMG7Rpj6JUxtKojlLqA5jHUjG0zcQLn1qACZq/q3QptHiYVLcu6LCbxl3/WS5/1Bn1FVP1H08njaQEzeFOy93JKxMk1iX9sMZfPx3EbdrmUNORdnST3QyvbdAX35YOAZ7a/u8h1ZcGP4Z4C9U=
+before_script:
+- ./travis/install_certs.sh
+script:
+- zsh:build_ipa.sh
+after_success:
+- zsh:upload_ipa.sh
+after_script:
+- ./travis/uninstall_certs.sh
