@@ -8,4 +8,4 @@ fi
 
 rm -rf ./build/*
 xcodebuild -workspace Fezaar.xcworkspace -scheme Fezaar -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY='iPhone Distribution: Tomohiro Matsumura' archive -archivePath ./build/Fezaar.xcarchive
-xcodebuild -exportArchive -exportFormat IPA -archivePath ./build/Fezaar.xcarchive -exportPath ./build/Fezaar.ipa -exportProvisioningProfile 'Fezaar'
+xcodebuild -exportArchive -exportFormat IPA -archivePath ./build/Fezaar.xcarchive -exportPath ./build/Fezaar.ipa -exportProvisioningProfile 'FezaarAdHoc'
