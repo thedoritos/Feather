@@ -10,8 +10,8 @@ env:
 before_script:
 - ./travis/install_certs.sh
 script:
-- zsh:build_ipa.sh
+- ./travis/build_ipa.sh
 after_success:
-- zsh:upload_ipa.sh
+- ./travis/upload_ipa.sh
 after_script:
 - ./travis/uninstall_certs.sh
