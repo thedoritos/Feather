@@ -19,6 +19,8 @@
         
         _consumerKey    = secrets[@"TwitterAPI"][@"ConsumerKey"];
         _consumerSecret = secrets[@"TwitterAPI"][@"ConsumerSecret"];
+        
+        _pocketConfig = [FEZPocketConfig configWithDictionary:secrets[@"PocketAPI"]];
     }
     return self;
 }

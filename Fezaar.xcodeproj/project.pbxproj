@@ -16,6 +16,7 @@
 		76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */; };
 		9D07769C1AC38FC00094EA03 /* FEZListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D07769A1AC38FC00094EA03 /* FEZListCollectionViewController.m */; };
 		9D07769D1AC38FC00094EA03 /* FEZListCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */; };
+		9D0BFA601AEDF241004D6750 /* FEZPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BFA5F1AEDF241004D6750 /* FEZPreference.m */; };
 		9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E331ABB223E0024C26A /* FEZTweet.m */; };
 		9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E361ABB23B80024C26A /* FEZTimeline.m */; };
 		9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E3E1ABB329E0024C26A /* HUKJson.m */; };
@@ -47,11 +48,16 @@
 		9D90E3EE1ACEC383001EE56C /* FEZTimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3ED1ACEC383001EE56C /* FEZTimelineTests.m */; };
 		9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D90E3F01ACEDC78001EE56C /* HUKLoader.m */; };
 		9D90E3F61ACEDDB7001EE56C /* get_statuses_hometimeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */; };
+		9DB50F5A1AEFCADD00BFCC43 /* FEZMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */; };
 		9DB56C1B1AD2BED300F6A98B /* FEZListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB56C191AD2BED300F6A98B /* FEZListViewController.m */; };
 		9DB56C1C1AD2BED300F6A98B /* FEZListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB56C1A1AD2BED300F6A98B /* FEZListViewController.xib */; };
 		9DC175311AE2948000C406E5 /* FEZDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC175301AE2948000C406E5 /* FEZDateFormatter.m */; };
 		9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */; };
 		9DE9B8FC1AE546B5000ED3BF /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B8FB1AE546B5000ED3BF /* UIColor+HexString.m */; };
+		9DFB076D1AEBC48500F97EE4 /* FEZPocketConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB076C1AEBC48500F97EE4 /* FEZPocketConfig.m */; };
+		9DFB07711AEBCA1700F97EE4 /* FEZEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */; };
+		9DFB077A1AED19EA00F97EE4 /* FEZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB07781AED19EA00F97EE4 /* FEZWebViewController.m */; };
+		9DFB077B1AED19EA00F97EE4 /* FEZWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DFB07791AED19EA00F97EE4 /* FEZWebViewController.xib */; };
 		CBA7D452CC6A9D4C78CA2429 /* libPods-Fezaar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +91,8 @@
 		9D0776991AC38FC00094EA03 /* FEZListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListCollectionViewController.h; path = Classes/Controllers/FEZListCollectionViewController/FEZListCollectionViewController.h; sourceTree = "<group>"; };
 		9D07769A1AC38FC00094EA03 /* FEZListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZListCollectionViewController.m; path = Classes/Controllers/FEZListCollectionViewController/FEZListCollectionViewController.m; sourceTree = "<group>"; };
 		9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListCollectionViewController.xib; path = Classes/Controllers/FEZListCollectionViewController/FEZListCollectionViewController.xib; sourceTree = "<group>"; };
+		9D0BFA5E1AEDF241004D6750 /* FEZPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZPreference.h; path = Classes/Models/FEZPreference.h; sourceTree = "<group>"; };
+		9D0BFA5F1AEDF241004D6750 /* FEZPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZPreference.m; path = Classes/Models/FEZPreference.m; sourceTree = "<group>"; };
 		9D448E1C1ABB10900024C26A /* FezaarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FezaarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D448E1F1ABB10910024C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D448E321ABB223E0024C26A /* FEZTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTweet.h; path = Classes/Models/Twitter/FEZTweet.h; sourceTree = "<group>"; };
@@ -138,6 +146,8 @@
 		9D90E3EF1ACEDC78001EE56C /* HUKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUKLoader.h; path = Classes/Libraries/HumourKit/HUKLoader.h; sourceTree = "<group>"; };
 		9D90E3F01ACEDC78001EE56C /* HUKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUKLoader.m; path = Classes/Libraries/HumourKit/HUKLoader.m; sourceTree = "<group>"; };
 		9D90E3F51ACEDDB7001EE56C /* get_statuses_hometimeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = get_statuses_hometimeline.json; path = Resources/twitter_api/statuses/get_statuses_hometimeline.json; sourceTree = "<group>"; };
+		9DB50F581AEFCADD00BFCC43 /* FEZMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZMedia.h; path = Classes/Models/Twitter/FEZMedia.h; sourceTree = "<group>"; };
+		9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZMedia.m; path = Classes/Models/Twitter/FEZMedia.m; sourceTree = "<group>"; };
 		9DB56C181AD2BED300F6A98B /* FEZListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListViewController.h; path = Classes/Controllers/FEZListViewController/FEZListViewController.h; sourceTree = "<group>"; };
 		9DB56C191AD2BED300F6A98B /* FEZListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZListViewController.m; path = Classes/Controllers/FEZListViewController/FEZListViewController.m; sourceTree = "<group>"; };
 		9DB56C1A1AD2BED300F6A98B /* FEZListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListViewController.xib; path = Classes/Controllers/FEZListViewController/FEZListViewController.xib; sourceTree = "<group>"; };
@@ -147,6 +157,13 @@
 		9DCF739B1AC1C055005C3134 /* SLRequest+HUKTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SLRequest+HUKTwitter.m"; path = "Classes/Libraries/HumourKit/SLRequest+HUKTwitter.m"; sourceTree = "<group>"; };
 		9DE9B8FA1AE546B5000ED3BF /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Classes/Libraries/UIColor+HexString/UIColor+HexString.h"; sourceTree = "<group>"; };
 		9DE9B8FB1AE546B5000ED3BF /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Classes/Libraries/UIColor+HexString/UIColor+HexString.m"; sourceTree = "<group>"; };
+		9DFB076B1AEBC48500F97EE4 /* FEZPocketConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZPocketConfig.h; path = Classes/Models/FEZPocketConfig.h; sourceTree = "<group>"; };
+		9DFB076C1AEBC48500F97EE4 /* FEZPocketConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZPocketConfig.m; path = Classes/Models/FEZPocketConfig.m; sourceTree = "<group>"; };
+		9DFB076F1AEBCA1700F97EE4 /* FEZEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZEntities.h; path = Classes/Models/Twitter/FEZEntities.h; sourceTree = "<group>"; };
+		9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZEntities.m; path = Classes/Models/Twitter/FEZEntities.m; sourceTree = "<group>"; };
+		9DFB07771AED19EA00F97EE4 /* FEZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZWebViewController.h; path = Classes/Controllers/FEZWebViewController/FEZWebViewController.h; sourceTree = "<group>"; };
+		9DFB07781AED19EA00F97EE4 /* FEZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZWebViewController.m; path = Classes/Controllers/FEZWebViewController/FEZWebViewController.m; sourceTree = "<group>"; };
+		9DFB07791AED19EA00F97EE4 /* FEZWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZWebViewController.xib; path = Classes/Controllers/FEZWebViewController/FEZWebViewController.xib; sourceTree = "<group>"; };
 		E2F22591E5C322311E6E6FEC /* libPods-Fezaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fezaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -324,6 +341,10 @@
 				9D5EF8001AC42F160010781B /* FEZList.m */,
 				9D5EF8021AC43F2A0010781B /* FEZListCollection.h */,
 				9D5EF8031AC43F2A0010781B /* FEZListCollection.m */,
+				9DFB076F1AEBCA1700F97EE4 /* FEZEntities.h */,
+				9DFB07701AEBCA1700F97EE4 /* FEZEntities.m */,
+				9DB50F581AEFCADD00BFCC43 /* FEZMedia.h */,
+				9DB50F591AEFCADD00BFCC43 /* FEZMedia.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -372,6 +393,10 @@
 				9D448E361ABB23B80024C26A /* FEZTimeline.m */,
 				9D7E68071ACD85C100DAAEFD /* FEZColor.h */,
 				9D7E68081ACD85C100DAAEFD /* FEZColor.m */,
+				9DFB076B1AEBC48500F97EE4 /* FEZPocketConfig.h */,
+				9DFB076C1AEBC48500F97EE4 /* FEZPocketConfig.m */,
+				9D0BFA5E1AEDF241004D6750 /* FEZPreference.h */,
+				9D0BFA5F1AEDF241004D6750 /* FEZPreference.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -421,6 +446,7 @@
 		9D713CE41ABD7DE500709229 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9DFB07761AED19CF00F97EE4 /* FEZWebViewController */,
 				9D713CE51ABD7DFD00709229 /* FEZAuthViewController */,
 				9D713CF01ABF002A00709229 /* FEZHomeViewController */,
 				9DB56C171AD2BEA100F6A98B /* FEZListViewController */,
@@ -537,6 +563,16 @@
 			name = "UIColor+HexString";
 			sourceTree = "<group>";
 		};
+		9DFB07761AED19CF00F97EE4 /* FEZWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DFB07771AED19EA00F97EE4 /* FEZWebViewController.h */,
+				9DFB07781AED19EA00F97EE4 /* FEZWebViewController.m */,
+				9DFB07791AED19EA00F97EE4 /* FEZWebViewController.xib */,
+			);
+			name = FEZWebViewController;
+			sourceTree = "<group>";
+		};
 		BF5B1D4517669CAC12D82838 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +673,7 @@
 				9D713CEF1ABE626B00709229 /* FEZLaunchScreen.xib in Resources */,
 				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
 				9DB56C1C1AD2BED300F6A98B /* FEZListViewController.xib in Resources */,
+				9DFB077B1AED19EA00F97EE4 /* FEZWebViewController.xib in Resources */,
 				9D713CF51ABF004800709229 /* FEZHomeViewController.xib in Resources */,
 				9D713CFD1ABF023E00709229 /* FEZTweetCell.xib in Resources */,
 				9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */,
@@ -698,6 +735,7 @@
 				9D07769C1AC38FC00094EA03 /* FEZListCollectionViewController.m in Sources */,
 				9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */,
 				9D5EF8041AC43F2A0010781B /* FEZListCollection.m in Sources */,
+				9D0BFA601AEDF241004D6750 /* FEZPreference.m in Sources */,
 				9DC175311AE2948000C406E5 /* FEZDateFormatter.m in Sources */,
 				9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */,
 				9D713D0E1ABF158C00709229 /* FEZUser.m in Sources */,
@@ -707,11 +745,15 @@
 				9D90E3F11ACEDC78001EE56C /* HUKLoader.m in Sources */,
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
+				9DFB07711AEBCA1700F97EE4 /* FEZEntities.m in Sources */,
+				9DFB076D1AEBC48500F97EE4 /* FEZPocketConfig.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,
 				9D713CCE1ABCC16700709229 /* HUKTwitter+RACSupport.m in Sources */,
 				9D47A3F91A8907E8003C1089 /* FEZConfig.m in Sources */,
 				9D713CD11ABCC4FC00709229 /* HUKArray.m in Sources */,
+				9DFB077A1AED19EA00F97EE4 /* FEZWebViewController.m in Sources */,
 				76D9510C1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m in Sources */,
+				9DB50F5A1AEFCADD00BFCC43 /* FEZMedia.m in Sources */,
 				9D713CF41ABF004800709229 /* FEZHomeViewController.m in Sources */,
 				76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */,
 				9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */,

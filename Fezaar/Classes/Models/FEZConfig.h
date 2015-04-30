@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FEZPocketConfig.h"
 
 @interface FEZConfig : NSObject
 
 @property (nonatomic, copy, readonly) NSString *consumerKey;
 @property (nonatomic, copy, readonly) NSString *consumerSecret;
+
+@property (nonatomic, copy, readonly) FEZPocketConfig *pocketConfig;
 
 + (instancetype)defaultConfig;
 
