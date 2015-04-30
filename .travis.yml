@@ -7,11 +7,15 @@ env:
   - secure: jC6xGatJlIA/67O8AEocmnJtTOwe9a4hfB3/pQgb7ZhscKuexj0oWlXKFUO1cGF9AQnI8mEVRYL365wbfYG8oWBxwiQANN1sYWqjYccmGN/wIRU+IgLYXbK+4mtJmMeygKWGdr2YQB0jo6ZoZtjIcOQFS4cPRH6uNM4X+biVROA=
   - secure: QAsbN1eVZj8gBzkdkI26VAFtL/KXe7sEXPzQMXPyOZdijsTHNX7tde0JW1G5j8lB6ZmWTnDY7LBoeiJuvW6yaLPVipLG3JEoGeEPCW/6vpcr8HP3U5SuQv8Tk0F7k67aNur2Lv68pAZugUzwJYi9NybygTVv0c5Ry56Qf/q0luw=
   - secure: RgCq9t8p2Y54mqMrGPq7R99KaVlMG7Rpj6JUxtKojlLqA5jHUjG0zcQLn1qACZq/q3QptHiYVLcu6LCbxl3/WS5/1Bn1FVP1H08njaQEzeFOy93JKxMk1iX9sMZfPx3EbdrmUNORdnST3QyvbdAX35YOAZ7a/u8h1ZcGP4Z4C9U=
+  - secure: nujU19gfSJRPOui9qNumVDGqGdz7hW5opxvkbXYsGBoTfdp5ULLVuubdZCJQdIFiiRw94OG9erZH3i1EeEjzJzdWg8v5vsXiErG0eLy84QeO5KG8LTiP+rfN4TGWQUDkYZT3LNUZYhWw+oFnhR/KGQ/xeDTOWn4Q5U6v34I2zIU=
+  - secure: uLUUJmRQXK46k8byIPq/KhSCcyagWGP74He2UAOc8UWPFdgiFd2pUXCiTjsJZ+OHJqPdUsMb/kfv/hcenAzr9gPIWwH5126PXZ1ic211sd2mFwq1+Kq2wMXkIe+9+pLCfIg9XZSaqBk6GxYtMZbkTzjnnBkz05pbRMG2DbiJV0Y=
+  - secure: oG3jDsQ+PhJVFK4vRsXEePad0I2MEHfk63r0oYD5YibHz1u1WGP8gO7kdzmwXK4NgWUHhXE9AFnpPfyFKyOLwmQ0zSPr7bFbxkw0D8kDCsTi891Xn60jvkV0wwFCHI2/4bqG4WR6wXNB3v4+aLLhCH4DIL7HafCFXT9zLHW81oU=
 before_script:
-- ./travis/install_certs.sh
+- "./travis/install_certs.sh"
+- "./travis/create_secrets.sh"
 script:
-- ./travis/build_ipa.sh
+- "./travis/build_ipa.sh"
 after_success:
-- ./travis/upload_ipa.sh
+- "./travis/upload_ipa.sh"
 after_script:
-- ./travis/uninstall_certs.sh
+- "./travis/uninstall_certs.sh"
