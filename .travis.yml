@@ -1,3 +1,7 @@
 language: objective-c
 xcode_project: Fezaar.xcodeproj
 xcode_scheme: Fezaar
+env:
+  global:
+  - secure: GZ3xSFDXPcHFF3MulBY0z8SdbjTtHCTu4JhOxPJKPFNsZ34OFSqWRqnX6lWCxXRpMdKI+b3qhJjqq0VM7+nqfwa2EY7GeKoivPHDkc5ZL3WmcHKenG83xCMds+fszmmZbwQQpfVt3j7pHdhSn52uNMsnCD8LbzZCMS0qK3GswzU=
+  - secure: jC6xGatJlIA/67O8AEocmnJtTOwe9a4hfB3/pQgb7ZhscKuexj0oWlXKFUO1cGF9AQnI8mEVRYL365wbfYG8oWBxwiQANN1sYWqjYccmGN/wIRU+IgLYXbK+4mtJmMeygKWGdr2YQB0jo6ZoZtjIcOQFS4cPRH6uNM4X+biVROA=
