@@ -14,6 +14,7 @@ target "Fezaar" do
   # Controls 
   pod 'ECSlidingViewController'
   pod 'MRProgress'
+  pod 'NYTPhotoViewer'
 end
 
 target "FezaarTests" do
