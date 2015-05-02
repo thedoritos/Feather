@@ -82,6 +82,8 @@
     if (![self.tweet containsMedia]) {
         return;
     }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FEZNotificationShowMedia" object:nil userInfo:@{@"tweet" : self.tweet}];
 }
 
 - (IBAction)saveToPocket:(id)sender

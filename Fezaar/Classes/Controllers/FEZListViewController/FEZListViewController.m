@@ -8,6 +8,7 @@
 
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import <SVPullToRefresh/SVPullToRefresh.h>
+#import <NYTPhotoViewer/NYTPhotosViewController.h>
 #import "FEZListViewController.h"
 #import "FEZTweetCell.h"
 #import "FEZTwitter.h"
@@ -107,6 +108,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.twitter = [[FEZTwitter alloc] init];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveListSelection:) name:@"FEZNotificationShowList" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMediaSelection:) name:@"FEZNotificationShowMedia" object:nil];
     
     [self refreshTimeline];
 }
@@ -144,6 +146,19 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     [preference save];
     
     [self refreshTimeline];
+}
+
+- (void)didReceiveMediaSelection:(NSNotification *)notification
+{
+    FEZTweet *selectedTweet = notification.userInfo[@"tweet"];
+    if (![selectedTweet containsMedia]) {
+        return;
+    }
+    
+    NSArray *media = selectedTweet.entities.media;
+    
+    NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:media];
+    [self presentViewController:photosViewController animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
