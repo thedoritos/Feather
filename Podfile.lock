@@ -47,6 +47,7 @@ PODS:
   - MRProgress/Stopable (0.8.1):
     - MRProgress/Helper
   - NSDate-Extensions (0.0.1)
+  - NYTPhotoViewer (0.1.2)
   - PocketAPI (1.0.3)
   - ReactiveCocoa (2.4.4):
     - ReactiveCocoa/UI (= 2.4.4)
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - Mantle
   - MRProgress
   - NSDate-Extensions
+  - NYTPhotoViewer
   - PocketAPI
   - ReactiveCocoa
   - SDWebImage
@@ -79,6 +81,7 @@ SPEC CHECKSUMS:
   Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
   MRProgress: 72653f3ffd13c7bbac8c9de1da9bf0249fc2717d
   NSDate-Extensions: cbd68ecf5cf8a150644e184b4521d7734fea5ace
+  NYTPhotoViewer: 874a57dd833238b52ab2e8d1c827356c763626c3
   PocketAPI: 561fd4f428a38a4662c5837247c85f9962393f01
   ReactiveCocoa: cbe3b5eae464aa72a348a7323996b171728a9e71
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29

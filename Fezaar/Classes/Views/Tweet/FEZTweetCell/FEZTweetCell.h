@@ -21,7 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *mediaImageView;
+@property (weak, nonatomic) IBOutlet UIButton *mediaImageButton;
 
 @property (weak, nonatomic) IBOutlet UILabel *favoriteCountLabel;
 

@@ -15,8 +15,8 @@
 
 @property (nonatomic, copy, readonly) FEZTweet *tweet;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeight;
-@property (nonatomic) CGFloat imageViewDefaultHeight;
+@property (nonatomic) CGFloat imageButtonDefaultHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageButtonHeight;
 
 @property (nonatomic) NSString *retweetUserLabelFormat;
 
@@ -30,9 +30,9 @@
     self.userImageView.layer.cornerRadius = 8;
     self.userImageView.layer.masksToBounds = YES;
     
-    self.mediaImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.mediaImageView.clipsToBounds = YES;
-    self.imageViewDefaultHeight = self.imageViewHeight.constant;
+    self.mediaImageButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.mediaImageButton.imageView.clipsToBounds = YES;
+    self.imageButtonDefaultHeight = self.mediaImageButton.frame.size.height;
     
     self.retweetUserLabelFormat = self.retweetUserLabel.text;
 }
@@ -66,16 +66,26 @@
     
     self.pocketButton.enabled = [tweet containsURL];
     
-    self.imageViewHeight.constant = [tweet containsMedia] ? self.imageViewDefaultHeight : 0;
-    
+    self.imageButtonHeight.constant = [tweet containsMedia] ? self.imageButtonDefaultHeight: 0;
     if ([tweet containsMedia]) {
+        SDWebImageManager *manager = [SDWebImageManager sharedManager];
         FEZMedia *media = tweet.entities.media.firstObject;
-        [self.mediaImageView sd_setImageWithURL:media.mediaURL];
-    } else {
-        [self.mediaImageView sd_setImageWithURL:nil];
+        [manager downloadImageWithURL:media.mediaURL options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+            
+            [self.mediaImageButton setImage:image forState:UIControlStateNormal];
+        }];
     }
     
     [self layoutIfNeeded];
+}
+
+- (IBAction)presentMedia:(id)sender
+{
+    if (![self.tweet containsMedia]) {
+        return;
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FEZNotificationShowMedia" object:nil userInfo:@{@"tweet" : self.tweet}];
 }
 
 - (IBAction)saveToPocket:(id)sender

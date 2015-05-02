@@ -23,4 +23,9 @@
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
+- (UIImage *)image
+{
+    return [UIImage imageWithData:[NSData dataWithContentsOfURL:self.mediaURL]];
+}
+
 @end
