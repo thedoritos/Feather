@@ -136,6 +136,7 @@
             <connections>
                 <outlet property="creationDateLabel" destination="L08-U9-vnl" id="bCw-Xi-Vu0"/>
                 <outlet property="favoriteCountLabel" destination="19I-sV-5rv" id="cuW-bH-2ij"/>
+                <outlet property="imageButtonHeight" destination="1rD-WZ-grW" id="IFu-61-Jsg"/>
                 <outlet property="mediaImageButton" destination="pva-dz-n5K" id="o7v-nd-mY0"/>
                 <outlet property="pocketButton" destination="viK-uv-qph" id="exE-V9-GkG"/>
                 <outlet property="retweetCountLabel" destination="NVc-2n-xbr" id="PLi-je-FKc"/>

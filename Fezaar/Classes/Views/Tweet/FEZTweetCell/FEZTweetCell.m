@@ -15,7 +15,8 @@
 
 @property (nonatomic, copy, readonly) FEZTweet *tweet;
 
-@property (nonatomic) CGFloat imageViewDefaultHeight;
+@property (nonatomic) CGFloat imageButtonDefaultHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageButtonHeight;
 
 @property (nonatomic) NSString *retweetUserLabelFormat;
 
@@ -31,6 +32,7 @@
     
     self.mediaImageButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
     self.mediaImageButton.imageView.clipsToBounds = YES;
+    self.imageButtonDefaultHeight = self.mediaImageButton.frame.size.height;
     
     self.retweetUserLabelFormat = self.retweetUserLabel.text;
 }
@@ -64,7 +66,7 @@
     
     self.pocketButton.enabled = [tweet containsURL];
     
-    self.mediaImageButton.hidden = ![tweet containsMedia];
+    self.imageButtonHeight.constant = [tweet containsMedia] ? self.imageButtonDefaultHeight: 0;
     if ([tweet containsMedia]) {
         SDWebImageManager *manager = [SDWebImageManager sharedManager];
         FEZMedia *media = tweet.entities.media.firstObject;
