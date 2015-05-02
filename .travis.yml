@@ -19,3 +19,6 @@ after_success:
 - "./travis/upload_ipa.sh"
 after_script:
 - "./travis/uninstall_certs.sh"
+notifications:
+  slack:
+    secure: nySf7M2ygRDJYdO3PwbbH57OmQlk2LwOaE47qauw4vM/NMgmLiCtpRi6wa1a1BCmSCRk+MPHYHpb3uou+1Iqp+cmkpJ4YJQekbkyDQ9OMpp7JUivJbl/cwT8XIVmdteu8ZztM0XP8WVDMI3c7qfA2A8KFLEs70wbWaFBj3EMAww=
