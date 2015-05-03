@@ -24,6 +24,9 @@
 		9D47A3FD1A890941003C1089 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D47A3FC1A890941003C1089 /* secrets.plist */; };
 		9D4F9CBD1AE66AB30088669A /* FEZListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F9CBB1AE66AB30088669A /* FEZListCell.m */; };
 		9D4F9CBE1AE66AB30088669A /* FEZListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4F9CBC1AE66AB30088669A /* FEZListCell.xib */; };
+		9D51558C1AF64A0600AF5CA9 /* FEZImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D51558A1AF64A0600AF5CA9 /* FEZImageCell.m */; };
+		9D51558D1AF64A0600AF5CA9 /* FEZImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D51558B1AF64A0600AF5CA9 /* FEZImageCell.xib */; };
+		9D5155901AF6587100AF5CA9 /* UITableView+StrongScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D51558F1AF6587100AF5CA9 /* UITableView+StrongScroll.m */; };
 		9D5EF8011AC42F160010781B /* FEZList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EF8001AC42F160010781B /* FEZList.m */; };
 		9D5EF8041AC43F2A0010781B /* FEZListCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EF8031AC43F2A0010781B /* FEZListCollection.m */; };
 		9D713CC41ABCB96900709229 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D713CC31ABCB96900709229 /* Social.framework */; };
@@ -107,6 +110,11 @@
 		9D4F9CBA1AE66AB30088669A /* FEZListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListCell.h; path = Classes/Views/Tweet/FEZListCell/FEZListCell.h; sourceTree = "<group>"; };
 		9D4F9CBB1AE66AB30088669A /* FEZListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZListCell.m; path = Classes/Views/Tweet/FEZListCell/FEZListCell.m; sourceTree = "<group>"; };
 		9D4F9CBC1AE66AB30088669A /* FEZListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListCell.xib; path = Classes/Views/Tweet/FEZListCell/FEZListCell.xib; sourceTree = "<group>"; };
+		9D5155891AF64A0600AF5CA9 /* FEZImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZImageCell.h; path = Classes/Views/Tweet/FEZImageCell/FEZImageCell.h; sourceTree = "<group>"; };
+		9D51558A1AF64A0600AF5CA9 /* FEZImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZImageCell.m; path = Classes/Views/Tweet/FEZImageCell/FEZImageCell.m; sourceTree = "<group>"; };
+		9D51558B1AF64A0600AF5CA9 /* FEZImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZImageCell.xib; path = Classes/Views/Tweet/FEZImageCell/FEZImageCell.xib; sourceTree = "<group>"; };
+		9D51558E1AF6587100AF5CA9 /* UITableView+StrongScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+StrongScroll.h"; path = "Classes/Extensions/UITableView+StrongScroll.h"; sourceTree = "<group>"; };
+		9D51558F1AF6587100AF5CA9 /* UITableView+StrongScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+StrongScroll.m"; path = "Classes/Extensions/UITableView+StrongScroll.m"; sourceTree = "<group>"; };
 		9D5EF7FF1AC42F160010781B /* FEZList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZList.h; path = Classes/Models/Twitter/FEZList.h; sourceTree = "<group>"; };
 		9D5EF8001AC42F160010781B /* FEZList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZList.m; path = Classes/Models/Twitter/FEZList.m; sourceTree = "<group>"; };
 		9D5EF8021AC43F2A0010781B /* FEZListCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZListCollection.h; path = Classes/Models/Twitter/FEZListCollection.h; sourceTree = "<group>"; };
@@ -260,6 +268,8 @@
 				76D9510B1A83A7A6009EC9D0 /* STTwitterAPI+RACSignalSupport.m */,
 				76D951151A86656E009EC9D0 /* STTwitterAPI+Fezaar.h */,
 				76D951161A86656E009EC9D0 /* STTwitterAPI+Fezaar.m */,
+				9D51558E1AF6587100AF5CA9 /* UITableView+StrongScroll.h */,
+				9D51558F1AF6587100AF5CA9 /* UITableView+StrongScroll.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -427,6 +437,16 @@
 			name = FEZListCell;
 			sourceTree = "<group>";
 		};
+		9D5155881AF649E600AF5CA9 /* FEZImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D5155891AF64A0600AF5CA9 /* FEZImageCell.h */,
+				9D51558A1AF64A0600AF5CA9 /* FEZImageCell.m */,
+				9D51558B1AF64A0600AF5CA9 /* FEZImageCell.xib */,
+			);
+			name = FEZImageCell;
+			sourceTree = "<group>";
+		};
 		9D713CDD1ABD6A9300709229 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +507,7 @@
 		9D713CF71ABF01EE00709229 /* Tweet */ = {
 			isa = PBXGroup;
 			children = (
+				9D5155881AF649E600AF5CA9 /* FEZImageCell */,
 				9D4F9CB91AE66A9E0088669A /* FEZListCell */,
 				9D713CF81ABF01FF00709229 /* FEZTweetCell */,
 			);
@@ -670,6 +691,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D51558D1AF64A0600AF5CA9 /* FEZImageCell.xib in Resources */,
 				9D713CEF1ABE626B00709229 /* FEZLaunchScreen.xib in Resources */,
 				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
 				9DB56C1C1AD2BED300F6A98B /* FEZListViewController.xib in Resources */,
@@ -746,6 +768,7 @@
 				76D951141A86648C009EC9D0 /* FEZTwitterAPI.m in Sources */,
 				9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */,
 				9DFB07711AEBCA1700F97EE4 /* FEZEntities.m in Sources */,
+				9D5155901AF6587100AF5CA9 /* UITableView+StrongScroll.m in Sources */,
 				9DFB076D1AEBC48500F97EE4 /* FEZPocketConfig.m in Sources */,
 				9D713CE31ABD6EBF00709229 /* HUKTwitterAccountStore+RACSupport.m in Sources */,
 				9D713CCE1ABCC16700709229 /* HUKTwitter+RACSupport.m in Sources */,
@@ -756,6 +779,7 @@
 				9DB50F5A1AEFCADD00BFCC43 /* FEZMedia.m in Sources */,
 				9D713CF41ABF004800709229 /* FEZHomeViewController.m in Sources */,
 				76D951171A86656E009EC9D0 /* STTwitterAPI+Fezaar.m in Sources */,
+				9D51558C1AF64A0600AF5CA9 /* FEZImageCell.m in Sources */,
 				9DCF739C1AC1C055005C3134 /* SLRequest+HUKTwitter.m in Sources */,
 				9D713CD41ABCC64800709229 /* HUKTwitterError.m in Sources */,
 				76D951101A8661C9009EC9D0 /* STAccessToken.m in Sources */,
