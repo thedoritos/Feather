@@ -28,6 +28,8 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 @property (nonatomic) FEZTwitter *twitter;
 
+@property (nonatomic) BOOL filteringImages;
+
 @end
 
 @implementation FEZListViewController
@@ -52,7 +54,13 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.title = @"List";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(toggleListCollectionView)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    
+    UIBarButtonItem *imageButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(filterImages)];
+    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    
+    self.navigationItem.rightBarButtonItems = @[accountButton, imageButton];
+    
+    self.filteringImages = NO;
     
     CALayer *baseLayer = self.navigationController.view.layer;
     baseLayer.shadowOpacity = 0.5f;
@@ -133,6 +141,12 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     [self presentViewController:authNavigationController animated:YES completion:nil];
 }
 
+- (void)filterImages
+{
+    self.filteringImages = !self.filteringImages;
+    [self.tweetTableView reloadData];
+}
+
 #pragma mark - Notifications
 
 - (void)didReceiveListSelection:(NSNotification *)notification
@@ -165,13 +179,22 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.timeline.length;
+    NSArray *tweets = !self.filteringImages ? self.timeline.tweets : [self.timeline.tweets huk_filter:^BOOL(FEZTweet *tweet) {
+        return [tweet containsMedia];
+    }];
+    
+    return tweets.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FEZTweetCell *cell = [tableView dequeueReusableCellWithIdentifier:kTweetCellID];
-    FEZTweet *tweet = [self.timeline tweetAtIndex:indexPath.row];
+    
+    NSArray *tweets = !self.filteringImages ? self.timeline.tweets : [self.timeline.tweets huk_filter:^BOOL(FEZTweet *tweet) {
+        return [tweet containsMedia];
+    }];
+    
+    FEZTweet *tweet = tweets[indexPath.row];
     
     [cell presentTweet:tweet];
     
