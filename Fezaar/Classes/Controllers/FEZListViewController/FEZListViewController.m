@@ -17,6 +17,7 @@
 #import "FEZWebViewController.h"
 #import "FEZPreference.h"
 #import "HUKArray.h"
+#import "UITableView+StrongScroll.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 static NSString * const kImageCellID = @"FEZImageCell";
