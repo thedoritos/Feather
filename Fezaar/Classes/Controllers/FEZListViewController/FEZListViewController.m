@@ -11,6 +11,7 @@
 #import <NYTPhotoViewer/NYTPhotosViewController.h>
 #import "FEZListViewController.h"
 #import "FEZTweetCell.h"
+#import "FEZImageCell.h"
 #import "FEZTwitter.h"
 #import "FEZAuthViewController.h"
 #import "FEZWebViewController.h"
@@ -18,6 +19,7 @@
 #import "HUKArray.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
+static NSString * const kImageCellID = @"FEZImageCell";
 
 @interface FEZListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -71,6 +73,7 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     self.timeline = [FEZTimeline timeline];
     
     [self.tweetTableView registerNib:[UINib nibWithNibName:kTweetCellID bundle:nil] forCellReuseIdentifier:kTweetCellID];
+    [self.tweetTableView registerNib:[UINib nibWithNibName:kImageCellID bundle:nil] forCellReuseIdentifier:kImageCellID];
     
     self.tweetTableView.dataSource = self;
     self.tweetTableView.delegate = self;
@@ -188,7 +191,6 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    FEZTweetCell *cell = [tableView dequeueReusableCellWithIdentifier:kTweetCellID];
     
     NSArray *tweets = !self.filteringImages ? self.timeline.tweets : [self.timeline.tweets huk_filter:^BOOL(FEZTweet *tweet) {
         return [tweet containsMedia];
@@ -196,9 +198,15 @@ static NSString * const kTweetCellID = @"FEZTweetCell";
     
     FEZTweet *tweet = tweets[indexPath.row];
     
-    [cell presentTweet:tweet];
-    
-    return cell;
+    if (self.filteringImages) {
+        FEZImageCell *cell = [tableView dequeueReusableCellWithIdentifier:kImageCellID];
+        [cell setTweet:tweet];
+        return cell;
+    } else {
+        FEZTweetCell *cell = [tableView dequeueReusableCellWithIdentifier:kTweetCellID];
+        [cell presentTweet:tweet];
+        return cell;
+    }
 }
 
 #pragma mark - UITableViewDelegate
