@@ -58,6 +58,7 @@
     self.creationDateLabel.text = [FEZDateFormatter formatDate:tweet.creationDate];
     
     self.userNameLabel.text = tweet.user.name;
+    self.screenNameLabel.text = [NSString stringWithFormat:@"@%@", tweet.user.screenName];
     self.tweetTextLabel.text = tweet.text;
     [self.userImageView sd_setImageWithURL:[tweet.user profileImageURLWithType:FEZUserProfileImageTypeBigger]];
     
