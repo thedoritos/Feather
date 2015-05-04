@@ -19,6 +19,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *screenNameLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *mediaImageButton;
