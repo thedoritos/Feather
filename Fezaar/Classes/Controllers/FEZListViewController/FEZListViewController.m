@@ -148,6 +148,9 @@ static NSString * const kImageCellID = @"FEZImageCell";
 - (void)filterImages
 {
     self.filteringImages = !self.filteringImages;
+    
+    self.tweetTableView.separatorStyle = self.filteringImages ?  UITableViewCellSeparatorStyleNone : UITableViewCellSeparatorStyleSingleLine;
+    
     [self.tweetTableView reloadData];
 }
 
