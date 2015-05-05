@@ -148,6 +148,17 @@ static NSString * const kImageCellID = @"FEZImageCell";
 - (void)filterImages
 {
     self.filteringImages = !self.filteringImages;
+    
+    if (self.filteringImages) {
+        self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.view.backgroundColor = [UIColor blackColor];
+        self.tweetTableView.infiniteScrollingView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
+    } else {
+        self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        self.view.backgroundColor = [UIColor whiteColor];
+        self.tweetTableView.infiniteScrollingView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    }
+    
     [self.tweetTableView reloadData];
 }
 
