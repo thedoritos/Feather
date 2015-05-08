@@ -17,6 +17,10 @@
 		9D07769C1AC38FC00094EA03 /* FEZListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D07769A1AC38FC00094EA03 /* FEZListCollectionViewController.m */; };
 		9D07769D1AC38FC00094EA03 /* FEZListCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */; };
 		9D0BFA601AEDF241004D6750 /* FEZPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BFA5F1AEDF241004D6750 /* FEZPreference.m */; };
+		9D305EF61AFD8A210072911A /* ic_image_black_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D305EF21AFD8A210072911A /* ic_image_black_@2x.png */; };
+		9D305EF71AFD8A210072911A /* ic_menu_black_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D305EF31AFD8A210072911A /* ic_menu_black_@2x.png */; };
+		9D305EF81AFD8A210072911A /* ic_person_black_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D305EF41AFD8A210072911A /* ic_person_black_@2x.png */; };
+		9D305EF91AFD8A210072911A /* ic_public_black_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D305EF51AFD8A210072911A /* ic_public_black_@2x.png */; };
 		9D448E341ABB223E0024C26A /* FEZTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E331ABB223E0024C26A /* FEZTweet.m */; };
 		9D448E371ABB23B80024C26A /* FEZTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E361ABB23B80024C26A /* FEZTimeline.m */; };
 		9D448E3F1ABB329E0024C26A /* HUKJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D448E3E1ABB329E0024C26A /* HUKJson.m */; };
@@ -96,6 +100,10 @@
 		9D07769B1AC38FC00094EA03 /* FEZListCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FEZListCollectionViewController.xib; path = Classes/Controllers/FEZListCollectionViewController/FEZListCollectionViewController.xib; sourceTree = "<group>"; };
 		9D0BFA5E1AEDF241004D6750 /* FEZPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZPreference.h; path = Classes/Models/FEZPreference.h; sourceTree = "<group>"; };
 		9D0BFA5F1AEDF241004D6750 /* FEZPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FEZPreference.m; path = Classes/Models/FEZPreference.m; sourceTree = "<group>"; };
+		9D305EF21AFD8A210072911A /* ic_image_black_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_image_black_@2x.png"; path = "Resources/Icons/ic_image_black_@2x.png"; sourceTree = "<group>"; };
+		9D305EF31AFD8A210072911A /* ic_menu_black_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_menu_black_@2x.png"; path = "Resources/Icons/ic_menu_black_@2x.png"; sourceTree = "<group>"; };
+		9D305EF41AFD8A210072911A /* ic_person_black_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_person_black_@2x.png"; path = "Resources/Icons/ic_person_black_@2x.png"; sourceTree = "<group>"; };
+		9D305EF51AFD8A210072911A /* ic_public_black_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_public_black_@2x.png"; path = "Resources/Icons/ic_public_black_@2x.png"; sourceTree = "<group>"; };
 		9D448E1C1ABB10900024C26A /* FezaarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FezaarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D448E1F1ABB10910024C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D448E321ABB223E0024C26A /* FEZTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEZTweet.h; path = Classes/Models/Twitter/FEZTweet.h; sourceTree = "<group>"; };
@@ -304,6 +312,17 @@
 			name = FEZListCollectionViewController;
 			sourceTree = "<group>";
 		};
+		9D305EE91AFD80C70072911A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				9D305EF21AFD8A210072911A /* ic_image_black_@2x.png */,
+				9D305EF31AFD8A210072911A /* ic_menu_black_@2x.png */,
+				9D305EF41AFD8A210072911A /* ic_person_black_@2x.png */,
+				9D305EF51AFD8A210072911A /* ic_public_black_@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		9D448E1D1ABB10910024C26A /* FezaarTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +433,7 @@
 		9D47A3FA1A8908A9003C1089 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D305EE91AFD80C70072911A /* Icons */,
 				9D47A3FB1A890936003C1089 /* Config */,
 			);
 			name = Resources;
@@ -694,11 +714,15 @@
 				9D51558D1AF64A0600AF5CA9 /* FEZImageCell.xib in Resources */,
 				9D713CEF1ABE626B00709229 /* FEZLaunchScreen.xib in Resources */,
 				9D47A3FD1A890941003C1089 /* secrets.plist in Resources */,
+				9D305EF91AFD8A210072911A /* ic_public_black_@2x.png in Resources */,
+				9D305EF81AFD8A210072911A /* ic_person_black_@2x.png in Resources */,
 				9DB56C1C1AD2BED300F6A98B /* FEZListViewController.xib in Resources */,
 				9DFB077B1AED19EA00F97EE4 /* FEZWebViewController.xib in Resources */,
 				9D713CF51ABF004800709229 /* FEZHomeViewController.xib in Resources */,
 				9D713CFD1ABF023E00709229 /* FEZTweetCell.xib in Resources */,
 				9D713CEA1ABD7E5400709229 /* FEZAuthViewController.xib in Resources */,
+				9D305EF61AFD8A210072911A /* ic_image_black_@2x.png in Resources */,
+				9D305EF71AFD8A210072911A /* ic_menu_black_@2x.png in Resources */,
 				9D07769D1AC38FC00094EA03 /* FEZListCollectionViewController.xib in Resources */,
 				9D4F9CBE1AE66AB30088669A /* FEZListCell.xib in Resources */,
 				76CBECE91A83A111008C4551 /* Images.xcassets in Resources */,
