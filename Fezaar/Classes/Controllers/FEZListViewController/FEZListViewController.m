@@ -22,6 +22,11 @@
 static NSString * const kTweetCellID = @"FEZTweetCell";
 static NSString * const kImageCellID = @"FEZImageCell";
 
+static NSString * const kImageImage   = @"ic_image_black_.png";
+static NSString * const kMenuImage    = @"ic_menu_black_.png";
+static NSString * const kAccountImage = @"ic_person_black_.png";
+static NSString * const kURLImage     = @"ic_public_black_.png";
+
 @interface FEZListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tweetTableView;
@@ -56,10 +61,10 @@ static NSString * const kImageCellID = @"FEZImageCell";
     
     self.title = @"List";
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(toggleListCollectionView)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:kMenuImage] style:UIBarButtonItemStylePlain target:self action:@selector(toggleListCollectionView)];
     
-    UIBarButtonItem *imageButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(filterImages)];
-    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(presentAccounts)];
+    UIBarButtonItem *imageButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:kImageImage] style:UIBarButtonItemStylePlain target:self action:@selector(filterImages)];
+    UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:kAccountImage] style:UIBarButtonItemStylePlain target:self action:@selector(presentAccounts)];
     
     self.navigationItem.rightBarButtonItems = @[accountButton, imageButton];
     
