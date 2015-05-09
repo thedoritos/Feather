@@ -12,6 +12,9 @@
 @interface FEZImageCell ()
 
 @property (weak, nonatomic) IBOutlet UIButton *imageButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
+
 @property (nonatomic) FEZTweet *tweet;
 
 @end
@@ -36,6 +39,8 @@
             [self.imageButton setImage:image forState:UIControlStateNormal];
         }];
     }
+    
+    self.tweetTextLabel.text = tweet.text;
 }
 
 - (IBAction)showImage:(id)sender
