@@ -27,17 +27,28 @@
                             <action selector="showImage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q75-aQ-yB6"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is tweet text." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0E-Tj-0gU" userLabel="TextLabel">
+                        <rect key="frame" x="0.0" y="234" width="320" height="14"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Dz6-Gt-JcP" firstAttribute="leading" secondItem="M0E-Tj-0gU" secondAttribute="leading" id="7PU-QF-4iP"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Dz6-Gt-JcP" secondAttribute="bottom" id="Krj-Bv-SHW"/>
+                    <constraint firstItem="Dz6-Gt-JcP" firstAttribute="bottom" secondItem="M0E-Tj-0gU" secondAttribute="bottom" id="VO8-RL-p4W"/>
                     <constraint firstAttribute="trailing" secondItem="Dz6-Gt-JcP" secondAttribute="trailing" id="VX0-Mn-vwR"/>
                     <constraint firstItem="Dz6-Gt-JcP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Wgq-Q3-Ox1"/>
                     <constraint firstAttribute="leading" secondItem="Dz6-Gt-JcP" secondAttribute="leading" id="ZEI-ZJ-g5l"/>
+                    <constraint firstItem="Dz6-Gt-JcP" firstAttribute="trailing" secondItem="M0E-Tj-0gU" secondAttribute="trailing" id="iBr-rO-u9b"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <connections>
                 <outlet property="imageButton" destination="Dz6-Gt-JcP" id="5yC-Y8-tul"/>
+                <outlet property="tweetTextLabel" destination="M0E-Tj-0gU" id="XMO-XD-net"/>
             </connections>
             <point key="canvasLocation" x="231" y="232.5"/>
         </tableViewCell>
