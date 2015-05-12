@@ -18,6 +18,7 @@
 #import "FEZPreference.h"
 #import "HUKArray.h"
 #import "UITableView+StrongScroll.h"
+#import "FEZColor.h"
 
 static NSString * const kTweetCellID = @"FEZTweetCell";
 static NSString * const kImageCellID = @"FEZImageCell";
@@ -37,6 +38,8 @@ static NSString * const kURLImage     = @"ic_public_black_.png";
 @property (nonatomic) FEZTwitter *twitter;
 
 @property (nonatomic) BOOL filteringImages;
+
+@property (nonatomic, weak) UIBarButtonItem *imageFilterButton;
 
 @end
 
@@ -67,6 +70,7 @@ static NSString * const kURLImage     = @"ic_public_black_.png";
     UIBarButtonItem *accountButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:kAccountImage] style:UIBarButtonItemStylePlain target:self action:@selector(presentAccounts)];
     
     self.navigationItem.rightBarButtonItems = @[accountButton, imageButton];
+    self.imageFilterButton = imageButton;
     
     self.filteringImages = NO;
     
@@ -153,6 +157,8 @@ static NSString * const kURLImage     = @"ic_public_black_.png";
 - (void)filterImages
 {
     self.filteringImages = !self.filteringImages;
+    
+    self.imageFilterButton.tintColor = self.filteringImages ? [UIColor yellowColor] : [UIColor whiteColor];
     
     if (self.filteringImages) {
         self.tweetTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
