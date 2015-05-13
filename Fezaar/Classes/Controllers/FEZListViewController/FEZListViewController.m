@@ -247,6 +247,15 @@ static NSString * const kURLImage     = @"ic_public_black_.png";
 
 #pragma mark - Private
 
+- (void)setList:(FEZList *)list
+{
+    _list = list;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.title = list == nil ? @"list" : list.name;
+    });
+}
+
 - (void)refreshTimeline
 {
     @weakify(self)
