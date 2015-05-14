@@ -54,6 +54,15 @@
         NSLog(@"Saved to Pocket url:%@, error:%@", url, error);
         
         [MRProgressOverlayView dismissOverlayForView:self.view.window animated:YES];
+        
+        [MRProgressOverlayView showOverlayAddedTo:self.view.window
+                                            title:@"Success"
+                                             mode:MRProgressOverlayViewModeCheckmark animated:YES];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MRProgressOverlayView dismissOverlayForView:self.view.window animated:YES];
+        });
+        
     }];
 }
 
